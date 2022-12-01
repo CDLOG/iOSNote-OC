@@ -10,6 +10,7 @@
 #import "XcodeVC.h"
 #import "PlistLoadVC.h"
 #import "CustomViewClass.h"
+#import "ScrollVC.h"
 @interface ViewController ()
 
 @end
@@ -25,7 +26,7 @@
     // Do any additional setup after loading the view.
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    PlistLoadVC *vc = [[PlistLoadVC alloc]init];
+    ScrollVC *vc = [[ScrollVC alloc]init];
 //    [self.navigationController pushViewController:vc animated:YES];
     [self presentViewController:vc animated:YES completion:nil];
 }
