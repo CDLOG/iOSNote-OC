@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA08AE482918DC7B00907C6E /* UIView+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = CA08AE472918DC7B00907C6E /* UIView+Tools.m */; };
 		CA75DB512918A93C0038E172 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75DB502918A93C0038E172 /* AppDelegate.m */; };
 		CA75DB542918A93C0038E172 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75DB532918A93C0038E172 /* SceneDelegate.m */; };
 		CA75DB572918A93C0038E172 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75DB562918A93C0038E172 /* ViewController.m */; };
@@ -14,9 +15,22 @@
 		CA75DB5C2918A93E0038E172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA75DB5B2918A93E0038E172 /* Assets.xcassets */; };
 		CA75DB5F2918A93E0038E172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA75DB5D2918A93E0038E172 /* LaunchScreen.storyboard */; };
 		CA75DB622918A93E0038E172 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75DB612918A93E0038E172 /* main.m */; };
+		CAC023FC2918CD3D00B0A827 /* ViewNoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC023FA2918CD3D00B0A827 /* ViewNoteController.m */; };
+		CAC023FD2918CD3D00B0A827 /* ViewNoteController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC023FB2918CD3D00B0A827 /* ViewNoteController.xib */; };
+		CAC89C9329385C5300ED408E /* PlistLoadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC89C9129385C5300ED408E /* PlistLoadVC.m */; };
+		CAC89C9429385C5300ED408E /* PlistLoadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC89C9229385C5300ED408E /* PlistLoadVC.xib */; };
+		CAC89C9D29385E8900ED408E /* XcodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC89C9B29385E8900ED408E /* XcodeVC.m */; };
+		CAC89C9E29385E8900ED408E /* XcodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC89C9C29385E8900ED408E /* XcodeVC.xib */; };
+		CAC89CA1293874B300ED408E /* shops.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAC89CA0293874B300ED408E /* shops.plist */; };
+		CAC89CA52938DAA000ED408E /* CustomViewClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC89CA42938DAA000ED408E /* CustomViewClass.m */; };
+		CAC89CA72938DAB300ED408E /* CustomViewClass.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC89CA62938DAB300ED408E /* CustomViewClass.xib */; };
+		CAC89CB12938E7E900ED408E /* ScrollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC89CAF2938E7E900ED408E /* ScrollVC.m */; };
+		CAC89CB22938E7E900ED408E /* ScrollVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC89CB02938E7E900ED408E /* ScrollVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA08AE462918DC7B00907C6E /* UIView+Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Tools.h"; sourceTree = "<group>"; };
+		CA08AE472918DC7B00907C6E /* UIView+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tools.m"; sourceTree = "<group>"; };
 		CA75DB4C2918A93C0038E172 /* iOSNote-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSNote-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA75DB4F2918A93C0038E172 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CA75DB502918A93C0038E172 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +43,23 @@
 		CA75DB5E2918A93E0038E172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA75DB602918A93E0038E172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA75DB612918A93E0038E172 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CAC023F92918CD3D00B0A827 /* ViewNoteController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewNoteController.h; sourceTree = "<group>"; };
+		CAC023FA2918CD3D00B0A827 /* ViewNoteController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewNoteController.m; sourceTree = "<group>"; };
+		CAC023FB2918CD3D00B0A827 /* ViewNoteController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewNoteController.xib; sourceTree = "<group>"; };
+		CAC89C9029385C5300ED408E /* PlistLoadVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlistLoadVC.h; sourceTree = "<group>"; };
+		CAC89C9129385C5300ED408E /* PlistLoadVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlistLoadVC.m; sourceTree = "<group>"; };
+		CAC89C9229385C5300ED408E /* PlistLoadVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlistLoadVC.xib; sourceTree = "<group>"; };
+		CAC89C9A29385E8900ED408E /* XcodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XcodeVC.h; sourceTree = "<group>"; };
+		CAC89C9B29385E8900ED408E /* XcodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XcodeVC.m; sourceTree = "<group>"; };
+		CAC89C9C29385E8900ED408E /* XcodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XcodeVC.xib; sourceTree = "<group>"; };
+		CAC89C9F29386FB400ED408E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CAC89CA0293874B300ED408E /* shops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shops.plist; sourceTree = "<group>"; };
+		CAC89CA32938DAA000ED408E /* CustomViewClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewClass.h; sourceTree = "<group>"; };
+		CAC89CA42938DAA000ED408E /* CustomViewClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewClass.m; sourceTree = "<group>"; };
+		CAC89CA62938DAB300ED408E /* CustomViewClass.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomViewClass.xib; sourceTree = "<group>"; };
+		CAC89CAE2938E7E900ED408E /* ScrollVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollVC.h; sourceTree = "<group>"; };
+		CAC89CAF2938E7E900ED408E /* ScrollVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollVC.m; sourceTree = "<group>"; };
+		CAC89CB02938E7E900ED408E /* ScrollVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +73,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA08AE452918DC2600907C6E /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				CA08AE462918DC7B00907C6E /* UIView+Tools.h */,
+				CA08AE472918DC7B00907C6E /* UIView+Tools.m */,
+			);
+			path = "分类";
+			sourceTree = "<group>";
+		};
 		CA75DB432918A93C0038E172 = {
 			isa = PBXGroup;
 			children = (
@@ -61,12 +101,16 @@
 		CA75DB4E2918A93C0038E172 /* iOSNote-OC */ = {
 			isa = PBXGroup;
 			children = (
+				CAC89C9929385E5700ED408E /* 工程相关 */,
+				CAC89C8E29385B5200ED408E /* 数据存储 */,
+				CAC023F72918CC6E00B0A827 /* UI */,
 				CA75DB4F2918A93C0038E172 /* AppDelegate.h */,
 				CA75DB502918A93C0038E172 /* AppDelegate.m */,
 				CA75DB522918A93C0038E172 /* SceneDelegate.h */,
 				CA75DB532918A93C0038E172 /* SceneDelegate.m */,
 				CA75DB552918A93C0038E172 /* ViewController.h */,
 				CA75DB562918A93C0038E172 /* ViewController.m */,
+				CAC89C9F29386FB400ED408E /* PrefixHeader.pch */,
 				CA75DB582918A93C0038E172 /* Main.storyboard */,
 				CA75DB5B2918A93E0038E172 /* Assets.xcassets */,
 				CA75DB5D2918A93E0038E172 /* LaunchScreen.storyboard */,
@@ -74,6 +118,84 @@
 				CA75DB612918A93E0038E172 /* main.m */,
 			);
 			path = "iOSNote-OC";
+			sourceTree = "<group>";
+		};
+		CAC023F72918CC6E00B0A827 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CAC89CA22938DA5E00ED408E /* 自定义控件 */,
+				CAC89C9529385C8C00ED408E /* Tools */,
+				CA08AE452918DC2600907C6E /* 分类 */,
+				CAC023F82918CC8800B0A827 /* 原生控件 */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CAC023F82918CC8800B0A827 /* 原生控件 */ = {
+			isa = PBXGroup;
+			children = (
+				CAC89CA82938E6CD00ED408E /* ScrollView */,
+				CAC023F92918CD3D00B0A827 /* ViewNoteController.h */,
+				CAC023FA2918CD3D00B0A827 /* ViewNoteController.m */,
+				CAC023FB2918CD3D00B0A827 /* ViewNoteController.xib */,
+			);
+			path = "原生控件";
+			sourceTree = "<group>";
+		};
+		CAC89C8E29385B5200ED408E /* 数据存储 */ = {
+			isa = PBXGroup;
+			children = (
+				CAC89C8F29385B6900ED408E /* plist */,
+			);
+			path = "数据存储";
+			sourceTree = "<group>";
+		};
+		CAC89C8F29385B6900ED408E /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				CAC89CA0293874B300ED408E /* shops.plist */,
+				CAC89C9029385C5300ED408E /* PlistLoadVC.h */,
+				CAC89C9129385C5300ED408E /* PlistLoadVC.m */,
+				CAC89C9229385C5300ED408E /* PlistLoadVC.xib */,
+			);
+			path = plist;
+			sourceTree = "<group>";
+		};
+		CAC89C9529385C8C00ED408E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		CAC89C9929385E5700ED408E /* 工程相关 */ = {
+			isa = PBXGroup;
+			children = (
+				CAC89C9A29385E8900ED408E /* XcodeVC.h */,
+				CAC89C9B29385E8900ED408E /* XcodeVC.m */,
+				CAC89C9C29385E8900ED408E /* XcodeVC.xib */,
+			);
+			path = "工程相关";
+			sourceTree = "<group>";
+		};
+		CAC89CA22938DA5E00ED408E /* 自定义控件 */ = {
+			isa = PBXGroup;
+			children = (
+				CAC89CA32938DAA000ED408E /* CustomViewClass.h */,
+				CAC89CA42938DAA000ED408E /* CustomViewClass.m */,
+				CAC89CA62938DAB300ED408E /* CustomViewClass.xib */,
+			);
+			path = "自定义控件";
+			sourceTree = "<group>";
+		};
+		CAC89CA82938E6CD00ED408E /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				CAC89CAE2938E7E900ED408E /* ScrollVC.h */,
+				CAC89CAF2938E7E900ED408E /* ScrollVC.m */,
+				CAC89CB02938E7E900ED408E /* ScrollVC.xib */,
+			);
+			path = ScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +255,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC89CA1293874B300ED408E /* shops.plist in Resources */,
+				CAC89CB22938E7E900ED408E /* ScrollVC.xib in Resources */,
+				CAC023FD2918CD3D00B0A827 /* ViewNoteController.xib in Resources */,
 				CA75DB5F2918A93E0038E172 /* LaunchScreen.storyboard in Resources */,
+				CAC89C9E29385E8900ED408E /* XcodeVC.xib in Resources */,
+				CAC89C9429385C5300ED408E /* PlistLoadVC.xib in Resources */,
+				CAC89CA72938DAB300ED408E /* CustomViewClass.xib in Resources */,
 				CA75DB5C2918A93E0038E172 /* Assets.xcassets in Resources */,
 				CA75DB5A2918A93C0038E172 /* Main.storyboard in Resources */,
 			);
@@ -147,8 +275,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA75DB572918A93C0038E172 /* ViewController.m in Sources */,
+				CAC023FC2918CD3D00B0A827 /* ViewNoteController.m in Sources */,
 				CA75DB512918A93C0038E172 /* AppDelegate.m in Sources */,
 				CA75DB622918A93E0038E172 /* main.m in Sources */,
+				CA08AE482918DC7B00907C6E /* UIView+Tools.m in Sources */,
+				CAC89CB12938E7E900ED408E /* ScrollVC.m in Sources */,
+				CAC89CA52938DAA000ED408E /* CustomViewClass.m in Sources */,
+				CAC89C9329385C5300ED408E /* PlistLoadVC.m in Sources */,
+				CAC89C9D29385E8900ED408E /* XcodeVC.m in Sources */,
 				CA75DB542918A93C0038E172 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +349,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSNote-OC/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -271,6 +407,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSNote-OC/PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
