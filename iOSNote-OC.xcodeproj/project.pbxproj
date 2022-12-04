@@ -26,6 +26,8 @@
 		CAC89CA72938DAB300ED408E /* CustomViewClass.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC89CA62938DAB300ED408E /* CustomViewClass.xib */; };
 		CAC89CB12938E7E900ED408E /* ScrollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC89CAF2938E7E900ED408E /* ScrollVC.m */; };
 		CAC89CB22938E7E900ED408E /* ScrollVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC89CB02938E7E900ED408E /* ScrollVC.xib */; };
+		CADB038F293C9B7F00DBEDB6 /* XMGPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB038D293C9B7F00DBEDB6 /* XMGPageView.m */; };
+		CADB0390293C9B7F00DBEDB6 /* XMGPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADB038E293C9B7F00DBEDB6 /* XMGPageView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,9 @@
 		CAC89CAE2938E7E900ED408E /* ScrollVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollVC.h; sourceTree = "<group>"; };
 		CAC89CAF2938E7E900ED408E /* ScrollVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollVC.m; sourceTree = "<group>"; };
 		CAC89CB02938E7E900ED408E /* ScrollVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollVC.xib; sourceTree = "<group>"; };
+		CADB038C293C9B7F00DBEDB6 /* XMGPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGPageView.h; sourceTree = "<group>"; };
+		CADB038D293C9B7F00DBEDB6 /* XMGPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGPageView.m; sourceTree = "<group>"; };
+		CADB038E293C9B7F00DBEDB6 /* XMGPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGPageView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,11 +196,22 @@
 		CAC89CA82938E6CD00ED408E /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				CADB038B293C9B6900DBEDB6 /* 定时轮播图 */,
 				CAC89CAE2938E7E900ED408E /* ScrollVC.h */,
 				CAC89CAF2938E7E900ED408E /* ScrollVC.m */,
 				CAC89CB02938E7E900ED408E /* ScrollVC.xib */,
 			);
 			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		CADB038B293C9B6900DBEDB6 /* 定时轮播图 */ = {
+			isa = PBXGroup;
+			children = (
+				CADB038C293C9B7F00DBEDB6 /* XMGPageView.h */,
+				CADB038D293C9B7F00DBEDB6 /* XMGPageView.m */,
+				CADB038E293C9B7F00DBEDB6 /* XMGPageView.xib */,
+			);
+			path = "定时轮播图";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +277,7 @@
 				CA75DB5F2918A93E0038E172 /* LaunchScreen.storyboard in Resources */,
 				CAC89C9E29385E8900ED408E /* XcodeVC.xib in Resources */,
 				CAC89C9429385C5300ED408E /* PlistLoadVC.xib in Resources */,
+				CADB0390293C9B7F00DBEDB6 /* XMGPageView.xib in Resources */,
 				CAC89CA72938DAB300ED408E /* CustomViewClass.xib in Resources */,
 				CA75DB5C2918A93E0038E172 /* Assets.xcassets in Resources */,
 				CA75DB5A2918A93C0038E172 /* Main.storyboard in Resources */,
@@ -276,6 +293,7 @@
 			files = (
 				CA75DB572918A93C0038E172 /* ViewController.m in Sources */,
 				CAC023FC2918CD3D00B0A827 /* ViewNoteController.m in Sources */,
+				CADB038F293C9B7F00DBEDB6 /* XMGPageView.m in Sources */,
 				CA75DB512918A93C0038E172 /* AppDelegate.m in Sources */,
 				CA75DB622918A93E0038E172 /* main.m in Sources */,
 				CA08AE482918DC7B00907C6E /* UIView+Tools.m in Sources */,
