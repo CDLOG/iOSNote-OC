@@ -47,10 +47,14 @@
     [self pageSet];
 }
 
+-(void)viewWillDisappear:(BOOL)animated{
+    [self.pageView releaseAction];
+}
 
 /// 定时轮播图
 -(void)pageSet{
     XMGPageView *pageView = [XMGPageView pageView];
+    _pageView = pageView;
     pageView.frame = CGRectMake(70, 350, 300, 80);
     pageView.imageNames = @[@"img_00", @"img_01", @"img_02", @"img_03", @"img_04"];
     pageView.otherColor = [UIColor grayColor];
@@ -58,6 +62,8 @@
     [self.view addSubview:pageView];
     self.pageView = pageView;
 }
+
+
 
 - (IBAction)left:(id)sender {
     // self.scrollView.contentOffset ： 偏移量

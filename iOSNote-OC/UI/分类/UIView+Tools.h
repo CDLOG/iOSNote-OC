@@ -26,7 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// - Parameters:
 ///   - view: 目标view
 ///   - frame: 在目标view的frame
-+ (UIButton *)addButtonWithUIview:(UIView *)view  Frame:(CGRect)frame;
+///   - title: 文字
++ (UIButton *)addButtonWithUIview:(UIView *)view  Frame:(CGRect)frame Title:(NSString *)title;
 
 
 @end

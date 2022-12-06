@@ -28,6 +28,8 @@
 		CAC89CB22938E7E900ED408E /* ScrollVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC89CB02938E7E900ED408E /* ScrollVC.xib */; };
 		CADB038F293C9B7F00DBEDB6 /* XMGPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB038D293C9B7F00DBEDB6 /* XMGPageView.m */; };
 		CADB0390293C9B7F00DBEDB6 /* XMGPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADB038E293C9B7F00DBEDB6 /* XMGPageView.xib */; };
+		CADB0395293DF20400DBEDB6 /* TableViewNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB0393293DF20400DBEDB6 /* TableViewNoteVC.m */; };
+		CADB0396293DF20400DBEDB6 /* TableViewNoteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADB0394293DF20400DBEDB6 /* TableViewNoteVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,9 @@
 		CADB038C293C9B7F00DBEDB6 /* XMGPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGPageView.h; sourceTree = "<group>"; };
 		CADB038D293C9B7F00DBEDB6 /* XMGPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGPageView.m; sourceTree = "<group>"; };
 		CADB038E293C9B7F00DBEDB6 /* XMGPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGPageView.xib; sourceTree = "<group>"; };
+		CADB0392293DF20400DBEDB6 /* TableViewNoteVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewNoteVC.h; sourceTree = "<group>"; };
+		CADB0393293DF20400DBEDB6 /* TableViewNoteVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewNoteVC.m; sourceTree = "<group>"; };
+		CADB0394293DF20400DBEDB6 /* TableViewNoteVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewNoteVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +144,7 @@
 		CAC023F82918CC8800B0A827 /* 原生控件 */ = {
 			isa = PBXGroup;
 			children = (
+				CADB0391293DF1D600DBEDB6 /* Tableview */,
 				CAC89CA82938E6CD00ED408E /* ScrollView */,
 				CAC023F92918CD3D00B0A827 /* ViewNoteController.h */,
 				CAC023FA2918CD3D00B0A827 /* ViewNoteController.m */,
@@ -214,6 +220,16 @@
 			path = "定时轮播图";
 			sourceTree = "<group>";
 		};
+		CADB0391293DF1D600DBEDB6 /* Tableview */ = {
+			isa = PBXGroup;
+			children = (
+				CADB0392293DF20400DBEDB6 /* TableViewNoteVC.h */,
+				CADB0393293DF20400DBEDB6 /* TableViewNoteVC.m */,
+				CADB0394293DF20400DBEDB6 /* TableViewNoteVC.xib */,
+			);
+			path = Tableview;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -277,6 +293,7 @@
 				CA75DB5F2918A93E0038E172 /* LaunchScreen.storyboard in Resources */,
 				CAC89C9E29385E8900ED408E /* XcodeVC.xib in Resources */,
 				CAC89C9429385C5300ED408E /* PlistLoadVC.xib in Resources */,
+				CADB0396293DF20400DBEDB6 /* TableViewNoteVC.xib in Resources */,
 				CADB0390293C9B7F00DBEDB6 /* XMGPageView.xib in Resources */,
 				CAC89CA72938DAB300ED408E /* CustomViewClass.xib in Resources */,
 				CA75DB5C2918A93E0038E172 /* Assets.xcassets in Resources */,
@@ -301,6 +318,7 @@
 				CAC89CA52938DAA000ED408E /* CustomViewClass.m in Sources */,
 				CAC89C9329385C5300ED408E /* PlistLoadVC.m in Sources */,
 				CAC89C9D29385E8900ED408E /* XcodeVC.m in Sources */,
+				CADB0395293DF20400DBEDB6 /* TableViewNoteVC.m in Sources */,
 				CA75DB542918A93C0038E172 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +464,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P2F7HH3P2K;
@@ -473,6 +492,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P2F7HH3P2K;

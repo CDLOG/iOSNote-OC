@@ -40,13 +40,16 @@
 
 #pragma mark 添加按钮
 
-+ (UIButton *)addButtonWithUIview:(UIView *)view  Frame:(CGRect)frame
++ (UIButton *)addButtonWithUIview:(UIView *)view  Frame:(CGRect)frame Title:(NSString *)title
 {
     // 创建按钮
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.backgroundColor = [UIColor greenColor];
     // 设置位置和尺寸
     btn.frame = frame;
+    //设置标题
+    [btn setTitle:title forState:UIControlStateNormal];
+    
     // 添加按钮
     [view addSubview:btn];
     return btn;

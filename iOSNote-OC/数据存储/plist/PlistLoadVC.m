@@ -30,8 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIButton *loadBtn = [UIView addButtonWithUIview:self.view Frame:CGRectMake(100, 100, 100, 30)];
-    [loadBtn setTitle:@"加载plist" forState:UIControlStateNormal];
+    UIButton *loadBtn = [UIView addButtonWithUIview:self.view Frame:CGRectMake(100, 100, 100, 30) Title:@"加载plist"];
     [loadBtn addTarget:self action:@selector(loadPlist) forControlEvents:UIControlEventTouchUpInside];
     // Do any additional setup after loading the view from its nib.
 }

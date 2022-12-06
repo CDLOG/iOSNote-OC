@@ -35,7 +35,10 @@
     }
     return self;
 }
-
+/// 释放
+-(void)releaseAction{
+    [self stopTimer];
+}
 /**
  * 当控件从xib\storyboard中创建完毕时，就会调用这个方法
  * 当控件从xib\storyboard中创建完毕后的初始化操作。应该在这个方法中执行

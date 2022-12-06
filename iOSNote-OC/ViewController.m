@@ -19,16 +19,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    CustomViewClass *custom_view = [CustomViewClass customViewCreat];
-    custom_view.frame = CGRectMake(100, 100, 100, 30);
-    [self.view addSubview:custom_view];
-    
-    // Do any additional setup after loading the view.
-}
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    ScrollVC *vc = [[ScrollVC alloc]init];
-//    [self.navigationController pushViewController:vc animated:YES];
-    [self presentViewController:vc animated:YES completion:nil];
+    UIButton *hitBtn = [UIView addButtonWithUIview:self.view Frame:CGRectMake(100, 100, 100, 30) Title:@"加载"];
+    [hitBtn addTarget:self action:@selector(loadAction) forControlEvents:UIControlEventTouchUpInside];
+    self.title = @"导航";
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
+-(void)loadAction{
+    ScrollVC *vc = [[ScrollVC alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 @end

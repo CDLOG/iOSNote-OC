@@ -6,19 +6,34 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
++ (AppDelegate *)shareApplication {
+    return (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    [self addRootVC];
     return YES;
 }
 
+
+/// 添加根控制器
+-(void)addRootVC{
+    if (@available(iOS 13.0, *)) {
+        
+    }
+    else {
+        self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+        self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]] ;
+        [self.window makeKeyAndVisible];
+    }
+}
 
 #pragma mark - UISceneSession lifecycle
 

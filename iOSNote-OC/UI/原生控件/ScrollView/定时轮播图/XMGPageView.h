@@ -16,4 +16,9 @@
 @property (nonatomic, strong) UIColor *otherColor;
 /** 当前圆点颜色 */
 @property (nonatomic, strong) UIColor *currentColor;
+
+
+/// 释放
+-(void)releaseAction;
+
 @end
