@@ -11,6 +11,7 @@
 #import "PlistLoadVC.h"
 #import "CustomViewClass.h"
 #import "ScrollVC.h"
+#import "TableViewNoteVC.h"
 @interface ViewController ()
 
 @end
@@ -19,14 +20,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIButton *hitBtn = [UIView addButtonWithUIview:self.view Frame:CGRectMake(100, 100, 100, 30) Title:@"加载"];
+    UIButton *hitBtn = [UIView addButtonWithUIview:self.view Frame:CGRectMake(100, 100, 200, 200) Title:@"加载"];
     [hitBtn addTarget:self action:@selector(loadAction) forControlEvents:UIControlEventTouchUpInside];
     self.title = @"导航";
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
 -(void)loadAction{
-    ScrollVC *vc = [[ScrollVC alloc]init];
+    TableViewNoteVC *vc = [[TableViewNoteVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end
