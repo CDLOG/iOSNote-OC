@@ -7,10 +7,13 @@
 
 #import "TableViewNoteVC.h"
 #import "CustomEqualCell.h"
+#import "XMGStatus.h"
+#import "XMGStatusCell.h"
 @interface TableViewNoteVC ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 /** 所有的团购数据 */
 @property (nonatomic, strong) NSArray *deals;
+@property (strong, nonatomic) NSArray *statuses;
 @end
 
 @implementation TableViewNoteVC
@@ -34,6 +37,24 @@
         _deals = dealArray;
     }
     return _deals;
+}
+- (NSArray *)statuses
+{
+    if (_statuses == nil) {
+        // 加载plist中的字典数组
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"statuses.plist" ofType:nil];
+        NSArray *dictArray = [NSArray arrayWithContentsOfFile:path];
+        
+        // 字典数组 -> 模型数组
+        NSMutableArray *statusArray = [NSMutableArray array];
+        for (NSDictionary *dict in dictArray) {
+            XMGStatus *status = [XMGStatus statusWithDict:dict];
+            [statusArray addObject:status];
+        }
+        
+        _statuses = statusArray;
+    }
+    return _statuses;
 }
 
 
@@ -98,7 +119,7 @@
     if (section == 0) {
         return self.deals.count;
     } else if (section == 1) {
-        return 4;
+        return self.statuses.count;
     } else if (section == 2) {
         return 2;
     } else {
@@ -114,13 +135,23 @@
 {
     if(indexPath.section == 0){//等高cell
         return 70;
+    }else if(indexPath.section == 1){//非等高cell
+        XMGStatus *staus = self.statuses[indexPath.row];
+        return staus.cellHeight;
     }else{
         return 100;
     }
     
     
 }
-
+/**
+ * 返回每一行的估计高度.非等高cell
+ * 只要返回了估计高度，那么就会先调用tableView:cellForRowAtIndexPath:方法创建cell，再调用tableView:heightForRowAtIndexPath:方法获取cell的真实高度
+ */
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 200;
+}
 
 /**
  *  什么时候调用：每当有一个cell进入视野范围内就会调用
@@ -128,13 +159,29 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    // 创建cell
-    CustomEqualCell *cell = [CustomEqualCell cellWithTableView:tableView];
+    if(indexPath.section == 0){
+        // 创建cell
+        CustomEqualCell *cell = [CustomEqualCell cellWithTableView:tableView];
+        
+        // 取出模型数据
+        cell.deal = self.deals[indexPath.row];
+        
+        return cell;
+    }else if(indexPath.section == 1){
+        XMGStatusCell *cell = [XMGStatusCell cellWithTableView:tableView];
+        cell.status = self.statuses[indexPath.row];
+        return cell;
+    }else{
+        // 创建cell
+        CustomEqualCell *cell = [CustomEqualCell cellWithTableView:tableView];
+        
+        // 取出模型数据
+        cell.deal = self.deals[indexPath.row];
+        
+        return cell;
+    }
     
-    // 取出模型数据
-    cell.deal = self.deals[indexPath.row];
     
-    return cell;
     
 }
 
@@ -144,9 +191,9 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     if (section == 0) {
-        return @"第一组";
+        return @"等高cell";
     } else if (section == 1) {
-        return @"第2组";
+        return @"非等高cell";
     } else if (section == 2) {
         return @"第3组";
     } else {
