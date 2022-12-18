@@ -12,6 +12,7 @@
 #import "CustomViewClass.h"
 #import "ScrollVC.h"
 #import "TableViewNoteVC.h"
+#import "XMGDealsViewController.h"
 @interface ViewController ()
 
 @end
@@ -27,7 +28,7 @@
 }
 
 -(void)loadAction{
-    TableViewNoteVC *vc = [[TableViewNoteVC alloc]init];
+    XMGDealsViewController *vc = [[XMGDealsViewController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end

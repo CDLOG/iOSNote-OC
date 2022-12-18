@@ -34,6 +34,10 @@
 		CAD60C44294088CB006A01D5 /* XMGStatusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C3F294088CB006A01D5 /* XMGStatusCell.xib */; };
 		CAD60C45294088CB006A01D5 /* XMGStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C42294088CB006A01D5 /* XMGStatusCell.m */; };
 		CAD60C47294088DE006A01D5 /* statuses.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C46294088DE006A01D5 /* statuses.plist */; };
+		CAD60C57294F6474006A01D5 /* XMGDealCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C54294F6474006A01D5 /* XMGDealCell.m */; };
+		CAD60C58294F6474006A01D5 /* XMGDealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C56294F6474006A01D5 /* XMGDealCell.xib */; };
+		CAD60C5C294F64C7006A01D5 /* XMGDealsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C5A294F64C7006A01D5 /* XMGDealsViewController.m */; };
+		CAD60C5D294F64C7006A01D5 /* XMGDealsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C5B294F64C7006A01D5 /* XMGDealsViewController.xib */; };
 		CADB038F293C9B7F00DBEDB6 /* XMGPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB038D293C9B7F00DBEDB6 /* XMGPageView.m */; };
 		CADB0390293C9B7F00DBEDB6 /* XMGPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADB038E293C9B7F00DBEDB6 /* XMGPageView.xib */; };
 		CADB0395293DF20400DBEDB6 /* TableViewNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB0393293DF20400DBEDB6 /* TableViewNoteVC.m */; };
@@ -84,6 +88,12 @@
 		CAD60C41294088CB006A01D5 /* XMGStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGStatusCell.h; sourceTree = "<group>"; };
 		CAD60C42294088CB006A01D5 /* XMGStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGStatusCell.m; sourceTree = "<group>"; };
 		CAD60C46294088DE006A01D5 /* statuses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statuses.plist; sourceTree = "<group>"; };
+		CAD60C54294F6474006A01D5 /* XMGDealCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGDealCell.m; sourceTree = "<group>"; };
+		CAD60C55294F6474006A01D5 /* XMGDealCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGDealCell.h; sourceTree = "<group>"; };
+		CAD60C56294F6474006A01D5 /* XMGDealCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGDealCell.xib; sourceTree = "<group>"; };
+		CAD60C59294F64C7006A01D5 /* XMGDealsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGDealsViewController.h; sourceTree = "<group>"; };
+		CAD60C5A294F64C7006A01D5 /* XMGDealsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGDealsViewController.m; sourceTree = "<group>"; };
+		CAD60C5B294F64C7006A01D5 /* XMGDealsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XMGDealsViewController.xib; sourceTree = "<group>"; };
 		CADB038C293C9B7F00DBEDB6 /* XMGPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGPageView.h; sourceTree = "<group>"; };
 		CADB038D293C9B7F00DBEDB6 /* XMGPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGPageView.m; sourceTree = "<group>"; };
 		CADB038E293C9B7F00DBEDB6 /* XMGPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGPageView.xib; sourceTree = "<group>"; };
@@ -256,6 +266,19 @@
 			path = "自定义非等高cell";
 			sourceTree = "<group>";
 		};
+		CAD60C4829409D09006A01D5 /* tableview数据更新 */ = {
+			isa = PBXGroup;
+			children = (
+				CAD60C55294F6474006A01D5 /* XMGDealCell.h */,
+				CAD60C54294F6474006A01D5 /* XMGDealCell.m */,
+				CAD60C56294F6474006A01D5 /* XMGDealCell.xib */,
+				CAD60C59294F64C7006A01D5 /* XMGDealsViewController.h */,
+				CAD60C5A294F64C7006A01D5 /* XMGDealsViewController.m */,
+				CAD60C5B294F64C7006A01D5 /* XMGDealsViewController.xib */,
+			);
+			path = "tableview数据更新";
+			sourceTree = "<group>";
+		};
 		CADB038B293C9B6900DBEDB6 /* 定时轮播图 */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +292,7 @@
 		CADB0391293DF1D600DBEDB6 /* Tableview */ = {
 			isa = PBXGroup;
 			children = (
+				CAD60C4829409D09006A01D5 /* tableview数据更新 */,
 				CAD60C3D2940889B006A01D5 /* 自定义非等高cell */,
 				CA4F710A29407CB8007957D4 /* 自定义等高cell */,
 				CADB0392293DF20400DBEDB6 /* TableViewNoteVC.h */,
@@ -337,6 +361,7 @@
 			files = (
 				CAD60C44294088CB006A01D5 /* XMGStatusCell.xib in Resources */,
 				CAC89CA1293874B300ED408E /* shops.plist in Resources */,
+				CAD60C58294F6474006A01D5 /* XMGDealCell.xib in Resources */,
 				CAD60C47294088DE006A01D5 /* statuses.plist in Resources */,
 				CAC89CB22938E7E900ED408E /* ScrollVC.xib in Resources */,
 				CAC023FD2918CD3D00B0A827 /* ViewNoteController.xib in Resources */,
@@ -346,6 +371,7 @@
 				CADB0396293DF20400DBEDB6 /* TableViewNoteVC.xib in Resources */,
 				CADB0390293C9B7F00DBEDB6 /* XMGPageView.xib in Resources */,
 				CAD60C3C2940800E006A01D5 /* deals.plist in Resources */,
+				CAD60C5D294F64C7006A01D5 /* XMGDealsViewController.xib in Resources */,
 				CAC89CA72938DAB300ED408E /* CustomViewClass.xib in Resources */,
 				CA75DB5C2918A93E0038E172 /* Assets.xcassets in Resources */,
 				CA75DB5A2918A93C0038E172 /* Main.storyboard in Resources */,
@@ -364,6 +390,7 @@
 				CAC023FC2918CD3D00B0A827 /* ViewNoteController.m in Sources */,
 				CAD60C43294088CB006A01D5 /* XMGStatus.m in Sources */,
 				CAD60C3A29407EFA006A01D5 /* XMGDeal.m in Sources */,
+				CAD60C57294F6474006A01D5 /* XMGDealCell.m in Sources */,
 				CADB038F293C9B7F00DBEDB6 /* XMGPageView.m in Sources */,
 				CA75DB512918A93C0038E172 /* AppDelegate.m in Sources */,
 				CA75DB622918A93E0038E172 /* main.m in Sources */,
@@ -374,6 +401,7 @@
 				CAC89CA52938DAA000ED408E /* CustomViewClass.m in Sources */,
 				CAC89C9329385C5300ED408E /* PlistLoadVC.m in Sources */,
 				CAC89C9D29385E8900ED408E /* XcodeVC.m in Sources */,
+				CAD60C5C294F64C7006A01D5 /* XMGDealsViewController.m in Sources */,
 				CADB0395293DF20400DBEDB6 /* TableViewNoteVC.m in Sources */,
 				CA75DB542918A93C0038E172 /* SceneDelegate.m in Sources */,
 			);
