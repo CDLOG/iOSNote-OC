@@ -38,6 +38,9 @@
 		CAD60C58294F6474006A01D5 /* XMGDealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C56294F6474006A01D5 /* XMGDealCell.xib */; };
 		CAD60C5C294F64C7006A01D5 /* XMGDealsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C5A294F64C7006A01D5 /* XMGDealsViewController.m */; };
 		CAD60C5D294F64C7006A01D5 /* XMGDealsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C5B294F64C7006A01D5 /* XMGDealsViewController.xib */; };
+		CAD60C62296D262E006A01D5 /* PickerViewNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C60296D262E006A01D5 /* PickerViewNoteVC.m */; };
+		CAD60C63296D262E006A01D5 /* PickerViewNoteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C61296D262E006A01D5 /* PickerViewNoteVC.xib */; };
+		CAD60C65296D27A0006A01D5 /* foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C64296D27A0006A01D5 /* foods.plist */; };
 		CADB038F293C9B7F00DBEDB6 /* XMGPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB038D293C9B7F00DBEDB6 /* XMGPageView.m */; };
 		CADB0390293C9B7F00DBEDB6 /* XMGPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADB038E293C9B7F00DBEDB6 /* XMGPageView.xib */; };
 		CADB0395293DF20400DBEDB6 /* TableViewNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB0393293DF20400DBEDB6 /* TableViewNoteVC.m */; };
@@ -94,6 +97,10 @@
 		CAD60C59294F64C7006A01D5 /* XMGDealsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGDealsViewController.h; sourceTree = "<group>"; };
 		CAD60C5A294F64C7006A01D5 /* XMGDealsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGDealsViewController.m; sourceTree = "<group>"; };
 		CAD60C5B294F64C7006A01D5 /* XMGDealsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XMGDealsViewController.xib; sourceTree = "<group>"; };
+		CAD60C5F296D262E006A01D5 /* PickerViewNoteVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerViewNoteVC.h; sourceTree = "<group>"; };
+		CAD60C60296D262E006A01D5 /* PickerViewNoteVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerViewNoteVC.m; sourceTree = "<group>"; };
+		CAD60C61296D262E006A01D5 /* PickerViewNoteVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewNoteVC.xib; sourceTree = "<group>"; };
+		CAD60C64296D27A0006A01D5 /* foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = foods.plist; sourceTree = "<group>"; };
 		CADB038C293C9B7F00DBEDB6 /* XMGPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGPageView.h; sourceTree = "<group>"; };
 		CADB038D293C9B7F00DBEDB6 /* XMGPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGPageView.m; sourceTree = "<group>"; };
 		CADB038E293C9B7F00DBEDB6 /* XMGPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGPageView.xib; sourceTree = "<group>"; };
@@ -187,6 +194,7 @@
 		CAC023F82918CC8800B0A827 /* 原生控件 */ = {
 			isa = PBXGroup;
 			children = (
+				CAD60C5E296D2602006A01D5 /* PickerView */,
 				CADB0391293DF1D600DBEDB6 /* Tableview */,
 				CAC89CA82938E6CD00ED408E /* ScrollView */,
 				CAC023F92918CD3D00B0A827 /* ViewNoteController.h */,
@@ -279,6 +287,17 @@
 			path = "tableview数据更新";
 			sourceTree = "<group>";
 		};
+		CAD60C5E296D2602006A01D5 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				CAD60C64296D27A0006A01D5 /* foods.plist */,
+				CAD60C5F296D262E006A01D5 /* PickerViewNoteVC.h */,
+				CAD60C60296D262E006A01D5 /* PickerViewNoteVC.m */,
+				CAD60C61296D262E006A01D5 /* PickerViewNoteVC.xib */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
 		CADB038B293C9B6900DBEDB6 /* 定时轮播图 */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,6 +378,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAD60C65296D27A0006A01D5 /* foods.plist in Resources */,
 				CAD60C44294088CB006A01D5 /* XMGStatusCell.xib in Resources */,
 				CAC89CA1293874B300ED408E /* shops.plist in Resources */,
 				CAD60C58294F6474006A01D5 /* XMGDealCell.xib in Resources */,
@@ -376,6 +396,7 @@
 				CA75DB5C2918A93E0038E172 /* Assets.xcassets in Resources */,
 				CA75DB5A2918A93C0038E172 /* Main.storyboard in Resources */,
 				CA4F710F29407D4D007957D4 /* CustomEqualCell.xib in Resources */,
+				CAD60C63296D262E006A01D5 /* PickerViewNoteVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +423,7 @@
 				CAC89C9329385C5300ED408E /* PlistLoadVC.m in Sources */,
 				CAC89C9D29385E8900ED408E /* XcodeVC.m in Sources */,
 				CAD60C5C294F64C7006A01D5 /* XMGDealsViewController.m in Sources */,
+				CAD60C62296D262E006A01D5 /* PickerViewNoteVC.m in Sources */,
 				CADB0395293DF20400DBEDB6 /* TableViewNoteVC.m in Sources */,
 				CA75DB542918A93C0038E172 /* SceneDelegate.m in Sources */,
 			);

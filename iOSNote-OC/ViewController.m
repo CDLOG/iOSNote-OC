@@ -13,6 +13,7 @@
 #import "ScrollVC.h"
 #import "TableViewNoteVC.h"
 #import "XMGDealsViewController.h"
+#import "PickerViewNoteVC.h"
 @interface ViewController ()
 
 @end
@@ -28,7 +29,7 @@
 }
 
 -(void)loadAction{
-    XMGDealsViewController *vc = [[XMGDealsViewController alloc]init];
+    PickerViewNoteVC *vc = [[PickerViewNoteVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end
