@@ -14,6 +14,7 @@
 #import "TableViewNoteVC.h"
 #import "XMGDealsViewController.h"
 #import "PickerViewNoteVC.h"
+#import "CLJDatePickAndCityPickVC.h"
 @interface ViewController ()
 
 @end
@@ -29,7 +30,7 @@
 }
 
 -(void)loadAction{
-    PickerViewNoteVC *vc = [[PickerViewNoteVC alloc]init];
+    CLJDatePickAndCityPickVC *vc = [[CLJDatePickAndCityPickVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end

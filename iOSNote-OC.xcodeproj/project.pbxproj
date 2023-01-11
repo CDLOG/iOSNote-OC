@@ -41,6 +41,10 @@
 		CAD60C62296D262E006A01D5 /* PickerViewNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C60296D262E006A01D5 /* PickerViewNoteVC.m */; };
 		CAD60C63296D262E006A01D5 /* PickerViewNoteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C61296D262E006A01D5 /* PickerViewNoteVC.xib */; };
 		CAD60C65296D27A0006A01D5 /* foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C64296D27A0006A01D5 /* foods.plist */; };
+		CAD60C6A296EB119006A01D5 /* CLJDatePickAndCityPickVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C68296EB119006A01D5 /* CLJDatePickAndCityPickVC.m */; };
+		CAD60C6B296EB119006A01D5 /* CLJDatePickAndCityPickVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C69296EB119006A01D5 /* CLJDatePickAndCityPickVC.xib */; };
+		CAD60C6E296EB1E9006A01D5 /* XMGProvince.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C6C296EB1E9006A01D5 /* XMGProvince.m */; };
+		CAD60C70296EB1F9006A01D5 /* provinces.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C6F296EB1F9006A01D5 /* provinces.plist */; };
 		CADB038F293C9B7F00DBEDB6 /* XMGPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB038D293C9B7F00DBEDB6 /* XMGPageView.m */; };
 		CADB0390293C9B7F00DBEDB6 /* XMGPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADB038E293C9B7F00DBEDB6 /* XMGPageView.xib */; };
 		CADB0395293DF20400DBEDB6 /* TableViewNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB0393293DF20400DBEDB6 /* TableViewNoteVC.m */; };
@@ -101,6 +105,12 @@
 		CAD60C60296D262E006A01D5 /* PickerViewNoteVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerViewNoteVC.m; sourceTree = "<group>"; };
 		CAD60C61296D262E006A01D5 /* PickerViewNoteVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewNoteVC.xib; sourceTree = "<group>"; };
 		CAD60C64296D27A0006A01D5 /* foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = foods.plist; sourceTree = "<group>"; };
+		CAD60C67296EB119006A01D5 /* CLJDatePickAndCityPickVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLJDatePickAndCityPickVC.h; sourceTree = "<group>"; };
+		CAD60C68296EB119006A01D5 /* CLJDatePickAndCityPickVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLJDatePickAndCityPickVC.m; sourceTree = "<group>"; };
+		CAD60C69296EB119006A01D5 /* CLJDatePickAndCityPickVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CLJDatePickAndCityPickVC.xib; sourceTree = "<group>"; };
+		CAD60C6C296EB1E9006A01D5 /* XMGProvince.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGProvince.m; sourceTree = "<group>"; };
+		CAD60C6D296EB1E9006A01D5 /* XMGProvince.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGProvince.h; sourceTree = "<group>"; };
+		CAD60C6F296EB1F9006A01D5 /* provinces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = provinces.plist; sourceTree = "<group>"; };
 		CADB038C293C9B7F00DBEDB6 /* XMGPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGPageView.h; sourceTree = "<group>"; };
 		CADB038D293C9B7F00DBEDB6 /* XMGPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGPageView.m; sourceTree = "<group>"; };
 		CADB038E293C9B7F00DBEDB6 /* XMGPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGPageView.xib; sourceTree = "<group>"; };
@@ -290,12 +300,26 @@
 		CAD60C5E296D2602006A01D5 /* PickerView */ = {
 			isa = PBXGroup;
 			children = (
+				CAD60C66296D8EDB006A01D5 /* 日期选择和城市选择 */,
 				CAD60C64296D27A0006A01D5 /* foods.plist */,
 				CAD60C5F296D262E006A01D5 /* PickerViewNoteVC.h */,
 				CAD60C60296D262E006A01D5 /* PickerViewNoteVC.m */,
 				CAD60C61296D262E006A01D5 /* PickerViewNoteVC.xib */,
 			);
 			path = PickerView;
+			sourceTree = "<group>";
+		};
+		CAD60C66296D8EDB006A01D5 /* 日期选择和城市选择 */ = {
+			isa = PBXGroup;
+			children = (
+				CAD60C6F296EB1F9006A01D5 /* provinces.plist */,
+				CAD60C6D296EB1E9006A01D5 /* XMGProvince.h */,
+				CAD60C6C296EB1E9006A01D5 /* XMGProvince.m */,
+				CAD60C67296EB119006A01D5 /* CLJDatePickAndCityPickVC.h */,
+				CAD60C68296EB119006A01D5 /* CLJDatePickAndCityPickVC.m */,
+				CAD60C69296EB119006A01D5 /* CLJDatePickAndCityPickVC.xib */,
+			);
+			path = "日期选择和城市选择";
 			sourceTree = "<group>";
 		};
 		CADB038B293C9B6900DBEDB6 /* 定时轮播图 */ = {
@@ -348,6 +372,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = CLJ;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					CA75DB4B2918A93C0038E172 = {
@@ -386,6 +411,7 @@
 				CAC89CB22938E7E900ED408E /* ScrollVC.xib in Resources */,
 				CAC023FD2918CD3D00B0A827 /* ViewNoteController.xib in Resources */,
 				CA75DB5F2918A93E0038E172 /* LaunchScreen.storyboard in Resources */,
+				CAD60C70296EB1F9006A01D5 /* provinces.plist in Resources */,
 				CAC89C9E29385E8900ED408E /* XcodeVC.xib in Resources */,
 				CAC89C9429385C5300ED408E /* PlistLoadVC.xib in Resources */,
 				CADB0396293DF20400DBEDB6 /* TableViewNoteVC.xib in Resources */,
@@ -397,6 +423,7 @@
 				CA75DB5A2918A93C0038E172 /* Main.storyboard in Resources */,
 				CA4F710F29407D4D007957D4 /* CustomEqualCell.xib in Resources */,
 				CAD60C63296D262E006A01D5 /* PickerViewNoteVC.xib in Resources */,
+				CAD60C6B296EB119006A01D5 /* CLJDatePickAndCityPickVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +437,7 @@
 				CA75DB572918A93C0038E172 /* ViewController.m in Sources */,
 				CAC023FC2918CD3D00B0A827 /* ViewNoteController.m in Sources */,
 				CAD60C43294088CB006A01D5 /* XMGStatus.m in Sources */,
+				CAD60C6E296EB1E9006A01D5 /* XMGProvince.m in Sources */,
 				CAD60C3A29407EFA006A01D5 /* XMGDeal.m in Sources */,
 				CAD60C57294F6474006A01D5 /* XMGDealCell.m in Sources */,
 				CADB038F293C9B7F00DBEDB6 /* XMGPageView.m in Sources */,
@@ -426,6 +454,7 @@
 				CAD60C62296D262E006A01D5 /* PickerViewNoteVC.m in Sources */,
 				CADB0395293DF20400DBEDB6 /* TableViewNoteVC.m in Sources */,
 				CA75DB542918A93C0038E172 /* SceneDelegate.m in Sources */,
+				CAD60C6A296EB119006A01D5 /* CLJDatePickAndCityPickVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
