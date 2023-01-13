@@ -13,4 +13,35 @@
 
 #endif /* PrefixHeader_pch */
 
+
+
+
+//OC需要的文件,避免混编错误
+#ifdef __OBJC__
+
+#define ABC 10
 #import "UIView+Tools.h"
+/* pch里面的所有内容都是共享，每个文件都会共有:
+    作用:
+    1.存放一些公用的宏
+    2.存放一些公用的头文件
+    3.自定义Log
+ */
+
+
+// 宏里面可变参数：...
+// 函数中可变参数: __VA_ARGS__
+
+#ifdef DEBUG // 调试阶段
+
+    #define TTLog(...)  NSLog(__VA_ARGS__)
+
+#else // 发布阶段
+
+    #define TTLog(...)
+
+#endif
+
+#endif
+
+
