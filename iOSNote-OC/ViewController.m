@@ -15,6 +15,8 @@
 #import "XMGDealsViewController.h"
 #import "PickerViewNoteVC.h"
 #import "CLJDatePickAndCityPickVC.h"
+#import "NTUICollectionViewVC.h"
+
 @interface ViewController ()
 
 @end
@@ -30,7 +32,7 @@
 }
 
 -(void)loadAction{
-    CLJDatePickAndCityPickVC *vc = [[CLJDatePickAndCityPickVC alloc]init];
+    NTUICollectionViewVC *vc = [[NTUICollectionViewVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end

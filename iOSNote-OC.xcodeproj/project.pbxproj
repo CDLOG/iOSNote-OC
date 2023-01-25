@@ -54,6 +54,10 @@
 		CAD60C882973F3EE006A01D5 /* NTTips.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C862973F3EE006A01D5 /* NTTips.xib */; };
 		CAD60C8E29755AF6006A01D5 /* NTValueTransmitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C8C29755AF6006A01D5 /* NTValueTransmitVC.m */; };
 		CAD60C8F29755AF6006A01D5 /* NTValueTransmitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C8D29755AF6006A01D5 /* NTValueTransmitVC.xib */; };
+		CAD60C94297802AE006A01D5 /* NTUICollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C92297802AE006A01D5 /* NTUICollectionViewVC.m */; };
+		CAD60C95297802AE006A01D5 /* NTUICollectionViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C93297802AE006A01D5 /* NTUICollectionViewVC.xib */; };
+		CAD60C99297FD354006A01D5 /* NTCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C97297FD354006A01D5 /* NTCollectionViewCell.m */; };
+		CAD60C9A297FD354006A01D5 /* NTCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C98297FD354006A01D5 /* NTCollectionViewCell.xib */; };
 		CADB038F293C9B7F00DBEDB6 /* XMGPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB038D293C9B7F00DBEDB6 /* XMGPageView.m */; };
 		CADB0390293C9B7F00DBEDB6 /* XMGPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADB038E293C9B7F00DBEDB6 /* XMGPageView.xib */; };
 		CADB0395293DF20400DBEDB6 /* TableViewNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB0393293DF20400DBEDB6 /* TableViewNoteVC.m */; };
@@ -134,6 +138,12 @@
 		CAD60C8B29755AF6006A01D5 /* NTValueTransmitVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTValueTransmitVC.h; sourceTree = "<group>"; };
 		CAD60C8C29755AF6006A01D5 /* NTValueTransmitVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTValueTransmitVC.m; sourceTree = "<group>"; };
 		CAD60C8D29755AF6006A01D5 /* NTValueTransmitVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTValueTransmitVC.xib; sourceTree = "<group>"; };
+		CAD60C91297802AE006A01D5 /* NTUICollectionViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTUICollectionViewVC.h; sourceTree = "<group>"; };
+		CAD60C92297802AE006A01D5 /* NTUICollectionViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTUICollectionViewVC.m; sourceTree = "<group>"; };
+		CAD60C93297802AE006A01D5 /* NTUICollectionViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTUICollectionViewVC.xib; sourceTree = "<group>"; };
+		CAD60C96297FD354006A01D5 /* NTCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTCollectionViewCell.h; sourceTree = "<group>"; };
+		CAD60C97297FD354006A01D5 /* NTCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTCollectionViewCell.m; sourceTree = "<group>"; };
+		CAD60C98297FD354006A01D5 /* NTCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTCollectionViewCell.xib; sourceTree = "<group>"; };
 		CADB038C293C9B7F00DBEDB6 /* XMGPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGPageView.h; sourceTree = "<group>"; };
 		CADB038D293C9B7F00DBEDB6 /* XMGPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGPageView.m; sourceTree = "<group>"; };
 		CADB038E293C9B7F00DBEDB6 /* XMGPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGPageView.xib; sourceTree = "<group>"; };
@@ -229,6 +239,7 @@
 		CAC023F82918CC8800B0A827 /* 原生控件 */ = {
 			isa = PBXGroup;
 			children = (
+				CAD60C902978028A006A01D5 /* CollectionView */,
 				CAD60C7C2973E29E006A01D5 /* 控制器 */,
 				CAD60C5E296D2602006A01D5 /* PickerView */,
 				CADB0391293DF1D600DBEDB6 /* Tableview */,
@@ -415,6 +426,19 @@
 			path = "数值传递";
 			sourceTree = "<group>";
 		};
+		CAD60C902978028A006A01D5 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				CAD60C91297802AE006A01D5 /* NTUICollectionViewVC.h */,
+				CAD60C92297802AE006A01D5 /* NTUICollectionViewVC.m */,
+				CAD60C93297802AE006A01D5 /* NTUICollectionViewVC.xib */,
+				CAD60C96297FD354006A01D5 /* NTCollectionViewCell.h */,
+				CAD60C97297FD354006A01D5 /* NTCollectionViewCell.m */,
+				CAD60C98297FD354006A01D5 /* NTCollectionViewCell.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		CADB038B293C9B6900DBEDB6 /* 定时轮播图 */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,10 +537,12 @@
 				CADB0390293C9B7F00DBEDB6 /* XMGPageView.xib in Resources */,
 				CAD60C3C2940800E006A01D5 /* deals.plist in Resources */,
 				CAD60C822973E4AF006A01D5 /* NTNavVC.xib in Resources */,
+				CAD60C95297802AE006A01D5 /* NTUICollectionViewVC.xib in Resources */,
 				CAD60C5D294F64C7006A01D5 /* XMGDealsViewController.xib in Resources */,
 				CAC89CA72938DAB300ED408E /* CustomViewClass.xib in Resources */,
 				CA75DB5C2918A93E0038E172 /* Assets.xcassets in Resources */,
 				CA75DB5A2918A93C0038E172 /* Main.storyboard in Resources */,
+				CAD60C9A297FD354006A01D5 /* NTCollectionViewCell.xib in Resources */,
 				CA4F710F29407D4D007957D4 /* CustomEqualCell.xib in Resources */,
 				CAD60C882973F3EE006A01D5 /* NTTips.xib in Resources */,
 				CAD60C63296D262E006A01D5 /* PickerViewNoteVC.xib in Resources */,
@@ -533,6 +559,7 @@
 			files = (
 				CAD60C8E29755AF6006A01D5 /* NTValueTransmitVC.m in Sources */,
 				CA75DB572918A93C0038E172 /* ViewController.m in Sources */,
+				CAD60C99297FD354006A01D5 /* NTCollectionViewCell.m in Sources */,
 				CAC023FC2918CD3D00B0A827 /* ViewNoteController.m in Sources */,
 				CAD60C43294088CB006A01D5 /* XMGStatus.m in Sources */,
 				CAD60C7629715B61006A01D5 /* NTUIApplicationVC.m in Sources */,
@@ -543,6 +570,7 @@
 				CA75DB512918A93C0038E172 /* AppDelegate.m in Sources */,
 				CA75DB622918A93E0038E172 /* main.m in Sources */,
 				CA08AE482918DC7B00907C6E /* UIView+Tools.m in Sources */,
+				CAD60C94297802AE006A01D5 /* NTUICollectionViewVC.m in Sources */,
 				CAC89CB12938E7E900ED408E /* ScrollVC.m in Sources */,
 				CAD60C7A29716502006A01D5 /* NTAppDelegate.m in Sources */,
 				CAD60C872973F3EE006A01D5 /* NTTips.m in Sources */,
