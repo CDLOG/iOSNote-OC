@@ -16,7 +16,7 @@
 #import "PickerViewNoteVC.h"
 #import "CLJDatePickAndCityPickVC.h"
 #import "NTUICollectionViewVC.h"
-
+#import "NTGestureVC.h"
 @interface ViewController ()
 
 @end
@@ -32,7 +32,7 @@
 }
 
 -(void)loadAction{
-    NTUICollectionViewVC *vc = [[NTUICollectionViewVC alloc]init];
+    NTGestureVC *vc = [[NTGestureVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end

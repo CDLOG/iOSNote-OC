@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NTGestureVC">
+            <connections>
+                <outlet property="imageView" destination="iYt-NS-dGr" id="iac-d8-HYR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7735164184" translatesAutoresizingMaskIntoConstraints="NO" id="iYt-NS-dGr">
+                    <rect key="frame" x="22" y="316" width="349" height="220"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="220" id="FnA-n4-gnq"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="iYt-NS-dGr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="06d-gg-YOJ"/>
+                <constraint firstItem="iYt-NS-dGr" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="34w-8O-v2c"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="iYt-NS-dGr" secondAttribute="trailing" constant="22" id="A5j-Hw-BQc"/>
+                <constraint firstItem="iYt-NS-dGr" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="22" id="aqS-JY-oj9"/>
+            </constraints>
+            <point key="canvasLocation" x="123" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="7735164184" width="120" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

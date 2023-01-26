@@ -58,6 +58,9 @@
 		CAD60C95297802AE006A01D5 /* NTUICollectionViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C93297802AE006A01D5 /* NTUICollectionViewVC.xib */; };
 		CAD60C99297FD354006A01D5 /* NTCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C97297FD354006A01D5 /* NTCollectionViewCell.m */; };
 		CAD60C9A297FD354006A01D5 /* NTCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C98297FD354006A01D5 /* NTCollectionViewCell.xib */; };
+		CAD60C9F298244D7006A01D5 /* RedView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C9E298244D7006A01D5 /* RedView.m */; };
+		CAD60CA42982534C006A01D5 /* NTGestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60CA22982534C006A01D5 /* NTGestureVC.m */; };
+		CAD60CA52982534C006A01D5 /* NTGestureVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60CA32982534C006A01D5 /* NTGestureVC.xib */; };
 		CADB038F293C9B7F00DBEDB6 /* XMGPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB038D293C9B7F00DBEDB6 /* XMGPageView.m */; };
 		CADB0390293C9B7F00DBEDB6 /* XMGPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADB038E293C9B7F00DBEDB6 /* XMGPageView.xib */; };
 		CADB0395293DF20400DBEDB6 /* TableViewNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB0393293DF20400DBEDB6 /* TableViewNoteVC.m */; };
@@ -144,6 +147,11 @@
 		CAD60C96297FD354006A01D5 /* NTCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTCollectionViewCell.h; sourceTree = "<group>"; };
 		CAD60C97297FD354006A01D5 /* NTCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTCollectionViewCell.m; sourceTree = "<group>"; };
 		CAD60C98297FD354006A01D5 /* NTCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTCollectionViewCell.xib; sourceTree = "<group>"; };
+		CAD60C9D298244D7006A01D5 /* RedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedView.h; sourceTree = "<group>"; };
+		CAD60C9E298244D7006A01D5 /* RedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedView.m; sourceTree = "<group>"; };
+		CAD60CA12982534C006A01D5 /* NTGestureVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTGestureVC.h; sourceTree = "<group>"; };
+		CAD60CA22982534C006A01D5 /* NTGestureVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTGestureVC.m; sourceTree = "<group>"; };
+		CAD60CA32982534C006A01D5 /* NTGestureVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTGestureVC.xib; sourceTree = "<group>"; };
 		CADB038C293C9B7F00DBEDB6 /* XMGPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGPageView.h; sourceTree = "<group>"; };
 		CADB038D293C9B7F00DBEDB6 /* XMGPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGPageView.m; sourceTree = "<group>"; };
 		CADB038E293C9B7F00DBEDB6 /* XMGPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGPageView.xib; sourceTree = "<group>"; };
@@ -228,6 +236,7 @@
 		CAC023F72918CC6E00B0A827 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CAD60C9B29824499006A01D5 /* 事件处理 */,
 				CAC89CA22938DA5E00ED408E /* 自定义控件 */,
 				CAC89C9529385C8C00ED408E /* Tools */,
 				CA08AE452918DC2600907C6E /* 分类 */,
@@ -439,6 +448,34 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
+		CAD60C9B29824499006A01D5 /* 事件处理 */ = {
+			isa = PBXGroup;
+			children = (
+				CAD60CA02982530C006A01D5 /* 手势识别 */,
+				CAD60C9C298244A6006A01D5 /* 触摸事件 */,
+			);
+			path = "事件处理";
+			sourceTree = "<group>";
+		};
+		CAD60C9C298244A6006A01D5 /* 触摸事件 */ = {
+			isa = PBXGroup;
+			children = (
+				CAD60C9D298244D7006A01D5 /* RedView.h */,
+				CAD60C9E298244D7006A01D5 /* RedView.m */,
+			);
+			path = "触摸事件";
+			sourceTree = "<group>";
+		};
+		CAD60CA02982530C006A01D5 /* 手势识别 */ = {
+			isa = PBXGroup;
+			children = (
+				CAD60CA12982534C006A01D5 /* NTGestureVC.h */,
+				CAD60CA22982534C006A01D5 /* NTGestureVC.m */,
+				CAD60CA32982534C006A01D5 /* NTGestureVC.xib */,
+			);
+			path = "手势识别";
+			sourceTree = "<group>";
+		};
 		CADB038B293C9B6900DBEDB6 /* 定时轮播图 */ = {
 			isa = PBXGroup;
 			children = (
@@ -526,6 +563,7 @@
 				CAD60C7729715B61006A01D5 /* NTUIApplicationVC.xib in Resources */,
 				CAD60C58294F6474006A01D5 /* XMGDealCell.xib in Resources */,
 				CAD60C8F29755AF6006A01D5 /* NTValueTransmitVC.xib in Resources */,
+				CAD60CA52982534C006A01D5 /* NTGestureVC.xib in Resources */,
 				CAD60C47294088DE006A01D5 /* statuses.plist in Resources */,
 				CAC89CB22938E7E900ED408E /* ScrollVC.xib in Resources */,
 				CAC023FD2918CD3D00B0A827 /* ViewNoteController.xib in Resources */,
@@ -565,6 +603,7 @@
 				CAD60C7629715B61006A01D5 /* NTUIApplicationVC.m in Sources */,
 				CAD60C6E296EB1E9006A01D5 /* XMGProvince.m in Sources */,
 				CAD60C3A29407EFA006A01D5 /* XMGDeal.m in Sources */,
+				CAD60C9F298244D7006A01D5 /* RedView.m in Sources */,
 				CAD60C57294F6474006A01D5 /* XMGDealCell.m in Sources */,
 				CADB038F293C9B7F00DBEDB6 /* XMGPageView.m in Sources */,
 				CA75DB512918A93C0038E172 /* AppDelegate.m in Sources */,
@@ -580,6 +619,7 @@
 				CAC89C9329385C5300ED408E /* PlistLoadVC.m in Sources */,
 				CAC89C9D29385E8900ED408E /* XcodeVC.m in Sources */,
 				CAD60C5C294F64C7006A01D5 /* XMGDealsViewController.m in Sources */,
+				CAD60CA42982534C006A01D5 /* NTGestureVC.m in Sources */,
 				CAD60C62296D262E006A01D5 /* PickerViewNoteVC.m in Sources */,
 				CAD60C812973E4AF006A01D5 /* NTNavVC.m in Sources */,
 				CADB0395293DF20400DBEDB6 /* TableViewNoteVC.m in Sources */,
