@@ -17,6 +17,8 @@
 #import "CLJDatePickAndCityPickVC.h"
 #import "NTUICollectionViewVC.h"
 #import "NTGestureVC.h"
+#import "NTImageDrawVC.h"
+#import "NTClipImageVC.h"
 @interface ViewController ()
 
 @end
@@ -32,7 +34,7 @@
 }
 
 -(void)loadAction{
-    NTGestureVC *vc = [[NTGestureVC alloc]init];
+    NTClipImageVC *vc = [[NTClipImageVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end

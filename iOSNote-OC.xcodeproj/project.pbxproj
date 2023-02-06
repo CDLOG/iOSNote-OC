@@ -61,6 +61,12 @@
 		CAD60C9F298244D7006A01D5 /* RedView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C9E298244D7006A01D5 /* RedView.m */; };
 		CAD60CA42982534C006A01D5 /* NTGestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60CA22982534C006A01D5 /* NTGestureVC.m */; };
 		CAD60CA52982534C006A01D5 /* NTGestureVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60CA32982534C006A01D5 /* NTGestureVC.xib */; };
+		CAD60CAB298274C5006A01D5 /* NTImageDrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60CA9298274C5006A01D5 /* NTImageDrawVC.m */; };
+		CAD60CAC298274C5006A01D5 /* NTImageDrawVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60CAA298274C5006A01D5 /* NTImageDrawVC.xib */; };
+		CAD60CAF29827845006A01D5 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60CAE29827845006A01D5 /* UIImage+Image.m */; };
+		CAD60CB42984F571006A01D5 /* NTClipImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60CB22984F571006A01D5 /* NTClipImageVC.m */; };
+		CAD60CB52984F571006A01D5 /* NTClipImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60CB32984F571006A01D5 /* NTClipImageVC.xib */; };
+		CAD60CBA298680E3006A01D5 /* XMGPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60CB8298680E3006A01D5 /* XMGPerson.m */; };
 		CADB038F293C9B7F00DBEDB6 /* XMGPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB038D293C9B7F00DBEDB6 /* XMGPageView.m */; };
 		CADB0390293C9B7F00DBEDB6 /* XMGPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADB038E293C9B7F00DBEDB6 /* XMGPageView.xib */; };
 		CADB0395293DF20400DBEDB6 /* TableViewNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB0393293DF20400DBEDB6 /* TableViewNoteVC.m */; };
@@ -152,6 +158,17 @@
 		CAD60CA12982534C006A01D5 /* NTGestureVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTGestureVC.h; sourceTree = "<group>"; };
 		CAD60CA22982534C006A01D5 /* NTGestureVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTGestureVC.m; sourceTree = "<group>"; };
 		CAD60CA32982534C006A01D5 /* NTGestureVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTGestureVC.xib; sourceTree = "<group>"; };
+		CAD60CA8298274C5006A01D5 /* NTImageDrawVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTImageDrawVC.h; sourceTree = "<group>"; };
+		CAD60CA9298274C5006A01D5 /* NTImageDrawVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTImageDrawVC.m; sourceTree = "<group>"; };
+		CAD60CAA298274C5006A01D5 /* NTImageDrawVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTImageDrawVC.xib; sourceTree = "<group>"; };
+		CAD60CAD29827845006A01D5 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		CAD60CAE29827845006A01D5 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		CAD60CB12984F571006A01D5 /* NTClipImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTClipImageVC.h; sourceTree = "<group>"; };
+		CAD60CB22984F571006A01D5 /* NTClipImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTClipImageVC.m; sourceTree = "<group>"; };
+		CAD60CB32984F571006A01D5 /* NTClipImageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTClipImageVC.xib; sourceTree = "<group>"; };
+		CAD60CB8298680E3006A01D5 /* XMGPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGPerson.m; sourceTree = "<group>"; };
+		CAD60CB9298680E3006A01D5 /* XMGPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGPerson.h; sourceTree = "<group>"; };
+		CAD60CBB2986835C006A01D5 /* XMGSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGSingleton.h; sourceTree = "<group>"; };
 		CADB038C293C9B7F00DBEDB6 /* XMGPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGPageView.h; sourceTree = "<group>"; };
 		CADB038D293C9B7F00DBEDB6 /* XMGPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGPageView.m; sourceTree = "<group>"; };
 		CADB038E293C9B7F00DBEDB6 /* XMGPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGPageView.xib; sourceTree = "<group>"; };
@@ -174,6 +191,8 @@
 		CA08AE452918DC2600907C6E /* 分类 */ = {
 			isa = PBXGroup;
 			children = (
+				CAD60CAD29827845006A01D5 /* UIImage+Image.h */,
+				CAD60CAE29827845006A01D5 /* UIImage+Image.m */,
 				CA08AE462918DC7B00907C6E /* UIView+Tools.h */,
 				CA08AE472918DC7B00907C6E /* UIView+Tools.m */,
 			);
@@ -212,6 +231,8 @@
 		CA75DB4E2918A93C0038E172 /* iOSNote-OC */ = {
 			isa = PBXGroup;
 			children = (
+				CAD60CBC2988F72B006A01D5 /* 网络 */,
+				CAD60CB6298680B9006A01D5 /* 设计模式 */,
 				CAD60C8929755AAA006A01D5 /* 核心 */,
 				CAD60C7129715AF9006A01D5 /* 其他 */,
 				CAC89C9929385E5700ED408E /* 工程相关 */,
@@ -236,6 +257,7 @@
 		CAC023F72918CC6E00B0A827 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CAD60CA62982747B006A01D5 /* 上下文绘制 */,
 				CAD60C9B29824499006A01D5 /* 事件处理 */,
 				CAC89CA22938DA5E00ED408E /* 自定义控件 */,
 				CAC89C9529385C8C00ED408E /* Tools */,
@@ -476,6 +498,68 @@
 			path = "手势识别";
 			sourceTree = "<group>";
 		};
+		CAD60CA62982747B006A01D5 /* 上下文绘制 */ = {
+			isa = PBXGroup;
+			children = (
+				CAD60CA72982748A006A01D5 /* 图片相关 */,
+			);
+			path = "上下文绘制";
+			sourceTree = "<group>";
+		};
+		CAD60CA72982748A006A01D5 /* 图片相关 */ = {
+			isa = PBXGroup;
+			children = (
+				CAD60CB02984F536006A01D5 /* 图片截取 */,
+				CAD60CA8298274C5006A01D5 /* NTImageDrawVC.h */,
+				CAD60CA9298274C5006A01D5 /* NTImageDrawVC.m */,
+				CAD60CAA298274C5006A01D5 /* NTImageDrawVC.xib */,
+			);
+			path = "图片相关";
+			sourceTree = "<group>";
+		};
+		CAD60CB02984F536006A01D5 /* 图片截取 */ = {
+			isa = PBXGroup;
+			children = (
+				CAD60CB12984F571006A01D5 /* NTClipImageVC.h */,
+				CAD60CB22984F571006A01D5 /* NTClipImageVC.m */,
+				CAD60CB32984F571006A01D5 /* NTClipImageVC.xib */,
+			);
+			path = "图片截取";
+			sourceTree = "<group>";
+		};
+		CAD60CB6298680B9006A01D5 /* 设计模式 */ = {
+			isa = PBXGroup;
+			children = (
+				CAD60CB7298680C1006A01D5 /* 单例 */,
+			);
+			path = "设计模式";
+			sourceTree = "<group>";
+		};
+		CAD60CB7298680C1006A01D5 /* 单例 */ = {
+			isa = PBXGroup;
+			children = (
+				CAD60CBB2986835C006A01D5 /* XMGSingleton.h */,
+				CAD60CB9298680E3006A01D5 /* XMGPerson.h */,
+				CAD60CB8298680E3006A01D5 /* XMGPerson.m */,
+			);
+			path = "单例";
+			sourceTree = "<group>";
+		};
+		CAD60CBC2988F72B006A01D5 /* 网络 */ = {
+			isa = PBXGroup;
+			children = (
+				CAD60CBD2988F751006A01D5 /* 文件下载 */,
+			);
+			path = "网络";
+			sourceTree = "<group>";
+		};
+		CAD60CBD2988F751006A01D5 /* 文件下载 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "文件下载";
+			sourceTree = "<group>";
+		};
 		CADB038B293C9B6900DBEDB6 /* 定时轮播图 */ = {
 			isa = PBXGroup;
 			children = (
@@ -565,11 +649,13 @@
 				CAD60C8F29755AF6006A01D5 /* NTValueTransmitVC.xib in Resources */,
 				CAD60CA52982534C006A01D5 /* NTGestureVC.xib in Resources */,
 				CAD60C47294088DE006A01D5 /* statuses.plist in Resources */,
+				CAD60CAC298274C5006A01D5 /* NTImageDrawVC.xib in Resources */,
 				CAC89CB22938E7E900ED408E /* ScrollVC.xib in Resources */,
 				CAC023FD2918CD3D00B0A827 /* ViewNoteController.xib in Resources */,
 				CA75DB5F2918A93E0038E172 /* LaunchScreen.storyboard in Resources */,
 				CAD60C70296EB1F9006A01D5 /* provinces.plist in Resources */,
 				CAC89C9E29385E8900ED408E /* XcodeVC.xib in Resources */,
+				CAD60CB52984F571006A01D5 /* NTClipImageVC.xib in Resources */,
 				CAC89C9429385C5300ED408E /* PlistLoadVC.xib in Resources */,
 				CADB0396293DF20400DBEDB6 /* TableViewNoteVC.xib in Resources */,
 				CADB0390293C9B7F00DBEDB6 /* XMGPageView.xib in Resources */,
@@ -610,6 +696,7 @@
 				CA75DB622918A93E0038E172 /* main.m in Sources */,
 				CA08AE482918DC7B00907C6E /* UIView+Tools.m in Sources */,
 				CAD60C94297802AE006A01D5 /* NTUICollectionViewVC.m in Sources */,
+				CAD60CBA298680E3006A01D5 /* XMGPerson.m in Sources */,
 				CAC89CB12938E7E900ED408E /* ScrollVC.m in Sources */,
 				CAD60C7A29716502006A01D5 /* NTAppDelegate.m in Sources */,
 				CAD60C872973F3EE006A01D5 /* NTTips.m in Sources */,
@@ -618,13 +705,16 @@
 				CAC89CA52938DAA000ED408E /* CustomViewClass.m in Sources */,
 				CAC89C9329385C5300ED408E /* PlistLoadVC.m in Sources */,
 				CAC89C9D29385E8900ED408E /* XcodeVC.m in Sources */,
+				CAD60CAB298274C5006A01D5 /* NTImageDrawVC.m in Sources */,
 				CAD60C5C294F64C7006A01D5 /* XMGDealsViewController.m in Sources */,
+				CAD60CAF29827845006A01D5 /* UIImage+Image.m in Sources */,
 				CAD60CA42982534C006A01D5 /* NTGestureVC.m in Sources */,
 				CAD60C62296D262E006A01D5 /* PickerViewNoteVC.m in Sources */,
 				CAD60C812973E4AF006A01D5 /* NTNavVC.m in Sources */,
 				CADB0395293DF20400DBEDB6 /* TableViewNoteVC.m in Sources */,
 				CA75DB542918A93C0038E172 /* SceneDelegate.m in Sources */,
 				CAD60C6A296EB119006A01D5 /* CLJDatePickAndCityPickVC.m in Sources */,
+				CAD60CB42984F571006A01D5 /* NTClipImageVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
