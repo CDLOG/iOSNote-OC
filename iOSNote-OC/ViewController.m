@@ -19,6 +19,7 @@
 #import "NTGestureVC.h"
 #import "NTImageDrawVC.h"
 #import "NTClipImageVC.h"
+#import "NTZipArchiveVC.h"
 @interface ViewController ()
 
 @end
@@ -34,7 +35,7 @@
 }
 
 -(void)loadAction{
-    NTClipImageVC *vc = [[NTClipImageVC alloc]init];
+    NTZipArchiveVC *vc = [[NTZipArchiveVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end

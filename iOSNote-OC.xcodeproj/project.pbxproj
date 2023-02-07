@@ -10,6 +10,8 @@
 		CA08AE482918DC7B00907C6E /* UIView+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = CA08AE472918DC7B00907C6E /* UIView+Tools.m */; };
 		CA09E2142990EC6A00E4942B /* NTOneDownFileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA09E2122990EC6A00E4942B /* NTOneDownFileVC.m */; };
 		CA09E2152990EC6A00E4942B /* NTOneDownFileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA09E2132990EC6A00E4942B /* NTOneDownFileVC.xib */; };
+		CA09E21C2992269600E4942B /* NTZipArchiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA09E21A2992269600E4942B /* NTZipArchiveVC.m */; };
+		CA09E21D2992269600E4942B /* NTZipArchiveVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA09E21B2992269600E4942B /* NTZipArchiveVC.xib */; };
 		CA4F710E29407D4D007957D4 /* CustomEqualCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4F710C29407D4D007957D4 /* CustomEqualCell.m */; };
 		CA4F710F29407D4D007957D4 /* CustomEqualCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4F710D29407D4D007957D4 /* CustomEqualCell.xib */; };
 		CA75DB512918A93C0038E172 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75DB502918A93C0038E172 /* AppDelegate.m */; };
@@ -85,6 +87,9 @@
 		CA09E2112990EC6A00E4942B /* NTOneDownFileVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTOneDownFileVC.h; sourceTree = "<group>"; };
 		CA09E2122990EC6A00E4942B /* NTOneDownFileVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTOneDownFileVC.m; sourceTree = "<group>"; };
 		CA09E2132990EC6A00E4942B /* NTOneDownFileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTOneDownFileVC.xib; sourceTree = "<group>"; };
+		CA09E2192992269600E4942B /* NTZipArchiveVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTZipArchiveVC.h; sourceTree = "<group>"; };
+		CA09E21A2992269600E4942B /* NTZipArchiveVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTZipArchiveVC.m; sourceTree = "<group>"; };
+		CA09E21B2992269600E4942B /* NTZipArchiveVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTZipArchiveVC.xib; sourceTree = "<group>"; };
 		CA4F710B29407D4D007957D4 /* CustomEqualCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomEqualCell.h; sourceTree = "<group>"; };
 		CA4F710C29407D4D007957D4 /* CustomEqualCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomEqualCell.m; sourceTree = "<group>"; };
 		CA4F710D29407D4D007957D4 /* CustomEqualCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomEqualCell.xib; sourceTree = "<group>"; };
@@ -234,6 +239,16 @@
 				CA09E2132990EC6A00E4942B /* NTOneDownFileVC.xib */,
 			);
 			path = "一次性下载大文件";
+			sourceTree = "<group>";
+		};
+		CA09E2182992267700E4942B /* 文件解压 */ = {
+			isa = PBXGroup;
+			children = (
+				CA09E2192992269600E4942B /* NTZipArchiveVC.h */,
+				CA09E21A2992269600E4942B /* NTZipArchiveVC.m */,
+				CA09E21B2992269600E4942B /* NTZipArchiveVC.xib */,
+			);
+			path = "文件解压";
 			sourceTree = "<group>";
 		};
 		CA4F710A29407CB8007957D4 /* 自定义等高cell */ = {
@@ -587,6 +602,7 @@
 		CAD60CBC2988F72B006A01D5 /* 网络 */ = {
 			isa = PBXGroup;
 			children = (
+				CA09E2182992267700E4942B /* 文件解压 */,
 				CAD60CBD2988F751006A01D5 /* 文件下载 */,
 			);
 			path = "网络";
@@ -702,6 +718,7 @@
 				CADB0396293DF20400DBEDB6 /* TableViewNoteVC.xib in Resources */,
 				CADB0390293C9B7F00DBEDB6 /* XMGPageView.xib in Resources */,
 				CAD60C3C2940800E006A01D5 /* deals.plist in Resources */,
+				CA09E21D2992269600E4942B /* NTZipArchiveVC.xib in Resources */,
 				CA09E2152990EC6A00E4942B /* NTOneDownFileVC.xib in Resources */,
 				CAD60C822973E4AF006A01D5 /* NTNavVC.xib in Resources */,
 				CAD60C95297802AE006A01D5 /* NTUICollectionViewVC.xib in Resources */,
@@ -781,6 +798,7 @@
 				CA75DB512918A93C0038E172 /* AppDelegate.m in Sources */,
 				CA75DB622918A93E0038E172 /* main.m in Sources */,
 				CA08AE482918DC7B00907C6E /* UIView+Tools.m in Sources */,
+				CA09E21C2992269600E4942B /* NTZipArchiveVC.m in Sources */,
 				CAD60C94297802AE006A01D5 /* NTUICollectionViewVC.m in Sources */,
 				CAD60CBA298680E3006A01D5 /* XMGPerson.m in Sources */,
 				CAC89CB12938E7E900ED408E /* ScrollVC.m in Sources */,
