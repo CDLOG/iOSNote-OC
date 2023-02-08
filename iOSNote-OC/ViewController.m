@@ -20,6 +20,7 @@
 #import "NTImageDrawVC.h"
 #import "NTClipImageVC.h"
 #import "NTZipArchiveVC.h"
+#import "NTReachabilityVC.h"
 @interface ViewController ()
 
 @end
@@ -35,7 +36,7 @@
 }
 
 -(void)loadAction{
-    NTZipArchiveVC *vc = [[NTZipArchiveVC alloc]init];
+    NTReachabilityVC *vc = [[NTReachabilityVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end
