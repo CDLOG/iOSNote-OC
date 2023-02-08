@@ -12,6 +12,8 @@
 		CA09E2152990EC6A00E4942B /* NTOneDownFileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA09E2132990EC6A00E4942B /* NTOneDownFileVC.xib */; };
 		CA09E21C2992269600E4942B /* NTZipArchiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA09E21A2992269600E4942B /* NTZipArchiveVC.m */; };
 		CA09E21D2992269600E4942B /* NTZipArchiveVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA09E21B2992269600E4942B /* NTZipArchiveVC.xib */; };
+		CA09E22529924A4500E4942B /* NTOutputStreamVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA09E22329924A4500E4942B /* NTOutputStreamVC.m */; };
+		CA09E22629924A4500E4942B /* NTOutputStreamVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA09E22429924A4500E4942B /* NTOutputStreamVC.xib */; };
 		CA4F710E29407D4D007957D4 /* CustomEqualCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4F710C29407D4D007957D4 /* CustomEqualCell.m */; };
 		CA4F710F29407D4D007957D4 /* CustomEqualCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4F710D29407D4D007957D4 /* CustomEqualCell.xib */; };
 		CA75DB512918A93C0038E172 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75DB502918A93C0038E172 /* AppDelegate.m */; };
@@ -90,6 +92,9 @@
 		CA09E2192992269600E4942B /* NTZipArchiveVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTZipArchiveVC.h; sourceTree = "<group>"; };
 		CA09E21A2992269600E4942B /* NTZipArchiveVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTZipArchiveVC.m; sourceTree = "<group>"; };
 		CA09E21B2992269600E4942B /* NTZipArchiveVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTZipArchiveVC.xib; sourceTree = "<group>"; };
+		CA09E22229924A4500E4942B /* NTOutputStreamVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTOutputStreamVC.h; sourceTree = "<group>"; };
+		CA09E22329924A4500E4942B /* NTOutputStreamVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTOutputStreamVC.m; sourceTree = "<group>"; };
+		CA09E22429924A4500E4942B /* NTOutputStreamVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTOutputStreamVC.xib; sourceTree = "<group>"; };
 		CA4F710B29407D4D007957D4 /* CustomEqualCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomEqualCell.h; sourceTree = "<group>"; };
 		CA4F710C29407D4D007957D4 /* CustomEqualCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomEqualCell.m; sourceTree = "<group>"; };
 		CA4F710D29407D4D007957D4 /* CustomEqualCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomEqualCell.xib; sourceTree = "<group>"; };
@@ -234,9 +239,8 @@
 		CA09E2102990EC3300E4942B /* 一次性下载大文件 */ = {
 			isa = PBXGroup;
 			children = (
-				CA09E2112990EC6A00E4942B /* NTOneDownFileVC.h */,
-				CA09E2122990EC6A00E4942B /* NTOneDownFileVC.m */,
-				CA09E2132990EC6A00E4942B /* NTOneDownFileVC.xib */,
+				CA09E22129924A2100E4942B /* OutputStream */,
+				CA09E220299249ED00E4942B /* FileHandle */,
 			);
 			path = "一次性下载大文件";
 			sourceTree = "<group>";
@@ -249,6 +253,43 @@
 				CA09E21B2992269600E4942B /* NTZipArchiveVC.xib */,
 			);
 			path = "文件解压";
+			sourceTree = "<group>";
+		};
+		CA09E21E29923F3700E4942B /* 文件操作 */ = {
+			isa = PBXGroup;
+			children = (
+				CA09E21F29923F5A00E4942B /* 文件上传 */,
+				CA09E2182992267700E4942B /* 文件解压 */,
+				CAD60CBD2988F751006A01D5 /* 文件下载 */,
+			);
+			path = "文件操作";
+			sourceTree = "<group>";
+		};
+		CA09E21F29923F5A00E4942B /* 文件上传 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "文件上传";
+			sourceTree = "<group>";
+		};
+		CA09E220299249ED00E4942B /* FileHandle */ = {
+			isa = PBXGroup;
+			children = (
+				CA09E2112990EC6A00E4942B /* NTOneDownFileVC.h */,
+				CA09E2122990EC6A00E4942B /* NTOneDownFileVC.m */,
+				CA09E2132990EC6A00E4942B /* NTOneDownFileVC.xib */,
+			);
+			path = FileHandle;
+			sourceTree = "<group>";
+		};
+		CA09E22129924A2100E4942B /* OutputStream */ = {
+			isa = PBXGroup;
+			children = (
+				CA09E22229924A4500E4942B /* NTOutputStreamVC.h */,
+				CA09E22329924A4500E4942B /* NTOutputStreamVC.m */,
+				CA09E22429924A4500E4942B /* NTOutputStreamVC.xib */,
+			);
+			path = OutputStream;
 			sourceTree = "<group>";
 		};
 		CA4F710A29407CB8007957D4 /* 自定义等高cell */ = {
@@ -602,8 +643,7 @@
 		CAD60CBC2988F72B006A01D5 /* 网络 */ = {
 			isa = PBXGroup;
 			children = (
-				CA09E2182992267700E4942B /* 文件解压 */,
-				CAD60CBD2988F751006A01D5 /* 文件下载 */,
+				CA09E21E29923F3700E4942B /* 文件操作 */,
 			);
 			path = "网络";
 			sourceTree = "<group>";
@@ -712,6 +752,7 @@
 				CAC023FD2918CD3D00B0A827 /* ViewNoteController.xib in Resources */,
 				CA75DB5F2918A93E0038E172 /* LaunchScreen.storyboard in Resources */,
 				CAD60C70296EB1F9006A01D5 /* provinces.plist in Resources */,
+				CA09E22629924A4500E4942B /* NTOutputStreamVC.xib in Resources */,
 				CAC89C9E29385E8900ED408E /* XcodeVC.xib in Resources */,
 				CAD60CB52984F571006A01D5 /* NTClipImageVC.xib in Resources */,
 				CAC89C9429385C5300ED408E /* PlistLoadVC.xib in Resources */,
@@ -788,6 +829,7 @@
 				CAD60C99297FD354006A01D5 /* NTCollectionViewCell.m in Sources */,
 				CAC023FC2918CD3D00B0A827 /* ViewNoteController.m in Sources */,
 				CAD60C43294088CB006A01D5 /* XMGStatus.m in Sources */,
+				CA09E22529924A4500E4942B /* NTOutputStreamVC.m in Sources */,
 				CAD60C7629715B61006A01D5 /* NTUIApplicationVC.m in Sources */,
 				CAD60C6E296EB1E9006A01D5 /* XMGProvince.m in Sources */,
 				CAD60C3A29407EFA006A01D5 /* XMGDeal.m in Sources */,
