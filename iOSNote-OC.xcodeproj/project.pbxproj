@@ -18,6 +18,9 @@
 		CA09E22D29944CCB00E4942B /* NTAFNUploadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA09E22B29944CCB00E4942B /* NTAFNUploadVC.xib */; };
 		CA09E23229944F2500E4942B /* NTReachabilityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA09E23029944F2500E4942B /* NTReachabilityVC.m */; };
 		CA09E23329944F2500E4942B /* NTReachabilityVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA09E23129944F2500E4942B /* NTReachabilityVC.xib */; };
+		CA09E23929947F9100E4942B /* NTHTMLABCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA09E23729947F9100E4942B /* NTHTMLABCVC.m */; };
+		CA09E23A29947F9100E4942B /* NTHTMLABCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA09E23829947F9100E4942B /* NTHTMLABCVC.xib */; };
+		CA09E23C2994803F00E4942B /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = CA09E23B2994803F00E4942B /* test.html */; };
 		CA4F710E29407D4D007957D4 /* CustomEqualCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4F710C29407D4D007957D4 /* CustomEqualCell.m */; };
 		CA4F710F29407D4D007957D4 /* CustomEqualCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4F710D29407D4D007957D4 /* CustomEqualCell.xib */; };
 		CA75DB512918A93C0038E172 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75DB502918A93C0038E172 /* AppDelegate.m */; };
@@ -105,6 +108,10 @@
 		CA09E22F29944F2500E4942B /* NTReachabilityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTReachabilityVC.h; sourceTree = "<group>"; };
 		CA09E23029944F2500E4942B /* NTReachabilityVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTReachabilityVC.m; sourceTree = "<group>"; };
 		CA09E23129944F2500E4942B /* NTReachabilityVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTReachabilityVC.xib; sourceTree = "<group>"; };
+		CA09E23629947F9100E4942B /* NTHTMLABCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTHTMLABCVC.h; sourceTree = "<group>"; };
+		CA09E23729947F9100E4942B /* NTHTMLABCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTHTMLABCVC.m; sourceTree = "<group>"; };
+		CA09E23829947F9100E4942B /* NTHTMLABCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTHTMLABCVC.xib; sourceTree = "<group>"; };
+		CA09E23B2994803F00E4942B /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		CA4F710B29407D4D007957D4 /* CustomEqualCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomEqualCell.h; sourceTree = "<group>"; };
 		CA4F710C29407D4D007957D4 /* CustomEqualCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomEqualCell.m; sourceTree = "<group>"; };
 		CA4F710D29407D4D007957D4 /* CustomEqualCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomEqualCell.xib; sourceTree = "<group>"; };
@@ -329,6 +336,25 @@
 				CA09E23129944F2500E4942B /* NTReachabilityVC.xib */,
 			);
 			path = "网络状态监测";
+			sourceTree = "<group>";
+		};
+		CA09E23429947F5B00E4942B /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				CA09E23529947F6300E4942B /* HTML基础 */,
+			);
+			path = HTML;
+			sourceTree = "<group>";
+		};
+		CA09E23529947F6300E4942B /* HTML基础 */ = {
+			isa = PBXGroup;
+			children = (
+				CA09E23B2994803F00E4942B /* test.html */,
+				CA09E23629947F9100E4942B /* NTHTMLABCVC.h */,
+				CA09E23729947F9100E4942B /* NTHTMLABCVC.m */,
+				CA09E23829947F9100E4942B /* NTHTMLABCVC.xib */,
+			);
+			path = "HTML基础";
 			sourceTree = "<group>";
 		};
 		CA4F710A29407CB8007957D4 /* 自定义等高cell */ = {
@@ -682,6 +708,7 @@
 		CAD60CBC2988F72B006A01D5 /* 网络 */ = {
 			isa = PBXGroup;
 			children = (
+				CA09E23429947F5B00E4942B /* HTML */,
 				CA09E22729944C9300E4942B /* AFN */,
 				CA09E21E29923F3700E4942B /* 文件操作 */,
 			);
@@ -785,6 +812,8 @@
 				CAD60C7729715B61006A01D5 /* NTUIApplicationVC.xib in Resources */,
 				CAD60C58294F6474006A01D5 /* XMGDealCell.xib in Resources */,
 				CAD60C8F29755AF6006A01D5 /* NTValueTransmitVC.xib in Resources */,
+				CA09E23C2994803F00E4942B /* test.html in Resources */,
+				CA09E23A29947F9100E4942B /* NTHTMLABCVC.xib in Resources */,
 				CAD60CA52982534C006A01D5 /* NTGestureVC.xib in Resources */,
 				CA09E22D29944CCB00E4942B /* NTAFNUploadVC.xib in Resources */,
 				CAD60C47294088DE006A01D5 /* statuses.plist in Resources */,
@@ -880,6 +909,7 @@
 				CAD60C9F298244D7006A01D5 /* RedView.m in Sources */,
 				CAD60C57294F6474006A01D5 /* XMGDealCell.m in Sources */,
 				CADB038F293C9B7F00DBEDB6 /* XMGPageView.m in Sources */,
+				CA09E23929947F9100E4942B /* NTHTMLABCVC.m in Sources */,
 				CA75DB512918A93C0038E172 /* AppDelegate.m in Sources */,
 				CA75DB622918A93E0038E172 /* main.m in Sources */,
 				CA08AE482918DC7B00907C6E /* UIView+Tools.m in Sources */,

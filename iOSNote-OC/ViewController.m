@@ -21,6 +21,7 @@
 #import "NTClipImageVC.h"
 #import "NTZipArchiveVC.h"
 #import "NTReachabilityVC.h"
+#import "NTHTMLABCVC.h"
 @interface ViewController ()
 
 @end
@@ -36,7 +37,7 @@
 }
 
 -(void)loadAction{
-    NTReachabilityVC *vc = [[NTReachabilityVC alloc]init];
+    NTHTMLABCVC *vc = [[NTHTMLABCVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end
