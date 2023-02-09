@@ -341,12 +341,12 @@
 		CA09E23429947F5B00E4942B /* HTML */ = {
 			isa = PBXGroup;
 			children = (
-				CA09E23529947F6300E4942B /* HTML基础 */,
+				CA09E23529947F6300E4942B /* UIWebview */,
 			);
 			path = HTML;
 			sourceTree = "<group>";
 		};
-		CA09E23529947F6300E4942B /* HTML基础 */ = {
+		CA09E23529947F6300E4942B /* UIWebview */ = {
 			isa = PBXGroup;
 			children = (
 				CA09E23B2994803F00E4942B /* test.html */,
@@ -354,7 +354,7 @@
 				CA09E23729947F9100E4942B /* NTHTMLABCVC.m */,
 				CA09E23829947F9100E4942B /* NTHTMLABCVC.xib */,
 			);
-			path = "HTML基础";
+			path = UIWebview;
 			sourceTree = "<group>";
 		};
 		CA4F710A29407CB8007957D4 /* 自定义等高cell */ = {
