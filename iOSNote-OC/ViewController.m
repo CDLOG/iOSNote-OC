@@ -22,6 +22,7 @@
 #import "NTZipArchiveVC.h"
 #import "NTReachabilityVC.h"
 #import "NTHTMLABCVC.h"
+#import "NTWebViewOCAndJSVC.h"
 @interface ViewController ()
 
 @end
@@ -37,7 +38,7 @@
 }
 
 -(void)loadAction{
-    NTHTMLABCVC *vc = [[NTHTMLABCVC alloc]init];
+    NTWebViewOCAndJSVC *vc = [[NTWebViewOCAndJSVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end
