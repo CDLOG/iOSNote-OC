@@ -87,6 +87,7 @@
 		CAF491C429953A370052B16B /* NTWebViewOCAndJSVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF491C229953A370052B16B /* NTWebViewOCAndJSVC.m */; };
 		CAF491C529953A370052B16B /* NTWebViewOCAndJSVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAF491C329953A370052B16B /* NTWebViewOCAndJSVC.xib */; };
 		CAF491C729953D470052B16B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CAF491C629953D470052B16B /* index.html */; };
+		CAF491CC299A65710052B16B /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF491CB299A65710052B16B /* NSObject+Extension.m */; };
 		D88D6F43BE0D49FA51C97D0B /* Pods_iOSNote_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782CD2B76A1DF9F32227510A /* Pods_iOSNote_OC.framework */; };
 /* End PBXBuildFile section */
 
@@ -218,6 +219,8 @@
 		CAF491C229953A370052B16B /* NTWebViewOCAndJSVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTWebViewOCAndJSVC.m; sourceTree = "<group>"; };
 		CAF491C329953A370052B16B /* NTWebViewOCAndJSVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTWebViewOCAndJSVC.xib; sourceTree = "<group>"; };
 		CAF491C629953D470052B16B /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		CAF491CA299A65710052B16B /* NSObject+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		CAF491CB299A65710052B16B /* NSObject+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,17 +250,6 @@
 				5A80020D78EAC93EB7782A82 /* Pods-iOSNote-OC.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		CA08AE452918DC2600907C6E /* 分类 */ = {
-			isa = PBXGroup;
-			children = (
-				CAD60CAD29827845006A01D5 /* UIImage+Image.h */,
-				CAD60CAE29827845006A01D5 /* UIImage+Image.m */,
-				CA08AE462918DC7B00907C6E /* UIView+Tools.h */,
-				CA08AE472918DC7B00907C6E /* UIView+Tools.m */,
-			);
-			path = "分类";
 			sourceTree = "<group>";
 		};
 		CA09E2102990EC3300E4942B /* 一次性下载大文件 */ = {
@@ -396,6 +388,7 @@
 		CA75DB4E2918A93C0038E172 /* iOSNote-OC */ = {
 			isa = PBXGroup;
 			children = (
+				CAF491C8299A651C0052B16B /* 分类 */,
 				CAD60CBC2988F72B006A01D5 /* 网络 */,
 				CAD60CB6298680B9006A01D5 /* 设计模式 */,
 				CAD60C8929755AAA006A01D5 /* 核心 */,
@@ -426,7 +419,6 @@
 				CAD60C9B29824499006A01D5 /* 事件处理 */,
 				CAC89CA22938DA5E00ED408E /* 自定义控件 */,
 				CAC89C9529385C8C00ED408E /* Tools */,
-				CA08AE452918DC2600907C6E /* 分类 */,
 				CAC023F82918CC8800B0A827 /* 原生控件 */,
 			);
 			path = UI;
@@ -773,6 +765,27 @@
 			path = "OC和JS互调";
 			sourceTree = "<group>";
 		};
+		CAF491C8299A651C0052B16B /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				CAF491C9299A65480052B16B /* UI */,
+				CAF491CA299A65710052B16B /* NSObject+Extension.h */,
+				CAF491CB299A65710052B16B /* NSObject+Extension.m */,
+			);
+			path = "分类";
+			sourceTree = "<group>";
+		};
+		CAF491C9299A65480052B16B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CAD60CAD29827845006A01D5 /* UIImage+Image.h */,
+				CAD60CAE29827845006A01D5 /* UIImage+Image.m */,
+				CA08AE462918DC7B00907C6E /* UIView+Tools.h */,
+				CA08AE472918DC7B00907C6E /* UIView+Tools.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -929,6 +942,7 @@
 				CAD60C99297FD354006A01D5 /* NTCollectionViewCell.m in Sources */,
 				CAC023FC2918CD3D00B0A827 /* ViewNoteController.m in Sources */,
 				CAD60C43294088CB006A01D5 /* XMGStatus.m in Sources */,
+				CAF491CC299A65710052B16B /* NSObject+Extension.m in Sources */,
 				CA09E22529924A4500E4942B /* NTOutputStreamVC.m in Sources */,
 				CA09E23229944F2500E4942B /* NTReachabilityVC.m in Sources */,
 				CAD60C7629715B61006A01D5 /* NTUIApplicationVC.m in Sources */,

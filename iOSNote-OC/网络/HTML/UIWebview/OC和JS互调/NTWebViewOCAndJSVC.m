@@ -6,7 +6,7 @@
 //
 
 #import "NTWebViewOCAndJSVC.h"
-
+#import "NSObject+Extension.h"
 @interface NTWebViewOCAndJSVC ()<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @end
@@ -20,11 +20,25 @@
 }
 
 //JS调用的OC方法
-- (void)openCamera
+- (void)sendMessage
 {
     NSLog(@"%s", __func__);
 }
 
+- (void)sendMessage1:(NSString *)Param
+{
+    NSLog(@"%s %@", __func__,Param);
+}
+- (void)sendMessage1:(NSString *)Param number2:(NSString *)Param2
+{
+    NSLog(@"%s %@ %@", __func__,Param,Param2);
+}
+//有参数,有返回值
+- (NSString *)sendMessage1:(NSString *)Param number2:(NSString *)Param2 number3:(NSString *)Param3
+{
+    NSLog(@"%s %@ %@ %@", __func__,Param,Param2,Param3);
+    return @"有返回值";
+}
 #pragma mark - <UIWebViewDelegate>
 
 //OC调用JS方法stringByEvaluatingJavaScriptFromString
@@ -47,22 +61,41 @@
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
     NSString *url = request.URL.absoluteString;
-    //JS和OC约定好的协议头
+    //JS和OC约定好的协议头,判断是JS调用OC方法,而不是跳转链接
     NSString *scheme = @"xmg://";
     if ([url hasPrefix:scheme]) {
-        //获取JS传过来的方法名
-        NSString *methodName = [url substringFromIndex:scheme.length];
-        //执行OC的方法
-        [self performSelector:NSSelectorFromString(methodName) withObject:nil];
+        // 获得协议后面的路径(方法名和参数信息)
+        NSString *path = [url substringFromIndex:scheme.length];
+        
+        [self JS2OCMethod:path];
         
         return NO;
-    }else{
-        NSLog(@"想加载其他请求，不是想调用OC的方法");
     }
     
-    
+    NSLog(@"想加载其他请求");
     
     return YES;
 }
+
+/// 函数有两个及以下参数的处理
+/// - Parameter path: 去掉协议头后的字符串
+-(void)JS2OCMethod:(NSString *)path{
+    // 利用?切割路径
+    NSArray *subpaths = [path componentsSeparatedByString:@"?"];
+    // 方法名 methodName == sendMessage:number2:,因为H5不能直接写:,所以需要符号替换
+    NSString *methodName = [[subpaths firstObject] stringByReplacingOccurrencesOfString:@"_" withString:@":"];
+    // 函数参数 
+    NSString *param = [subpaths lastObject];
+    NSArray *subparams = nil;
+    if (param.length > 0 || [param containsString:@"&"]) {
+        subparams = [param componentsSeparatedByString:@"&"];
+    }
+    //调用OC方法,获取函数返回值
+    id returnValue =  [self performSelector:NSSelectorFromString(methodName) withObjects:subparams];
+    if ([returnValue isKindOfClass:[NSString class]]){
+        NSLog(@"returnValue是---%@",returnValue);
+    }
+}
+
 
 @end

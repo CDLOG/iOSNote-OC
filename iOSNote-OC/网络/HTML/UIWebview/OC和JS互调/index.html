@@ -8,12 +8,22 @@
             function login()
             {
                 // 让webView跳转到百度页面（加载百度页面）
-                location.href = 'xmg://openCamera';
+                location.href = 'xmg://sendMessage';
             }
-            function loginn()
+            function login1()
             {
                 // 让webView跳转到百度页面（加载百度页面）
-                return "JS被OC调用了";
+                location.href = 'xmg://sendMessage1_?400';
+            }
+            function login2()
+            {
+                // 让webView跳转到百度页面（加载百度页面）
+                location.href = 'xmg://sendMessage1_number2_?400&800';
+            }
+            function login3()
+            {
+                // 让webView跳转到百度页面（加载百度页面）
+                location.href = 'xmg://sendMessage1_number2_number3_?400&800&1200';
             }
         </script>
     </head>
@@ -21,8 +31,10 @@
     <!-- 网页的具体内容 -->
     <body>
         电话：10086
-        <button style="background: red; width:100px; height:30px;" onclick="login();">Call</button>
-        
+        <button style="background: red; width:100px; height:30px;" onclick="login();">无参数函数调用</button>
+        <button style="background: red; width:100px; height:30px;" onclick="login1();">1参数函数调用</button>
+        <button style="background: red; width:100px; height:30px;" onclick="login2();">2参数函数调用</button>
+        <button style="background: red; width:100px; height:30px;" onclick="login3();">3参数函数调用</button>
         <br>
         <a href="http://www.baidu.com">百度</a>
     </body>
