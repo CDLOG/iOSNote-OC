@@ -23,6 +23,7 @@
 #import "NTReachabilityVC.h"
 #import "NTHTMLABCVC.h"
 #import "NTWebViewOCAndJSVC.h"
+#import "NTUNLineDownVC.h"
 @interface ViewController ()
 
 @end
@@ -38,7 +39,7 @@
 }
 
 -(void)loadAction{
-    NTWebViewOCAndJSVC *vc = [[NTWebViewOCAndJSVC alloc]init];
+    NTUNLineDownVC *vc = [[NTUNLineDownVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end

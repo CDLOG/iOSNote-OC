@@ -32,6 +32,9 @@
 		CA75DB622918A93E0038E172 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75DB612918A93E0038E172 /* main.m */; };
 		CAC023FC2918CD3D00B0A827 /* ViewNoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC023FA2918CD3D00B0A827 /* ViewNoteController.m */; };
 		CAC023FD2918CD3D00B0A827 /* ViewNoteController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC023FB2918CD3D00B0A827 /* ViewNoteController.xib */; };
+		CAC49188299BA178003DFA70 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC49186299BA178003DFA70 /* NSString+Hash.m */; };
+		CAC4918D299BA1E3003DFA70 /* NTUNLineDownVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC4918B299BA1E3003DFA70 /* NTUNLineDownVC.m */; };
+		CAC4918E299BA1E3003DFA70 /* NTUNLineDownVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC4918C299BA1E3003DFA70 /* NTUNLineDownVC.xib */; };
 		CAC89C9329385C5300ED408E /* PlistLoadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC89C9129385C5300ED408E /* PlistLoadVC.m */; };
 		CAC89C9429385C5300ED408E /* PlistLoadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC89C9229385C5300ED408E /* PlistLoadVC.xib */; };
 		CAC89C9D29385E8900ED408E /* XcodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC89C9B29385E8900ED408E /* XcodeVC.m */; };
@@ -134,6 +137,11 @@
 		CAC023F92918CD3D00B0A827 /* ViewNoteController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewNoteController.h; sourceTree = "<group>"; };
 		CAC023FA2918CD3D00B0A827 /* ViewNoteController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewNoteController.m; sourceTree = "<group>"; };
 		CAC023FB2918CD3D00B0A827 /* ViewNoteController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewNoteController.xib; sourceTree = "<group>"; };
+		CAC49186299BA178003DFA70 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		CAC49187299BA178003DFA70 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		CAC4918A299BA1E3003DFA70 /* NTUNLineDownVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTUNLineDownVC.h; sourceTree = "<group>"; };
+		CAC4918B299BA1E3003DFA70 /* NTUNLineDownVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTUNLineDownVC.m; sourceTree = "<group>"; };
+		CAC4918C299BA1E3003DFA70 /* NTUNLineDownVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTUNLineDownVC.xib; sourceTree = "<group>"; };
 		CAC89C9029385C5300ED408E /* PlistLoadVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlistLoadVC.h; sourceTree = "<group>"; };
 		CAC89C9129385C5300ED408E /* PlistLoadVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlistLoadVC.m; sourceTree = "<group>"; };
 		CAC89C9229385C5300ED408E /* PlistLoadVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlistLoadVC.xib; sourceTree = "<group>"; };
@@ -439,6 +447,33 @@
 			path = "原生控件";
 			sourceTree = "<group>";
 		};
+		CAC49184299BA16B003DFA70 /* 加密 */ = {
+			isa = PBXGroup;
+			children = (
+				CAC49185299BA178003DFA70 /* MD5 */,
+			);
+			path = "加密";
+			sourceTree = "<group>";
+		};
+		CAC49185299BA178003DFA70 /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				CAC49187299BA178003DFA70 /* NSString+Hash.h */,
+				CAC49186299BA178003DFA70 /* NSString+Hash.m */,
+			);
+			path = MD5;
+			sourceTree = "<group>";
+		};
+		CAC49189299BA197003DFA70 /* 离线断点续传 */ = {
+			isa = PBXGroup;
+			children = (
+				CAC4918A299BA1E3003DFA70 /* NTUNLineDownVC.h */,
+				CAC4918B299BA1E3003DFA70 /* NTUNLineDownVC.m */,
+				CAC4918C299BA1E3003DFA70 /* NTUNLineDownVC.xib */,
+			);
+			path = "离线断点续传";
+			sourceTree = "<group>";
+		};
 		CAC89C8E29385B5200ED408E /* 数据存储 */ = {
 			isa = PBXGroup;
 			children = (
@@ -715,6 +750,7 @@
 		CAD60CBD2988F751006A01D5 /* 文件下载 */ = {
 			isa = PBXGroup;
 			children = (
+				CAC49189299BA197003DFA70 /* 离线断点续传 */,
 				CA09E2102990EC3300E4942B /* 一次性下载大文件 */,
 			);
 			path = "文件下载";
@@ -768,6 +804,7 @@
 		CAF491C8299A651C0052B16B /* 分类 */ = {
 			isa = PBXGroup;
 			children = (
+				CAC49184299BA16B003DFA70 /* 加密 */,
 				CAF491C9299A65480052B16B /* UI */,
 				CAF491CA299A65710052B16B /* NSObject+Extension.h */,
 				CAF491CB299A65710052B16B /* NSObject+Extension.m */,
@@ -863,6 +900,7 @@
 				CAC89CB22938E7E900ED408E /* ScrollVC.xib in Resources */,
 				CAC023FD2918CD3D00B0A827 /* ViewNoteController.xib in Resources */,
 				CA75DB5F2918A93E0038E172 /* LaunchScreen.storyboard in Resources */,
+				CAC4918E299BA1E3003DFA70 /* NTUNLineDownVC.xib in Resources */,
 				CAD60C70296EB1F9006A01D5 /* provinces.plist in Resources */,
 				CA09E22629924A4500E4942B /* NTOutputStreamVC.xib in Resources */,
 				CAC89C9E29385E8900ED408E /* XcodeVC.xib in Resources */,
@@ -958,6 +996,7 @@
 				CA08AE482918DC7B00907C6E /* UIView+Tools.m in Sources */,
 				CA09E21C2992269600E4942B /* NTZipArchiveVC.m in Sources */,
 				CAD60C94297802AE006A01D5 /* NTUICollectionViewVC.m in Sources */,
+				CAC4918D299BA1E3003DFA70 /* NTUNLineDownVC.m in Sources */,
 				CAD60CBA298680E3006A01D5 /* XMGPerson.m in Sources */,
 				CAC89CB12938E7E900ED408E /* ScrollVC.m in Sources */,
 				CAD60C7A29716502006A01D5 /* NTAppDelegate.m in Sources */,
@@ -976,6 +1015,7 @@
 				CAD60C812973E4AF006A01D5 /* NTNavVC.m in Sources */,
 				CADB0395293DF20400DBEDB6 /* TableViewNoteVC.m in Sources */,
 				CAF491C429953A370052B16B /* NTWebViewOCAndJSVC.m in Sources */,
+				CAC49188299BA178003DFA70 /* NSString+Hash.m in Sources */,
 				CA75DB542918A93C0038E172 /* SceneDelegate.m in Sources */,
 				CAD60C6A296EB119006A01D5 /* CLJDatePickAndCityPickVC.m in Sources */,
 				CAD60CB42984F571006A01D5 /* NTClipImageVC.m in Sources */,

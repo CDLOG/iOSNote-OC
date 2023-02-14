@@ -26,7 +26,7 @@
     [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
 }
-//控件大小图片决定
+/// 控件大小图片自适应
 -(void)viewFit{
     UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"tt"]];
     [imageView sizeToFit];
@@ -44,5 +44,9 @@
     NSLog(@"文字改变");
 }
 
+/// 结束程序运行
+-(void)finishApp{
+    exit(0);
+}
 
 @end
