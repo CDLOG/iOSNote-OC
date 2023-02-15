@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0z-FP-wqX">
+                                <rect key="frame" x="263" y="50" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CsV-OA-ZBm"/>
+                                    <constraint firstAttribute="width" constant="75" id="fZ7-tt-71e"/>
+                                </constraints>
+                                <state key="normal" title="跳转到微信">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipToWechat" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CRZ-a1-MGj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeP-SL-vzh">
+                                <rect key="frame" x="255" y="100" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="6z7-5r-jpg"/>
+                                    <constraint firstAttribute="height" constant="30" id="ewR-yx-U3m"/>
+                                </constraints>
+                                <state key="normal" title="跳转到朋友圈">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipToTimeline" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5r5-tb-oWq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohw-yP-zES">
+                                <rect key="frame" x="248" y="150" width="105" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="6ia-yv-BTW"/>
+                                    <constraint firstAttribute="height" constant="30" id="cyJ-56-XdH"/>
+                                </constraints>
+                                <state key="normal" title="跳转到微信好友">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipToSession" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CFn-d2-DqW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ohw-yP-zES" firstAttribute="top" secondItem="LeP-SL-vzh" secondAttribute="bottom" constant="20" id="38y-tA-CDU"/>
+                            <constraint firstItem="z0z-FP-wqX" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="AnY-6N-W3C"/>
+                            <constraint firstItem="z0z-FP-wqX" firstAttribute="centerX" secondItem="ohw-yP-zES" secondAttribute="centerX" id="N7n-pL-rU1"/>
+                            <constraint firstItem="LeP-SL-vzh" firstAttribute="top" secondItem="z0z-FP-wqX" secondAttribute="bottom" constant="20" id="RWd-Tz-alJ"/>
+                            <constraint firstAttribute="centerX" secondItem="z0z-FP-wqX" secondAttribute="centerX" id="bhU-Xd-75h"/>
+                            <constraint firstItem="z0z-FP-wqX" firstAttribute="centerX" secondItem="LeP-SL-vzh" secondAttribute="centerX" id="o5P-uD-KSQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-16" y="-40"/>
+        </scene>
+    </scenes>
+</document>
