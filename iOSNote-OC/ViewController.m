@@ -27,7 +27,7 @@
 #import "NTQRCodeCreateVC.h"
 #import "NTScanQRCodeVC.h"
 #import "UIDevice+Hardware.h"
-
+#import "NTContactVC.h"
 @interface ViewController ()
 
 @end
@@ -47,7 +47,7 @@
 }
 
 -(void)loadAction{
-    NTScanQRCodeVC *vc = [[NTScanQRCodeVC alloc]init];
+    NTContactVC *vc = [[NTContactVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end

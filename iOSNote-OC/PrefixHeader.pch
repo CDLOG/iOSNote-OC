@@ -21,6 +21,7 @@
 
 #define ABC 10
 #import "UIView+Tools.h"
+#import "NTTools.h"
 /* pch里面的所有内容都是共享，每个文件都会共有:
     作用:
     1.存放一些公用的宏

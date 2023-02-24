@@ -28,6 +28,10 @@
 		CA09E23C2994803F00E4942B /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = CA09E23B2994803F00E4942B /* test.html */; };
 		CA33F7AF29A85983003BB2FA /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = CA33F7AC29A85983003BB2FA /* UIDevice+Hardware.m */; };
 		CA33F7B029A85983003BB2FA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CA33F7AD29A85983003BB2FA /* README.md */; };
+		CA33F7BE29A867EA003BB2FA /* NTDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = CA33F7BD29A867EA003BB2FA /* NTDispatch.m */; };
+		CA33F7C329A86986003BB2FA /* NTContactVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA33F7C129A86986003BB2FA /* NTContactVC.m */; };
+		CA33F7C429A86986003BB2FA /* NTContactVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA33F7C229A86986003BB2FA /* NTContactVC.xib */; };
+		CA33F7C829A87881003BB2FA /* NTTools.m in Sources */ = {isa = PBXBuildFile; fileRef = CA33F7C729A87881003BB2FA /* NTTools.m */; };
 		CA4F710E29407D4D007957D4 /* CustomEqualCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4F710C29407D4D007957D4 /* CustomEqualCell.m */; };
 		CA4F710F29407D4D007957D4 /* CustomEqualCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4F710D29407D4D007957D4 /* CustomEqualCell.xib */; };
 		CA75DB512918A93C0038E172 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75DB502918A93C0038E172 /* AppDelegate.m */; };
@@ -137,6 +141,13 @@
 		CA33F7AC29A85983003BB2FA /* UIDevice+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
 		CA33F7AD29A85983003BB2FA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CA33F7AE29A85983003BB2FA /* UIDevice+Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
+		CA33F7BC29A867EA003BB2FA /* NTDispatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTDispatch.h; sourceTree = "<group>"; };
+		CA33F7BD29A867EA003BB2FA /* NTDispatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTDispatch.m; sourceTree = "<group>"; };
+		CA33F7C029A86986003BB2FA /* NTContactVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTContactVC.h; sourceTree = "<group>"; };
+		CA33F7C129A86986003BB2FA /* NTContactVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTContactVC.m; sourceTree = "<group>"; };
+		CA33F7C229A86986003BB2FA /* NTContactVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTContactVC.xib; sourceTree = "<group>"; };
+		CA33F7C629A87881003BB2FA /* NTTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTTools.h; sourceTree = "<group>"; };
+		CA33F7C729A87881003BB2FA /* NTTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTTools.m; sourceTree = "<group>"; };
 		CA4F710B29407D4D007957D4 /* CustomEqualCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomEqualCell.h; sourceTree = "<group>"; };
 		CA4F710C29407D4D007957D4 /* CustomEqualCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomEqualCell.m; sourceTree = "<group>"; };
 		CA4F710D29407D4D007957D4 /* CustomEqualCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomEqualCell.xib; sourceTree = "<group>"; };
@@ -414,6 +425,8 @@
 		CA33F7A929A8544C003BB2FA /* 多线程 */ = {
 			isa = PBXGroup;
 			children = (
+				CA33F7BC29A867EA003BB2FA /* NTDispatch.h */,
+				CA33F7BD29A867EA003BB2FA /* NTDispatch.m */,
 			);
 			path = "多线程";
 			sourceTree = "<group>";
@@ -434,6 +447,25 @@
 				CA33F7AC29A85983003BB2FA /* UIDevice+Hardware.m */,
 			);
 			path = "设备型号";
+			sourceTree = "<group>";
+		};
+		CA33F7BF29A86960003BB2FA /* 通讯录 */ = {
+			isa = PBXGroup;
+			children = (
+				CA33F7C029A86986003BB2FA /* NTContactVC.h */,
+				CA33F7C129A86986003BB2FA /* NTContactVC.m */,
+				CA33F7C229A86986003BB2FA /* NTContactVC.xib */,
+			);
+			path = "通讯录";
+			sourceTree = "<group>";
+		};
+		CA33F7C529A8786C003BB2FA /* 工具 */ = {
+			isa = PBXGroup;
+			children = (
+				CA33F7C629A87881003BB2FA /* NTTools.h */,
+				CA33F7C729A87881003BB2FA /* NTTools.m */,
+			);
+			path = "工具";
 			sourceTree = "<group>";
 		};
 		CA4F710A29407CB8007957D4 /* 自定义等高cell */ = {
@@ -511,6 +543,7 @@
 		CAC023F82918CC8800B0A827 /* 原生控件 */ = {
 			isa = PBXGroup;
 			children = (
+				CA33F7BF29A86960003BB2FA /* 通讯录 */,
 				CAD60C902978028A006A01D5 /* CollectionView */,
 				CAD60C7C2973E29E006A01D5 /* 控制器 */,
 				CAD60C5E296D2602006A01D5 /* PickerView */,
@@ -662,6 +695,7 @@
 		CAD60C7129715AF9006A01D5 /* 其他 */ = {
 			isa = PBXGroup;
 			children = (
+				CA33F7C529A8786C003BB2FA /* 工具 */,
 				CAD60C832973F3D4006A01D5 /* 小的知识点 */,
 				CAD60C7229715B0B006A01D5 /* UIApplication */,
 			);
@@ -971,6 +1005,7 @@
 				CA09E23A29947F9100E4942B /* NTHTMLABCVC.xib in Resources */,
 				CAD60CA52982534C006A01D5 /* NTGestureVC.xib in Resources */,
 				CAF491C529953A370052B16B /* NTWebViewOCAndJSVC.xib in Resources */,
+				CA33F7C429A86986003BB2FA /* NTContactVC.xib in Resources */,
 				CA09E22D29944CCB00E4942B /* NTAFNUploadVC.xib in Resources */,
 				CAD60C47294088DE006A01D5 /* statuses.plist in Resources */,
 				CA08FB8229A848B50004BA81 /* NTQRCodeCreateVC.xib in Resources */,
@@ -1076,6 +1111,7 @@
 				CA75DB622918A93E0038E172 /* main.m in Sources */,
 				CA08AE482918DC7B00907C6E /* UIView+Tools.m in Sources */,
 				CA09E21C2992269600E4942B /* NTZipArchiveVC.m in Sources */,
+				CA33F7C329A86986003BB2FA /* NTContactVC.m in Sources */,
 				CA33F7AF29A85983003BB2FA /* UIDevice+Hardware.m in Sources */,
 				CAD60C94297802AE006A01D5 /* NTUICollectionViewVC.m in Sources */,
 				CAC4918D299BA1E3003DFA70 /* NTUNLineDownVC.m in Sources */,
@@ -1083,10 +1119,12 @@
 				CAC89CB12938E7E900ED408E /* ScrollVC.m in Sources */,
 				CAD60C7A29716502006A01D5 /* NTAppDelegate.m in Sources */,
 				CA09E22C29944CCB00E4942B /* NTAFNUploadVC.m in Sources */,
+				CA33F7C829A87881003BB2FA /* NTTools.m in Sources */,
 				CAD60C872973F3EE006A01D5 /* NTTips.m in Sources */,
 				CA4F710E29407D4D007957D4 /* CustomEqualCell.m in Sources */,
 				CAD60C45294088CB006A01D5 /* XMGStatusCell.m in Sources */,
 				CAC89CA52938DAA000ED408E /* CustomViewClass.m in Sources */,
+				CA33F7BE29A867EA003BB2FA /* NTDispatch.m in Sources */,
 				CAC89C9329385C5300ED408E /* PlistLoadVC.m in Sources */,
 				CAC89C9D29385E8900ED408E /* XcodeVC.m in Sources */,
 				CAD60CAB298274C5006A01D5 /* NTImageDrawVC.m in Sources */,
