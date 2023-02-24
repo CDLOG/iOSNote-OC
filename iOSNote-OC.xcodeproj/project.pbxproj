@@ -26,6 +26,8 @@
 		CA09E23929947F9100E4942B /* NTHTMLABCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA09E23729947F9100E4942B /* NTHTMLABCVC.m */; };
 		CA09E23A29947F9100E4942B /* NTHTMLABCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA09E23829947F9100E4942B /* NTHTMLABCVC.xib */; };
 		CA09E23C2994803F00E4942B /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = CA09E23B2994803F00E4942B /* test.html */; };
+		CA33F7AF29A85983003BB2FA /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = CA33F7AC29A85983003BB2FA /* UIDevice+Hardware.m */; };
+		CA33F7B029A85983003BB2FA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CA33F7AD29A85983003BB2FA /* README.md */; };
 		CA4F710E29407D4D007957D4 /* CustomEqualCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4F710C29407D4D007957D4 /* CustomEqualCell.m */; };
 		CA4F710F29407D4D007957D4 /* CustomEqualCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4F710D29407D4D007957D4 /* CustomEqualCell.xib */; };
 		CA75DB512918A93C0038E172 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75DB502918A93C0038E172 /* AppDelegate.m */; };
@@ -132,6 +134,9 @@
 		CA09E23729947F9100E4942B /* NTHTMLABCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTHTMLABCVC.m; sourceTree = "<group>"; };
 		CA09E23829947F9100E4942B /* NTHTMLABCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTHTMLABCVC.xib; sourceTree = "<group>"; };
 		CA09E23B2994803F00E4942B /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		CA33F7AC29A85983003BB2FA /* UIDevice+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
+		CA33F7AD29A85983003BB2FA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CA33F7AE29A85983003BB2FA /* UIDevice+Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
 		CA4F710B29407D4D007957D4 /* CustomEqualCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomEqualCell.h; sourceTree = "<group>"; };
 		CA4F710C29407D4D007957D4 /* CustomEqualCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomEqualCell.m; sourceTree = "<group>"; };
 		CA4F710D29407D4D007957D4 /* CustomEqualCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomEqualCell.xib; sourceTree = "<group>"; };
@@ -413,6 +418,24 @@
 			path = "多线程";
 			sourceTree = "<group>";
 		};
+		CA33F7AA29A85970003BB2FA /* 三方框架 */ = {
+			isa = PBXGroup;
+			children = (
+				CA33F7AB29A85983003BB2FA /* 设备型号 */,
+			);
+			path = "三方框架";
+			sourceTree = "<group>";
+		};
+		CA33F7AB29A85983003BB2FA /* 设备型号 */ = {
+			isa = PBXGroup;
+			children = (
+				CA33F7AD29A85983003BB2FA /* README.md */,
+				CA33F7AE29A85983003BB2FA /* UIDevice+Hardware.h */,
+				CA33F7AC29A85983003BB2FA /* UIDevice+Hardware.m */,
+			);
+			path = "设备型号";
+			sourceTree = "<group>";
+		};
 		CA4F710A29407CB8007957D4 /* 自定义等高cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -447,6 +470,7 @@
 		CA75DB4E2918A93C0038E172 /* iOSNote-OC */ = {
 			isa = PBXGroup;
 			children = (
+				CA33F7AA29A85970003BB2FA /* 三方框架 */,
 				CA33F7A929A8544C003BB2FA /* 多线程 */,
 				CAF491C8299A651C0052B16B /* 分类 */,
 				CAD60CBC2988F72B006A01D5 /* 网络 */,
@@ -959,6 +983,7 @@
 				CA09E22629924A4500E4942B /* NTOutputStreamVC.xib in Resources */,
 				CAC89C9E29385E8900ED408E /* XcodeVC.xib in Resources */,
 				CAD60CB52984F571006A01D5 /* NTClipImageVC.xib in Resources */,
+				CA33F7B029A85983003BB2FA /* README.md in Resources */,
 				CAC89C9429385C5300ED408E /* PlistLoadVC.xib in Resources */,
 				CADB0396293DF20400DBEDB6 /* TableViewNoteVC.xib in Resources */,
 				CADB0390293C9B7F00DBEDB6 /* XMGPageView.xib in Resources */,
@@ -1051,6 +1076,7 @@
 				CA75DB622918A93E0038E172 /* main.m in Sources */,
 				CA08AE482918DC7B00907C6E /* UIView+Tools.m in Sources */,
 				CA09E21C2992269600E4942B /* NTZipArchiveVC.m in Sources */,
+				CA33F7AF29A85983003BB2FA /* UIDevice+Hardware.m in Sources */,
 				CAD60C94297802AE006A01D5 /* NTUICollectionViewVC.m in Sources */,
 				CAC4918D299BA1E3003DFA70 /* NTUNLineDownVC.m in Sources */,
 				CAD60CBA298680E3006A01D5 /* XMGPerson.m in Sources */,

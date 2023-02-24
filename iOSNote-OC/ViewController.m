@@ -26,6 +26,8 @@
 #import "NTUNLineDownVC.h"
 #import "NTQRCodeCreateVC.h"
 #import "NTScanQRCodeVC.h"
+#import "UIDevice+Hardware.h"
+
 @interface ViewController ()
 
 @end
@@ -33,6 +35,10 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
+    UIDevice *device = [UIDevice currentDevice];
+    NSLog(@"%@", [device generation]); //输出
+
     [super viewDidLoad];
     UIButton *hitBtn = [UIView addButtonWithUIview:self.view Frame:CGRectMake(100, 100, 200, 200) Title:@"加载"];
     [hitBtn addTarget:self action:@selector(loadAction) forControlEvents:UIControlEventTouchUpInside];
