@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CA08AE482918DC7B00907C6E /* UIView+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = CA08AE472918DC7B00907C6E /* UIView+Tools.m */; };
+		CA08FB8129A848B50004BA81 /* NTQRCodeCreateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA08FB7F29A848B50004BA81 /* NTQRCodeCreateVC.m */; };
+		CA08FB8229A848B50004BA81 /* NTQRCodeCreateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA08FB8029A848B50004BA81 /* NTQRCodeCreateVC.xib */; };
+		CA08FB8529A848EE0004BA81 /* UIImage+NTQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = CA08FB8429A848EE0004BA81 /* UIImage+NTQRCode.m */; };
+		CA08FB8A29A850200004BA81 /* NTScanQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA08FB8829A850200004BA81 /* NTScanQRCodeVC.m */; };
+		CA08FB8B29A850200004BA81 /* NTScanQRCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA08FB8929A850200004BA81 /* NTScanQRCodeVC.xib */; };
 		CA09E2142990EC6A00E4942B /* NTOneDownFileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA09E2122990EC6A00E4942B /* NTOneDownFileVC.m */; };
 		CA09E2152990EC6A00E4942B /* NTOneDownFileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA09E2132990EC6A00E4942B /* NTOneDownFileVC.xib */; };
 		CA09E21C2992269600E4942B /* NTZipArchiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA09E21A2992269600E4942B /* NTZipArchiveVC.m */; };
@@ -100,6 +105,14 @@
 		AEC64D221D2C1FB194FFEA45 /* Pods-iOSNote-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSNote-OC.debug.xcconfig"; path = "Target Support Files/Pods-iOSNote-OC/Pods-iOSNote-OC.debug.xcconfig"; sourceTree = "<group>"; };
 		CA08AE462918DC7B00907C6E /* UIView+Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Tools.h"; sourceTree = "<group>"; };
 		CA08AE472918DC7B00907C6E /* UIView+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tools.m"; sourceTree = "<group>"; };
+		CA08FB7E29A848B50004BA81 /* NTQRCodeCreateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTQRCodeCreateVC.h; sourceTree = "<group>"; };
+		CA08FB7F29A848B50004BA81 /* NTQRCodeCreateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTQRCodeCreateVC.m; sourceTree = "<group>"; };
+		CA08FB8029A848B50004BA81 /* NTQRCodeCreateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTQRCodeCreateVC.xib; sourceTree = "<group>"; };
+		CA08FB8329A848EE0004BA81 /* UIImage+NTQRCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+NTQRCode.h"; sourceTree = "<group>"; };
+		CA08FB8429A848EE0004BA81 /* UIImage+NTQRCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NTQRCode.m"; sourceTree = "<group>"; };
+		CA08FB8729A850200004BA81 /* NTScanQRCodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTScanQRCodeVC.h; sourceTree = "<group>"; };
+		CA08FB8829A850200004BA81 /* NTScanQRCodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTScanQRCodeVC.m; sourceTree = "<group>"; };
+		CA08FB8929A850200004BA81 /* NTScanQRCodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTScanQRCodeVC.xib; sourceTree = "<group>"; };
 		CA09E2112990EC6A00E4942B /* NTOneDownFileVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTOneDownFileVC.h; sourceTree = "<group>"; };
 		CA09E2122990EC6A00E4942B /* NTOneDownFileVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTOneDownFileVC.m; sourceTree = "<group>"; };
 		CA09E2132990EC6A00E4942B /* NTOneDownFileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTOneDownFileVC.xib; sourceTree = "<group>"; };
@@ -260,6 +273,37 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CA08FB7C29A848710004BA81 /* 二维码 */ = {
+			isa = PBXGroup;
+			children = (
+				CA08FB8629A84FEB0004BA81 /* 扫描二维码 */,
+				CA08FB7D29A848820004BA81 /* 生成二维码 */,
+			);
+			path = "二维码";
+			sourceTree = "<group>";
+		};
+		CA08FB7D29A848820004BA81 /* 生成二维码 */ = {
+			isa = PBXGroup;
+			children = (
+				CA08FB7E29A848B50004BA81 /* NTQRCodeCreateVC.h */,
+				CA08FB7F29A848B50004BA81 /* NTQRCodeCreateVC.m */,
+				CA08FB8029A848B50004BA81 /* NTQRCodeCreateVC.xib */,
+				CA08FB8329A848EE0004BA81 /* UIImage+NTQRCode.h */,
+				CA08FB8429A848EE0004BA81 /* UIImage+NTQRCode.m */,
+			);
+			path = "生成二维码";
+			sourceTree = "<group>";
+		};
+		CA08FB8629A84FEB0004BA81 /* 扫描二维码 */ = {
+			isa = PBXGroup;
+			children = (
+				CA08FB8729A850200004BA81 /* NTScanQRCodeVC.h */,
+				CA08FB8829A850200004BA81 /* NTScanQRCodeVC.m */,
+				CA08FB8929A850200004BA81 /* NTScanQRCodeVC.xib */,
+			);
+			path = "扫描二维码";
+			sourceTree = "<group>";
+		};
 		CA09E2102990EC3300E4942B /* 一次性下载大文件 */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,6 +406,13 @@
 			path = UIWebview;
 			sourceTree = "<group>";
 		};
+		CA33F7A929A8544C003BB2FA /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "多线程";
+			sourceTree = "<group>";
+		};
 		CA4F710A29407CB8007957D4 /* 自定义等高cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +447,7 @@
 		CA75DB4E2918A93C0038E172 /* iOSNote-OC */ = {
 			isa = PBXGroup;
 			children = (
+				CA33F7A929A8544C003BB2FA /* 多线程 */,
 				CAF491C8299A651C0052B16B /* 分类 */,
 				CAD60CBC2988F72B006A01D5 /* 网络 */,
 				CAD60CB6298680B9006A01D5 /* 设计模式 */,
@@ -513,6 +565,7 @@
 		CAC89CA22938DA5E00ED408E /* 自定义控件 */ = {
 			isa = PBXGroup;
 			children = (
+				CA08FB7C29A848710004BA81 /* 二维码 */,
 				CAC89CA32938DAA000ED408E /* CustomViewClass.h */,
 				CAC89CA42938DAA000ED408E /* CustomViewClass.m */,
 				CAC89CA62938DAB300ED408E /* CustomViewClass.xib */,
@@ -896,6 +949,7 @@
 				CAF491C529953A370052B16B /* NTWebViewOCAndJSVC.xib in Resources */,
 				CA09E22D29944CCB00E4942B /* NTAFNUploadVC.xib in Resources */,
 				CAD60C47294088DE006A01D5 /* statuses.plist in Resources */,
+				CA08FB8229A848B50004BA81 /* NTQRCodeCreateVC.xib in Resources */,
 				CAD60CAC298274C5006A01D5 /* NTImageDrawVC.xib in Resources */,
 				CAC89CB22938E7E900ED408E /* ScrollVC.xib in Resources */,
 				CAC023FD2918CD3D00B0A827 /* ViewNoteController.xib in Resources */,
@@ -921,6 +975,7 @@
 				CAD60C9A297FD354006A01D5 /* NTCollectionViewCell.xib in Resources */,
 				CA4F710F29407D4D007957D4 /* CustomEqualCell.xib in Resources */,
 				CAD60C882973F3EE006A01D5 /* NTTips.xib in Resources */,
+				CA08FB8B29A850200004BA81 /* NTScanQRCodeVC.xib in Resources */,
 				CAD60C63296D262E006A01D5 /* PickerViewNoteVC.xib in Resources */,
 				CAD60C6B296EB119006A01D5 /* CLJDatePickAndCityPickVC.xib in Resources */,
 			);
@@ -981,6 +1036,7 @@
 				CAC023FC2918CD3D00B0A827 /* ViewNoteController.m in Sources */,
 				CAD60C43294088CB006A01D5 /* XMGStatus.m in Sources */,
 				CAF491CC299A65710052B16B /* NSObject+Extension.m in Sources */,
+				CA08FB8129A848B50004BA81 /* NTQRCodeCreateVC.m in Sources */,
 				CA09E22529924A4500E4942B /* NTOutputStreamVC.m in Sources */,
 				CA09E23229944F2500E4942B /* NTReachabilityVC.m in Sources */,
 				CAD60C7629715B61006A01D5 /* NTUIApplicationVC.m in Sources */,
@@ -1013,12 +1069,14 @@
 				CAD60CA42982534C006A01D5 /* NTGestureVC.m in Sources */,
 				CAD60C62296D262E006A01D5 /* PickerViewNoteVC.m in Sources */,
 				CAD60C812973E4AF006A01D5 /* NTNavVC.m in Sources */,
+				CA08FB8A29A850200004BA81 /* NTScanQRCodeVC.m in Sources */,
 				CADB0395293DF20400DBEDB6 /* TableViewNoteVC.m in Sources */,
 				CAF491C429953A370052B16B /* NTWebViewOCAndJSVC.m in Sources */,
 				CAC49188299BA178003DFA70 /* NSString+Hash.m in Sources */,
 				CA75DB542918A93C0038E172 /* SceneDelegate.m in Sources */,
 				CAD60C6A296EB119006A01D5 /* CLJDatePickAndCityPickVC.m in Sources */,
 				CAD60CB42984F571006A01D5 /* NTClipImageVC.m in Sources */,
+				CA08FB8529A848EE0004BA81 /* UIImage+NTQRCode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

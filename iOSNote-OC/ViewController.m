@@ -24,6 +24,8 @@
 #import "NTHTMLABCVC.h"
 #import "NTWebViewOCAndJSVC.h"
 #import "NTUNLineDownVC.h"
+#import "NTQRCodeCreateVC.h"
+#import "NTScanQRCodeVC.h"
 @interface ViewController ()
 
 @end
@@ -39,7 +41,7 @@
 }
 
 -(void)loadAction{
-    NTUNLineDownVC *vc = [[NTUNLineDownVC alloc]init];
+    NTScanQRCodeVC *vc = [[NTScanQRCodeVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end
