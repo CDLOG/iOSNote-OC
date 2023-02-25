@@ -28,6 +28,7 @@
 #import "NTScanQRCodeVC.h"
 #import "UIDevice+Hardware.h"
 #import "NTContactVC.h"
+#import "NTChangeSkinVC.h"
 @interface ViewController ()
 
 @end
@@ -47,7 +48,7 @@
 }
 
 -(void)loadAction{
-    NTContactVC *vc = [[NTContactVC alloc]init];
+    NTChangeSkinVC *vc = [[NTChangeSkinVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end
