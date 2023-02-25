@@ -29,6 +29,7 @@
 #import "UIDevice+Hardware.h"
 #import "NTContactVC.h"
 #import "NTChangeSkinVC.h"
+#import "NTProximitySensorVC.h"
 @interface ViewController ()
 
 @end
@@ -48,7 +49,7 @@
 }
 
 -(void)loadAction{
-    NTChangeSkinVC *vc = [[NTChangeSkinVC alloc]init];
+    NTProximitySensorVC *vc = [[NTProximitySensorVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end
