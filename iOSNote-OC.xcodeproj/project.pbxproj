@@ -61,6 +61,10 @@
 		CAC89CB12938E7E900ED408E /* ScrollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC89CAF2938E7E900ED408E /* ScrollVC.m */; };
 		CAC89CB22938E7E900ED408E /* ScrollVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC89CB02938E7E900ED408E /* ScrollVC.xib */; };
 		CAD4CF0229AA48EA00B02D72 /* CarelessWhisper.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CAD4CF0129AA48EA00B02D72 /* CarelessWhisper.mp3 */; };
+		CAD4CF0729AA4BCC00B02D72 /* NTAccelerometerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD4CF0529AA4BCC00B02D72 /* NTAccelerometerVC.m */; };
+		CAD4CF0829AA4BCC00B02D72 /* NTAccelerometerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD4CF0629AA4BCC00B02D72 /* NTAccelerometerVC.xib */; };
+		CAD4CF1229AA50C500B02D72 /* NTPedometerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD4CF1029AA50C500B02D72 /* NTPedometerVC.m */; };
+		CAD4CF1329AA50C500B02D72 /* NTPedometerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD4CF1129AA50C500B02D72 /* NTPedometerVC.xib */; };
 		CAD60C3A29407EFA006A01D5 /* XMGDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C3929407EFA006A01D5 /* XMGDeal.m */; };
 		CAD60C3C2940800E006A01D5 /* deals.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C3B2940800E006A01D5 /* deals.plist */; };
 		CAD60C43294088CB006A01D5 /* XMGStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C3E294088CB006A01D5 /* XMGStatus.m */; };
@@ -200,6 +204,12 @@
 		CAC89CAF2938E7E900ED408E /* ScrollVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollVC.m; sourceTree = "<group>"; };
 		CAC89CB02938E7E900ED408E /* ScrollVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollVC.xib; sourceTree = "<group>"; };
 		CAD4CF0129AA48EA00B02D72 /* CarelessWhisper.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CarelessWhisper.mp3; sourceTree = "<group>"; };
+		CAD4CF0429AA4BCC00B02D72 /* NTAccelerometerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTAccelerometerVC.h; sourceTree = "<group>"; };
+		CAD4CF0529AA4BCC00B02D72 /* NTAccelerometerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTAccelerometerVC.m; sourceTree = "<group>"; };
+		CAD4CF0629AA4BCC00B02D72 /* NTAccelerometerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTAccelerometerVC.xib; sourceTree = "<group>"; };
+		CAD4CF0F29AA50C500B02D72 /* NTPedometerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTPedometerVC.h; sourceTree = "<group>"; };
+		CAD4CF1029AA50C500B02D72 /* NTPedometerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTPedometerVC.m; sourceTree = "<group>"; };
+		CAD4CF1129AA50C500B02D72 /* NTPedometerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTPedometerVC.xib; sourceTree = "<group>"; };
 		CAD60C3829407EFA006A01D5 /* XMGDeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGDeal.h; sourceTree = "<group>"; };
 		CAD60C3929407EFA006A01D5 /* XMGDeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGDeal.m; sourceTree = "<group>"; };
 		CAD60C3B2940800E006A01D5 /* deals.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = deals.plist; sourceTree = "<group>"; };
@@ -498,6 +508,8 @@
 		CA33F81C29AA4130003BB2FA /* 硬件 */ = {
 			isa = PBXGroup;
 			children = (
+				CAD4CF0929AA502100B02D72 /* 计步器 */,
+				CAD4CF0329AA4BB400B02D72 /* 加速计 */,
 				CA33F81D29AA4139003BB2FA /* 距离传感器 */,
 			);
 			path = "硬件";
@@ -687,6 +699,26 @@
 				CAC89CB02938E7E900ED408E /* ScrollVC.xib */,
 			);
 			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		CAD4CF0329AA4BB400B02D72 /* 加速计 */ = {
+			isa = PBXGroup;
+			children = (
+				CAD4CF0429AA4BCC00B02D72 /* NTAccelerometerVC.h */,
+				CAD4CF0529AA4BCC00B02D72 /* NTAccelerometerVC.m */,
+				CAD4CF0629AA4BCC00B02D72 /* NTAccelerometerVC.xib */,
+			);
+			path = "加速计";
+			sourceTree = "<group>";
+		};
+		CAD4CF0929AA502100B02D72 /* 计步器 */ = {
+			isa = PBXGroup;
+			children = (
+				CAD4CF0F29AA50C500B02D72 /* NTPedometerVC.h */,
+				CAD4CF1029AA50C500B02D72 /* NTPedometerVC.m */,
+				CAD4CF1129AA50C500B02D72 /* NTPedometerVC.xib */,
+			);
+			path = "计步器";
 			sourceTree = "<group>";
 		};
 		CAD60C3D2940889B006A01D5 /* 自定义非等高cell */ = {
@@ -1070,7 +1102,9 @@
 				CAC89C9429385C5300ED408E /* PlistLoadVC.xib in Resources */,
 				CADB0396293DF20400DBEDB6 /* TableViewNoteVC.xib in Resources */,
 				CADB0390293C9B7F00DBEDB6 /* XMGPageView.xib in Resources */,
+				CAD4CF0829AA4BCC00B02D72 /* NTAccelerometerVC.xib in Resources */,
 				CAD60C3C2940800E006A01D5 /* deals.plist in Resources */,
+				CAD4CF1329AA50C500B02D72 /* NTPedometerVC.xib in Resources */,
 				CA09E21D2992269600E4942B /* NTZipArchiveVC.xib in Resources */,
 				CA09E2152990EC6A00E4942B /* NTOneDownFileVC.xib in Resources */,
 				CAD60C822973E4AF006A01D5 /* NTNavVC.xib in Resources */,
@@ -1144,6 +1178,7 @@
 				CAD60C8E29755AF6006A01D5 /* NTValueTransmitVC.m in Sources */,
 				CA75DB572918A93C0038E172 /* ViewController.m in Sources */,
 				CAD60C99297FD354006A01D5 /* NTCollectionViewCell.m in Sources */,
+				CAD4CF0729AA4BCC00B02D72 /* NTAccelerometerVC.m in Sources */,
 				CAC023FC2918CD3D00B0A827 /* ViewNoteController.m in Sources */,
 				CAD60C43294088CB006A01D5 /* XMGStatus.m in Sources */,
 				CAF491CC299A65710052B16B /* NSObject+Extension.m in Sources */,
@@ -1190,6 +1225,7 @@
 				CA08FB8A29A850200004BA81 /* NTScanQRCodeVC.m in Sources */,
 				CADB0395293DF20400DBEDB6 /* TableViewNoteVC.m in Sources */,
 				CAF491C429953A370052B16B /* NTWebViewOCAndJSVC.m in Sources */,
+				CAD4CF1229AA50C500B02D72 /* NTPedometerVC.m in Sources */,
 				CAC49188299BA178003DFA70 /* NSString+Hash.m in Sources */,
 				CA75DB542918A93C0038E172 /* SceneDelegate.m in Sources */,
 				CAD60C6A296EB119006A01D5 /* CLJDatePickAndCityPickVC.m in Sources */,

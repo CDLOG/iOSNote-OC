@@ -8,28 +8,7 @@
 #import "ViewController.h"
 #import "ViewNoteController.h"
 #import "XcodeVC.h"
-#import "PlistLoadVC.h"
-#import "CustomViewClass.h"
-#import "ScrollVC.h"
-#import "TableViewNoteVC.h"
-#import "XMGDealsViewController.h"
-#import "PickerViewNoteVC.h"
-#import "CLJDatePickAndCityPickVC.h"
-#import "NTUICollectionViewVC.h"
-#import "NTGestureVC.h"
-#import "NTImageDrawVC.h"
-#import "NTClipImageVC.h"
-#import "NTZipArchiveVC.h"
-#import "NTReachabilityVC.h"
-#import "NTHTMLABCVC.h"
-#import "NTWebViewOCAndJSVC.h"
-#import "NTUNLineDownVC.h"
-#import "NTQRCodeCreateVC.h"
-#import "NTScanQRCodeVC.h"
-#import "UIDevice+Hardware.h"
-#import "NTContactVC.h"
-#import "NTChangeSkinVC.h"
-#import "NTProximitySensorVC.h"
+#import "NTPedometerVC.h"
 @interface ViewController ()
 
 @end
@@ -38,8 +17,6 @@
 
 - (void)viewDidLoad {
     
-    UIDevice *device = [UIDevice currentDevice];
-    NSLog(@"%@", [device generation]); //输出
 
     [super viewDidLoad];
     UIButton *hitBtn = [UIView addButtonWithUIview:self.view Frame:CGRectMake(100, 100, 200, 200) Title:@"加载"];
@@ -49,7 +26,7 @@
 }
 
 -(void)loadAction{
-    NTProximitySensorVC *vc = [[NTProximitySensorVC alloc]init];
+    NTPedometerVC *vc = [[NTPedometerVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end
