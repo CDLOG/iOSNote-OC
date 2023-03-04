@@ -65,6 +65,8 @@
 		CAD4CF0829AA4BCC00B02D72 /* NTAccelerometerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD4CF0629AA4BCC00B02D72 /* NTAccelerometerVC.xib */; };
 		CAD4CF1229AA50C500B02D72 /* NTPedometerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD4CF1029AA50C500B02D72 /* NTPedometerVC.m */; };
 		CAD4CF1329AA50C500B02D72 /* NTPedometerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD4CF1129AA50C500B02D72 /* NTPedometerVC.xib */; };
+		CAD4CF1E29AB904F00B02D72 /* NTAPPIconVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD4CF1C29AB904F00B02D72 /* NTAPPIconVC.m */; };
+		CAD4CF1F29AB904F00B02D72 /* NTAPPIconVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD4CF1D29AB904F00B02D72 /* NTAPPIconVC.xib */; };
 		CAD60C3A29407EFA006A01D5 /* XMGDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C3929407EFA006A01D5 /* XMGDeal.m */; };
 		CAD60C3C2940800E006A01D5 /* deals.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C3B2940800E006A01D5 /* deals.plist */; };
 		CAD60C43294088CB006A01D5 /* XMGStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C3E294088CB006A01D5 /* XMGStatus.m */; };
@@ -210,6 +212,9 @@
 		CAD4CF0F29AA50C500B02D72 /* NTPedometerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTPedometerVC.h; sourceTree = "<group>"; };
 		CAD4CF1029AA50C500B02D72 /* NTPedometerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTPedometerVC.m; sourceTree = "<group>"; };
 		CAD4CF1129AA50C500B02D72 /* NTPedometerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTPedometerVC.xib; sourceTree = "<group>"; };
+		CAD4CF1B29AB904F00B02D72 /* NTAPPIconVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTAPPIconVC.h; sourceTree = "<group>"; };
+		CAD4CF1C29AB904F00B02D72 /* NTAPPIconVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTAPPIconVC.m; sourceTree = "<group>"; };
+		CAD4CF1D29AB904F00B02D72 /* NTAPPIconVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTAPPIconVC.xib; sourceTree = "<group>"; };
 		CAD60C3829407EFA006A01D5 /* XMGDeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGDeal.h; sourceTree = "<group>"; };
 		CAD60C3929407EFA006A01D5 /* XMGDeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGDeal.m; sourceTree = "<group>"; };
 		CAD60C3B2940800E006A01D5 /* deals.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = deals.plist; sourceTree = "<group>"; };
@@ -590,6 +595,8 @@
 		CAC023F72918CC6E00B0A827 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CAD4CF2029B37F9500B02D72 /* 主流框架 */,
+				CAD4CF1A29AB902B00B02D72 /* APP图标和启动图片 */,
 				CAD60CA62982747B006A01D5 /* 上下文绘制 */,
 				CAD60C9B29824499006A01D5 /* 事件处理 */,
 				CAC89CA22938DA5E00ED408E /* 自定义控件 */,
@@ -719,6 +726,23 @@
 				CAD4CF1129AA50C500B02D72 /* NTPedometerVC.xib */,
 			);
 			path = "计步器";
+			sourceTree = "<group>";
+		};
+		CAD4CF1A29AB902B00B02D72 /* APP图标和启动图片 */ = {
+			isa = PBXGroup;
+			children = (
+				CAD4CF1B29AB904F00B02D72 /* NTAPPIconVC.h */,
+				CAD4CF1C29AB904F00B02D72 /* NTAPPIconVC.m */,
+				CAD4CF1D29AB904F00B02D72 /* NTAPPIconVC.xib */,
+			);
+			path = "APP图标和启动图片";
+			sourceTree = "<group>";
+		};
+		CAD4CF2029B37F9500B02D72 /* 主流框架 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "主流框架";
 			sourceTree = "<group>";
 		};
 		CAD60C3D2940889B006A01D5 /* 自定义非等高cell */ = {
@@ -1113,6 +1137,7 @@
 				CA33F7CE29AA3857003BB2FA /* NTChangeSkinVC.xib in Resources */,
 				CAD4CF0229AA48EA00B02D72 /* CarelessWhisper.mp3 in Resources */,
 				CAC89CA72938DAB300ED408E /* CustomViewClass.xib in Resources */,
+				CAD4CF1F29AB904F00B02D72 /* NTAPPIconVC.xib in Resources */,
 				CA75DB5C2918A93E0038E172 /* Assets.xcassets in Resources */,
 				CA09E23329944F2500E4942B /* NTReachabilityVC.xib in Resources */,
 				CA75DB5A2918A93C0038E172 /* Main.storyboard in Resources */,
@@ -1193,6 +1218,7 @@
 				CAD60C9F298244D7006A01D5 /* RedView.m in Sources */,
 				CAD60C57294F6474006A01D5 /* XMGDealCell.m in Sources */,
 				CADB038F293C9B7F00DBEDB6 /* XMGPageView.m in Sources */,
+				CAD4CF1E29AB904F00B02D72 /* NTAPPIconVC.m in Sources */,
 				CA09E23929947F9100E4942B /* NTHTMLABCVC.m in Sources */,
 				CA33F7CD29AA3857003BB2FA /* NTChangeSkinVC.m in Sources */,
 				CA75DB512918A93C0038E172 /* AppDelegate.m in Sources */,
@@ -1382,8 +1408,12 @@
 				DEVELOPMENT_TEAM = P2F7HH3P2K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOSNote-OC/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "需要蓝牙权限";
+				INFOPLIST_KEY_NSCameraUsageDescription = "需要授权摄像头权限";
+				INFOPLIST_KEY_NSContactsUsageDescription = "需要授权通讯录权限";
+				INFOPLIST_KEY_NSMotionUsageDescription = "授权计步器权限";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1411,8 +1441,12 @@
 				DEVELOPMENT_TEAM = P2F7HH3P2K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOSNote-OC/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "需要蓝牙权限";
+				INFOPLIST_KEY_NSCameraUsageDescription = "需要授权摄像头权限";
+				INFOPLIST_KEY_NSContactsUsageDescription = "需要授权通讯录权限";
+				INFOPLIST_KEY_NSMotionUsageDescription = "授权计步器权限";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

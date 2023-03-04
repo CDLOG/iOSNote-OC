@@ -90,6 +90,14 @@
     [self.deals removeObjectAtIndex:0];
     [self.deals removeObjectAtIndex:0];
     
+    
+    // 局部刷新
+    NSArray *indexPaths = @[
+                            [NSIndexPath indexPathForRow:0 inSection:0],
+                            [NSIndexPath indexPathForRow:1 inSection:0]
+                            ];
+    [self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationLeft];
+    
     // 刷新表格
     [self.tableView reloadData];
 }

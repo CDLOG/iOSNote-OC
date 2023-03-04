@@ -8,7 +8,6 @@
 #import "ViewController.h"
 #import "ViewNoteController.h"
 #import "XcodeVC.h"
-#import "NTPedometerVC.h"
 @interface ViewController ()
 
 @end
@@ -26,7 +25,7 @@
 }
 
 -(void)loadAction{
-    NTPedometerVC *vc = [[NTPedometerVC alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
+//    NTBluetoothVC *vc = [[NTBluetoothVC alloc]init];
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 @end

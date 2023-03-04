@@ -2,12 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSMotionUsageDescription</key>
-	<string>授权计步器权限</string>
-	<key>NSContactsUsageDescription</key>
-	<string>需要授权通讯录权限</string>
-	<key>NSCameraUsageDescription</key>
-	<string>需要授权摄像头权限</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
