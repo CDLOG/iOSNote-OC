@@ -67,6 +67,10 @@
 		CAD4CF1329AA50C500B02D72 /* NTPedometerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD4CF1129AA50C500B02D72 /* NTPedometerVC.xib */; };
 		CAD4CF1E29AB904F00B02D72 /* NTAPPIconVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD4CF1C29AB904F00B02D72 /* NTAPPIconVC.m */; };
 		CAD4CF1F29AB904F00B02D72 /* NTAPPIconVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD4CF1D29AB904F00B02D72 /* NTAPPIconVC.xib */; };
+		CAD4CF2529B491AE00B02D72 /* NTTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD4CF2429B491AE00B02D72 /* NTTabBarVC.m */; };
+		CAD4CF2829B4921C00B02D72 /* NTNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD4CF2729B4921C00B02D72 /* NTNavigationVC.m */; };
+		CAD4CF2B29B496A900B02D72 /* NTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD4CF2A29B496A900B02D72 /* NTTabBar.m */; };
+		CAD4CF2E29B4974A00B02D72 /* NTTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD4CF2D29B4974A00B02D72 /* NTTabBarButton.m */; };
 		CAD60C3A29407EFA006A01D5 /* XMGDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C3929407EFA006A01D5 /* XMGDeal.m */; };
 		CAD60C3C2940800E006A01D5 /* deals.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C3B2940800E006A01D5 /* deals.plist */; };
 		CAD60C43294088CB006A01D5 /* XMGStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C3E294088CB006A01D5 /* XMGStatus.m */; };
@@ -215,6 +219,14 @@
 		CAD4CF1B29AB904F00B02D72 /* NTAPPIconVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTAPPIconVC.h; sourceTree = "<group>"; };
 		CAD4CF1C29AB904F00B02D72 /* NTAPPIconVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTAPPIconVC.m; sourceTree = "<group>"; };
 		CAD4CF1D29AB904F00B02D72 /* NTAPPIconVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTAPPIconVC.xib; sourceTree = "<group>"; };
+		CAD4CF2329B491AE00B02D72 /* NTTabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTTabBarVC.h; sourceTree = "<group>"; };
+		CAD4CF2429B491AE00B02D72 /* NTTabBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTTabBarVC.m; sourceTree = "<group>"; };
+		CAD4CF2629B4921C00B02D72 /* NTNavigationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTNavigationVC.h; sourceTree = "<group>"; };
+		CAD4CF2729B4921C00B02D72 /* NTNavigationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTNavigationVC.m; sourceTree = "<group>"; };
+		CAD4CF2929B496A900B02D72 /* NTTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTTabBar.h; sourceTree = "<group>"; };
+		CAD4CF2A29B496A900B02D72 /* NTTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTTabBar.m; sourceTree = "<group>"; };
+		CAD4CF2C29B4974A00B02D72 /* NTTabBarButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTTabBarButton.h; sourceTree = "<group>"; };
+		CAD4CF2D29B4974A00B02D72 /* NTTabBarButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTTabBarButton.m; sourceTree = "<group>"; };
 		CAD60C3829407EFA006A01D5 /* XMGDeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGDeal.h; sourceTree = "<group>"; };
 		CAD60C3929407EFA006A01D5 /* XMGDeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGDeal.m; sourceTree = "<group>"; };
 		CAD60C3B2940800E006A01D5 /* deals.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = deals.plist; sourceTree = "<group>"; };
@@ -741,8 +753,32 @@
 		CAD4CF2029B37F9500B02D72 /* 主流框架 */ = {
 			isa = PBXGroup;
 			children = (
+				CAD4CF2229B4917E00B02D72 /* view */,
+				CAD4CF2129B4917700B02D72 /* page */,
 			);
 			path = "主流框架";
+			sourceTree = "<group>";
+		};
+		CAD4CF2129B4917700B02D72 /* page */ = {
+			isa = PBXGroup;
+			children = (
+				CAD4CF2329B491AE00B02D72 /* NTTabBarVC.h */,
+				CAD4CF2429B491AE00B02D72 /* NTTabBarVC.m */,
+				CAD4CF2629B4921C00B02D72 /* NTNavigationVC.h */,
+				CAD4CF2729B4921C00B02D72 /* NTNavigationVC.m */,
+			);
+			path = page;
+			sourceTree = "<group>";
+		};
+		CAD4CF2229B4917E00B02D72 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CAD4CF2929B496A900B02D72 /* NTTabBar.h */,
+				CAD4CF2A29B496A900B02D72 /* NTTabBar.m */,
+				CAD4CF2C29B4974A00B02D72 /* NTTabBarButton.h */,
+				CAD4CF2D29B4974A00B02D72 /* NTTabBarButton.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		CAD60C3D2940889B006A01D5 /* 自定义非等高cell */ = {
@@ -1223,6 +1259,7 @@
 				CA33F7CD29AA3857003BB2FA /* NTChangeSkinVC.m in Sources */,
 				CA75DB512918A93C0038E172 /* AppDelegate.m in Sources */,
 				CA75DB622918A93E0038E172 /* main.m in Sources */,
+				CAD4CF2E29B4974A00B02D72 /* NTTabBarButton.m in Sources */,
 				CA08AE482918DC7B00907C6E /* UIView+Tools.m in Sources */,
 				CA09E21C2992269600E4942B /* NTZipArchiveVC.m in Sources */,
 				CA33F7C329A86986003BB2FA /* NTContactVC.m in Sources */,
@@ -1243,7 +1280,9 @@
 				CAC89C9D29385E8900ED408E /* XcodeVC.m in Sources */,
 				CA33F7F629AA39D1003BB2FA /* SkinTool.m in Sources */,
 				CAD60CAB298274C5006A01D5 /* NTImageDrawVC.m in Sources */,
+				CAD4CF2B29B496A900B02D72 /* NTTabBar.m in Sources */,
 				CAD60C5C294F64C7006A01D5 /* XMGDealsViewController.m in Sources */,
+				CAD4CF2529B491AE00B02D72 /* NTTabBarVC.m in Sources */,
 				CAD60CAF29827845006A01D5 /* UIImage+Image.m in Sources */,
 				CAD60CA42982534C006A01D5 /* NTGestureVC.m in Sources */,
 				CAD60C62296D262E006A01D5 /* PickerViewNoteVC.m in Sources */,
@@ -1251,6 +1290,7 @@
 				CA08FB8A29A850200004BA81 /* NTScanQRCodeVC.m in Sources */,
 				CADB0395293DF20400DBEDB6 /* TableViewNoteVC.m in Sources */,
 				CAF491C429953A370052B16B /* NTWebViewOCAndJSVC.m in Sources */,
+				CAD4CF2829B4921C00B02D72 /* NTNavigationVC.m in Sources */,
 				CAD4CF1229AA50C500B02D72 /* NTPedometerVC.m in Sources */,
 				CAC49188299BA178003DFA70 /* NSString+Hash.m in Sources */,
 				CA75DB542918A93C0038E172 /* SceneDelegate.m in Sources */,

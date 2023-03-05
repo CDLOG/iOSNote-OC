@@ -22,6 +22,25 @@
 #define ABC 10
 #import "UIView+Tools.h"
 #import "NTTools.h"
+
+//X的适配
+// 导航栏底部
+#define kGetNavAndStatusHeight  self.navigationController.navigationBar.frame.size.height+[[UIApplication sharedApplication] statusBarFrame].size.height
+// 状态栏高度
+#define kGetStatusHeight  [[UIApplication sharedApplication] statusBarFrame].size.height
+// 导航栏高度
+#define kGetNavHeight  self.navigationController.navigationBar.frame.size.height
+// 是否是iPhoneX以上刘海屏
+#define is_iPhoneX (UIApplication.sharedApplication.statusBarFrame.size.height >= 44?YES:NO)
+// Tabbar安全区域底部间隙
+#define TabbarSafeBottomMargin  (is_iPhoneX ? 34.f : 0.f)
+//状态栏 导航栏 tabbar  高度常量  适配iphoneX
+#define StatusBarH (is_iPhoneX ? 44 : 20)
+#define TabbarH (is_iPhoneX ? 83 : 49)
+#define NavgationH 44
+#define KNavHeight (NavgationH + StatusBarH)
+#define sc_height [UIScreen mainScreen].bounds.size.height
+#define sc_width [UIScreen mainScreen].bounds.size.width
 /* pch里面的所有内容都是共享，每个文件都会共有:
     作用:
     1.存放一些公用的宏
