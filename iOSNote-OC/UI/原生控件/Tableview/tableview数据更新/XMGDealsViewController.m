@@ -42,7 +42,6 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [super viewDidLoad];
-    
 }
 
 - (IBAction)switchEditing {

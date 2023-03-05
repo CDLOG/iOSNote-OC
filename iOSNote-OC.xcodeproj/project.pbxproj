@@ -71,6 +71,7 @@
 		CAD4CF2829B4921C00B02D72 /* NTNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD4CF2729B4921C00B02D72 /* NTNavigationVC.m */; };
 		CAD4CF2B29B496A900B02D72 /* NTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD4CF2A29B496A900B02D72 /* NTTabBar.m */; };
 		CAD4CF2E29B4974A00B02D72 /* NTTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD4CF2D29B4974A00B02D72 /* NTTabBarButton.m */; };
+		CAD4CF3229B4D24000B02D72 /* UIView+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD4CF3129B4D24000B02D72 /* UIView+Size.m */; };
 		CAD60C3A29407EFA006A01D5 /* XMGDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C3929407EFA006A01D5 /* XMGDeal.m */; };
 		CAD60C3C2940800E006A01D5 /* deals.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C3B2940800E006A01D5 /* deals.plist */; };
 		CAD60C43294088CB006A01D5 /* XMGStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C3E294088CB006A01D5 /* XMGStatus.m */; };
@@ -227,6 +228,8 @@
 		CAD4CF2A29B496A900B02D72 /* NTTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTTabBar.m; sourceTree = "<group>"; };
 		CAD4CF2C29B4974A00B02D72 /* NTTabBarButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTTabBarButton.h; sourceTree = "<group>"; };
 		CAD4CF2D29B4974A00B02D72 /* NTTabBarButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTTabBarButton.m; sourceTree = "<group>"; };
+		CAD4CF3029B4D24000B02D72 /* UIView+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Size.h"; sourceTree = "<group>"; };
+		CAD4CF3129B4D24000B02D72 /* UIView+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Size.m"; sourceTree = "<group>"; };
 		CAD60C3829407EFA006A01D5 /* XMGDeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGDeal.h; sourceTree = "<group>"; };
 		CAD60C3929407EFA006A01D5 /* XMGDeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGDeal.m; sourceTree = "<group>"; };
 		CAD60C3B2940800E006A01D5 /* deals.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = deals.plist; sourceTree = "<group>"; };
@@ -607,6 +610,7 @@
 		CAC023F72918CC6E00B0A827 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CAD4CF2F29B4D23400B02D72 /* 分类 */,
 				CAD4CF2029B37F9500B02D72 /* 主流框架 */,
 				CAD4CF1A29AB902B00B02D72 /* APP图标和启动图片 */,
 				CAD60CA62982747B006A01D5 /* 上下文绘制 */,
@@ -779,6 +783,15 @@
 				CAD4CF2D29B4974A00B02D72 /* NTTabBarButton.m */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		CAD4CF2F29B4D23400B02D72 /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				CAD4CF3029B4D24000B02D72 /* UIView+Size.h */,
+				CAD4CF3129B4D24000B02D72 /* UIView+Size.m */,
+			);
+			path = "分类";
 			sourceTree = "<group>";
 		};
 		CAD60C3D2940889B006A01D5 /* 自定义非等高cell */ = {
@@ -1261,6 +1274,7 @@
 				CA75DB622918A93E0038E172 /* main.m in Sources */,
 				CAD4CF2E29B4974A00B02D72 /* NTTabBarButton.m in Sources */,
 				CA08AE482918DC7B00907C6E /* UIView+Tools.m in Sources */,
+				CAD4CF3229B4D24000B02D72 /* UIView+Size.m in Sources */,
 				CA09E21C2992269600E4942B /* NTZipArchiveVC.m in Sources */,
 				CA33F7C329A86986003BB2FA /* NTContactVC.m in Sources */,
 				CA33F7AF29A85983003BB2FA /* UIDevice+Hardware.m in Sources */,

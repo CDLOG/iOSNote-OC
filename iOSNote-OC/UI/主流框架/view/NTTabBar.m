@@ -56,7 +56,7 @@
     CGFloat buttonX = 0;
     CGFloat buttonY = 0;
     CGFloat buttonW = self.frame.size.width / self.subviews.count;
-    CGFloat buttonH = TabbarH;
+    CGFloat buttonH = 49;
     
     int i = 0;
     for (UIButton *button in self.subviews) {

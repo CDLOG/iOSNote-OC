@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XMGDealsViewController">
             <connections>
+                <outlet property="bottom_tableview" destination="cy5-vh-m2W" id="xah-Zw-YWO"/>
                 <outlet property="tableView" destination="bt8-gd-r9K" id="Cyw-JG-xsT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

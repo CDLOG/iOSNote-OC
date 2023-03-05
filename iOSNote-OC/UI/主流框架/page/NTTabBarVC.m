@@ -38,23 +38,17 @@
 }
 // 自定义tabBar
 - (void)setupTabBar{
-    /*
-     // 1.移除(简单粗暴)
-     1.tabBar UIView
-     2.UIButton
-     3.切换自控制 selectedIndex
-     */
-    // 1.移除系统的tabBar
-    [self.tabBar removeFromSuperview];
-//
-//    // 2.添加自己的tabBar
+
+
+    // 1.隐藏系统的tabBar,不玩完全去除,造成ui混乱
+    self.tabBar.alpha = 0.001;
+    // 2.添加自己的tabBar
     NTTabBar *tabBar = [[NTTabBar alloc] init];
     tabBar.items = self.items;
-
-    [self.view addSubview:tabBar];
-    tabBar.frame = CGRectMake(0, sc_height - TabbarH - TabbarSafeBottomMargin, sc_width, TabbarH + TabbarSafeBottomMargin);
     
-    tabBar.backgroundColor = [UIColor redColor];
+    [self.view addSubview:tabBar];
+    tabBar.frame = CGRectMake(0, sc_height - TabbarH, sc_width, TabbarH);
+    tabBar.backgroundColor = [UIColor whiteColor];
     tabBar.delegate = self;
     
     
@@ -62,25 +56,12 @@
 
 #pragma mark - XMGTabBarDelegate
 - (void)tabBar:(NTTabBar *)tabBar index:(NSInteger)index{
-//    NSLog(@"%ld",index);
     // 切换子控制器
     self.selectedIndex = index;
     
 }
 // 添加所有的子控制器
 - (void)setupAllChildViewController{
-    
-     // 怎么解
-    // 1.找UI妹子 调整图片, 项目负责, PM
-    // 2.自定义
-   
-    /*
-     // 1.移除(简单粗暴)
-     1.tabBar UIView
-     2.UIButton
-     3.切换自控制 selectedIndex
-    */
-    // 2.移除tabBar子控件
     
     
     // tabBarItem 模型 , 对应子控制器的tabBarItem 决定
@@ -89,9 +70,6 @@
     
     hall.view.backgroundColor = [UIColor yellowColor];
     [self setupOneChildViewController:hall image:[UIImage imageNamed:@"TabBar_Hall_new"] selImage:[UIImage imageNamed:@"TabBar_Hall_selected_new"] title:@"购彩大厅"];
-    
-//    [self.items addObject:hall.tabBarItem];
-    
     // 2.竞技场
     UIViewController *arena = [[UIViewController alloc] init];
     arena.view.backgroundColor =[UIColor greenColor];

@@ -13,7 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface XMGDealsViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottom_tableview;
 @end
 
 NS_ASSUME_NONNULL_END
