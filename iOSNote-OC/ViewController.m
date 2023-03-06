@@ -8,7 +8,9 @@
 #import "ViewController.h"
 #import "ViewNoteController.h"
 #import "XcodeVC.h"
-@interface ViewController ()
+#import "NTDelegateVC.h"
+#import "NTBlockVC.h"
+@interface ViewController ()<NTDelegateVCDelegate>
 
 @end
 
@@ -25,7 +27,15 @@
 }
 
 -(void)loadAction{
-//    NTBluetoothVC *vc = [[NTBluetoothVC alloc]init];
-//    [self.navigationController pushViewController:vc animated:YES];
+    NTBlockVC *vc = [[NTBlockVC alloc]init];
+    vc.myBlock = ^(NSString * _Nonnull data) {
+        NSLog(@"被动接受的数据--%@",data);
+    };
+    [vc clickWithBlock:^(NSString * _Nonnull data) {
+        NSLog(@"函数调用完成后block返回的数据--%@",data);
+    }];
+    vc.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController pushViewController:vc animated:YES];
 }
+
 @end

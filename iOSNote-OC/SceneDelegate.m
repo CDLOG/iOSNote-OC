@@ -26,10 +26,8 @@
     UIWindowScene *windowScene = (UIWindowScene *)scene;
     self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
     self.window.frame = windowScene.coordinateSpace.bounds;
-    UITabBarController *tabBarVc = [[NTTabBarVC alloc] init];
-    self.window.rootViewController = tabBarVc;
     
-//    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]];
     [AppDelegate shareApplication].window = self.window;
     [AppDelegate shareApplication].scene = scene;
     [self.window makeKeyAndVisible];
