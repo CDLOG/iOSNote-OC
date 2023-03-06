@@ -96,8 +96,6 @@
 		CAD60C822973E4AF006A01D5 /* NTNavVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C802973E4AF006A01D5 /* NTNavVC.xib */; };
 		CAD60C872973F3EE006A01D5 /* NTTips.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C852973F3EE006A01D5 /* NTTips.m */; };
 		CAD60C882973F3EE006A01D5 /* NTTips.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C862973F3EE006A01D5 /* NTTips.xib */; };
-		CAD60C8E29755AF6006A01D5 /* NTValueTransmitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C8C29755AF6006A01D5 /* NTValueTransmitVC.m */; };
-		CAD60C8F29755AF6006A01D5 /* NTValueTransmitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C8D29755AF6006A01D5 /* NTValueTransmitVC.xib */; };
 		CAD60C94297802AE006A01D5 /* NTUICollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C92297802AE006A01D5 /* NTUICollectionViewVC.m */; };
 		CAD60C95297802AE006A01D5 /* NTUICollectionViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD60C93297802AE006A01D5 /* NTUICollectionViewVC.xib */; };
 		CAD60C99297FD354006A01D5 /* NTCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD60C97297FD354006A01D5 /* NTCollectionViewCell.m */; };
@@ -266,9 +264,6 @@
 		CAD60C842973F3EE006A01D5 /* NTTips.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTTips.h; sourceTree = "<group>"; };
 		CAD60C852973F3EE006A01D5 /* NTTips.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTTips.m; sourceTree = "<group>"; };
 		CAD60C862973F3EE006A01D5 /* NTTips.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTTips.xib; sourceTree = "<group>"; };
-		CAD60C8B29755AF6006A01D5 /* NTValueTransmitVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTValueTransmitVC.h; sourceTree = "<group>"; };
-		CAD60C8C29755AF6006A01D5 /* NTValueTransmitVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTValueTransmitVC.m; sourceTree = "<group>"; };
-		CAD60C8D29755AF6006A01D5 /* NTValueTransmitVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTValueTransmitVC.xib; sourceTree = "<group>"; };
 		CAD60C91297802AE006A01D5 /* NTUICollectionViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTUICollectionViewVC.h; sourceTree = "<group>"; };
 		CAD60C92297802AE006A01D5 /* NTUICollectionViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTUICollectionViewVC.m; sourceTree = "<group>"; };
 		CAD60C93297802AE006A01D5 /* NTUICollectionViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTUICollectionViewVC.xib; sourceTree = "<group>"; };
@@ -557,6 +552,37 @@
 				CA4F710D29407D4D007957D4 /* CustomEqualCell.xib */,
 			);
 			path = "自定义等高cell";
+			sourceTree = "<group>";
+		};
+		CA68EA4229B5792D00801F82 /* 通知回调 */ = {
+			isa = PBXGroup;
+			children = (
+				CA68EA4429B5794400801F82 /* block */,
+				CA68EA4329B5793A00801F82 /* 代理 */,
+				CA68EA4529B5794C00801F82 /* 通知 */,
+			);
+			path = "通知回调";
+			sourceTree = "<group>";
+		};
+		CA68EA4329B5793A00801F82 /* 代理 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "代理";
+			sourceTree = "<group>";
+		};
+		CA68EA4429B5794400801F82 /* block */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = block;
+			sourceTree = "<group>";
+		};
+		CA68EA4529B5794C00801F82 /* 通知 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "通知";
 			sourceTree = "<group>";
 		};
 		CA75DB432918A93C0038E172 = {
@@ -848,6 +874,7 @@
 		CAD60C7129715AF9006A01D5 /* 其他 */ = {
 			isa = PBXGroup;
 			children = (
+				CA68EA4229B5792D00801F82 /* 通知回调 */,
 				CA33F7C529A8786C003BB2FA /* 工具 */,
 				CAD60C832973F3D4006A01D5 /* 小的知识点 */,
 				CAD60C7229715B0B006A01D5 /* UIApplication */,
@@ -906,9 +933,6 @@
 		CAD60C8A29755AB6006A01D5 /* 数值传递 */ = {
 			isa = PBXGroup;
 			children = (
-				CAD60C8B29755AF6006A01D5 /* NTValueTransmitVC.h */,
-				CAD60C8C29755AF6006A01D5 /* NTValueTransmitVC.m */,
-				CAD60C8D29755AF6006A01D5 /* NTValueTransmitVC.xib */,
 			);
 			path = "数值传递";
 			sourceTree = "<group>";
@@ -1153,7 +1177,6 @@
 				CAF491C729953D470052B16B /* index.html in Resources */,
 				CAD60C7729715B61006A01D5 /* NTUIApplicationVC.xib in Resources */,
 				CAD60C58294F6474006A01D5 /* XMGDealCell.xib in Resources */,
-				CAD60C8F29755AF6006A01D5 /* NTValueTransmitVC.xib in Resources */,
 				CA09E23C2994803F00E4942B /* test.html in Resources */,
 				CA09E23A29947F9100E4942B /* NTHTMLABCVC.xib in Resources */,
 				CAD60CA52982534C006A01D5 /* NTGestureVC.xib in Resources */,
@@ -1249,7 +1272,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAD60C8E29755AF6006A01D5 /* NTValueTransmitVC.m in Sources */,
 				CA75DB572918A93C0038E172 /* ViewController.m in Sources */,
 				CAD60C99297FD354006A01D5 /* NTCollectionViewCell.m in Sources */,
 				CAD4CF0729AA4BCC00B02D72 /* NTAccelerometerVC.m in Sources */,

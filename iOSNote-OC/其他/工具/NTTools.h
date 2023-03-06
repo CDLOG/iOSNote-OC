@@ -13,10 +13,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark- 图片相关
 
-/// 加载原始图片
-/// - Parameter imageName: 图片名
-+(void)iamgeLoadOriginal:(NSString *)imageName;
-
+/**
+ *  加载原始图片
+ *
+ *  @param name 图片名字
+ *
+ *  @return 返回一张不要渲染的图片
+ */
++ (UIImage *)imageWithRenderOriginalName:(NSString *)name;
+ 
 
 #pragma mark- 文字相关
 

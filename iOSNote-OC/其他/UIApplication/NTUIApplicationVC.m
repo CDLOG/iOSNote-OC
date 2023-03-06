@@ -45,19 +45,7 @@
     
     [app setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
 }
-#pragma mark - 控制器设置状态栏
-// 在iOS7以后，状态栏默认由控制器决定
-// 隐藏状态栏
-//- (BOOL)prefersStatusBarHidden
-//{
-//    return YES;
-//}
 
-
-//- (UIStatusBarStyle)preferredStatusBarStyle
-//{
-//    return UIStatusBarStyleLightContent;
-//}
 
 
 

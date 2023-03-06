@@ -11,10 +11,16 @@
 
 
 #pragma mark- 图片相关
-/// 加载原始图片
-+(void)iamgeLoadOriginal:(NSString *)imageName{
-    UIImage *image = [UIImage imageNamed:imageName];
-    [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+/**
+ *  加载原始图片
+ *
+ *  @param name 图片名字
+ *
+ *  @return 返回一张不要渲染的图片
+ */
++ (UIImage *)imageWithRenderOriginalName:(NSString *)name{
+    UIImage *image =  [UIImage imageNamed:name];
+    return [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 }
 #pragma mark- 文字相关
 

@@ -50,6 +50,7 @@ viewWillLayoutSubviews,viewDidLayoutSubviews,viewDidAppear,
 }
 
 //导航栏的内容由栈顶控制器的navigationItem属性决定
+//左右和中间的视图,可以设置文字,图片,控件.
 -(void)navUI{
     //左上角的返回按钮
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]init];
