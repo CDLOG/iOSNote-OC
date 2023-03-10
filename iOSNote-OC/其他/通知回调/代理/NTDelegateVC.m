@@ -21,8 +21,8 @@
 
 -(void)clickAction{
     // 通知
-    if ([self.delegate respondsToSelector:@selector(NTDelegateClick:andText:)]) {
-        [self.delegate NTDelegateClick:self andText:@"代理传递参数"];
+    if ([self.delegate respondsToSelector:@selector(delegateClick:andText:)]) {
+        [self.delegate delegateClick:self andText:@"代理传递参数"];
     }
 
 }

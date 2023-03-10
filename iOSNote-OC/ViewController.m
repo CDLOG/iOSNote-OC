@@ -10,7 +10,9 @@
 #import "XcodeVC.h"
 #import "NTDelegateVC.h"
 #import "NTBlockVC.h"
-@interface ViewController ()<NTDelegateVCDelegate>
+#import "NTCover.h"
+#import "NTCoverView.h"
+@interface ViewController ()
 
 @end
 
@@ -27,15 +29,22 @@
 }
 
 -(void)loadAction{
-    NTBlockVC *vc = [[NTBlockVC alloc]init];
-    vc.myBlock = ^(NSString * _Nonnull data) {
-        NSLog(@"被动接受的数据--%@",data);
+    //创建蒙版
+    NTCover *view = [[NTCover alloc]init];
+    view.canTouchHide = YES;
+    //获取弹窗控件
+    NTCoverView * addBaseView = [[NSBundle mainBundle]loadNibNamed:@"NTCoverView" owner:nil options:nil].firstObject;
+    addBaseView.frame = CGRectMake(0, 0, sc_width, 200);
+    //弹窗居中
+    addBaseView.center = view.center;
+    [view.baseView addSubview: addBaseView];
+    [view show];
+    
+    addBaseView.cancelBlock = ^{
+        [view hide];
     };
-    [vc clickWithBlock:^(NSString * _Nonnull data) {
-        NSLog(@"函数调用完成后block返回的数据--%@",data);
-    }];
-    vc.view.backgroundColor = [UIColor whiteColor];
-    [self.navigationController pushViewController:vc animated:YES];
+    
+   
 }
 
 @end
