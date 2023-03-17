@@ -26,8 +26,13 @@
     UIWindowScene *windowScene = (UIWindowScene *)scene;
     self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
     self.window.frame = windowScene.coordinateSpace.bounds;
+    self.window.backgroundColor = [UIColor whiteColor];
+//    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]];
     
-    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]];
+    UITabBarController *tabBarVc = [[NTTabBarVC alloc] init];
+    self.window.rootViewController = tabBarVc;
+
+    
     [AppDelegate shareApplication].window = self.window;
     [AppDelegate shareApplication].scene = scene;
     [self.window makeKeyAndVisible];

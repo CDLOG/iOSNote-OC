@@ -22,6 +22,10 @@
  */
 - (void)layoutSubviews{
     [super layoutSubviews];
+    
+    //根据控件数据自适应布局(常在控件设置数据后调用)
+    [self sizeToFit];
+    
 }
 
 @end

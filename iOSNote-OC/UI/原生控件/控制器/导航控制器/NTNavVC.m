@@ -28,14 +28,40 @@ viewWillLayoutSubviews,viewDidLayoutSubviews,viewDidAppear,
     
 }
 
-//导航条内容
+
+// 什么时候调用 当第一次初始这个类的时候调用,只会调用一次
+// 设置导航条内容
++ (void)initialize{
+//    NSLog(@"%s",__func__);
+    
+    // 1.获取导航条标识(当需要在类方法中,使用self方法时,用标识解决)
+    // Class 获取某几个类的导航条标识,进行统一设置
+    UINavigationBar *bar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[self]];
+
+    //设置导航条的背景图片
+    [bar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
+    
+    // 设置字体颜色大小
+    NSMutableDictionary *dictM = [NSMutableDictionary dictionary];
+    
+    //字体大小
+    dictM[NSFontAttributeName] = [UIFont boldSystemFontOfSize:22];
+    // 字体颜色
+    dictM[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    
+    [bar setTitleTextAttributes:dictM];
+
+}
+
+
+//导航条内容(导航条背景色,标题的大小和颜色)
 -(void)navigationBarUI{
-    // 设置背景颜色无效,navbar需要直接设置背景图片
-    //    vc.navigationItem se
-    //    [nav.navigationBar setBackgroundColor:[UIColor redColor]];
     
-    // 只要给导航设置背景图片只能用默认模式,但是控制器的view的尺寸是从64 开始,高度= 屏幕的高度 - 64
+    //导航条的背景色在没有滑动之前,是透明的,显示的是上一层的颜色
     
+    //通过颜色设置导航条的背景色
+    self.navigationBar.barTintColor=[UIColor colorWithRed:0 green:148 / 255.0 blue:238 /255.0 alpha:1];
+    //通过图片设置导航条的颜色
     [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
 
     // 设置字体颜色大小

@@ -27,6 +27,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     // 1.添加子控制器
     [self setupAllChildViewController];
     
@@ -107,7 +109,7 @@
     // 包装成导航控制器
     // 1.创建导航控制器
     UINavigationController *nav = [[NTNavigationVC alloc] initWithRootViewController:vc];
-    
+
     //单独设置某一个控制器的导航控制器
     if ([vc isKindOfClass:[UIViewController class]]) {
         //竞技场
@@ -118,11 +120,35 @@
     
     // 导航控制器上的内容有栈顶控制器navigationItem
     vc.navigationItem.title = title;
-
+    [self navbarUI:nav];
     
     vc.tabBarItem.image = image;
     vc.tabBarItem.selectedImage = selImage;
-//    vc.tabBarItem.title =
     [self.items addObject:vc.tabBarItem];
 }
+
+
+/// 设置导航条的背景颜色,和标题的文字颜色和大小
+/// - Parameter nav: 导航控制器
+-(void)navbarUI:(UINavigationController *)nav{
+    
+
+    UINavigationBar *bar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[nav class]]];
+    
+    //设置导航条的背景图片
+    
+    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
+    
+    // 设置字体颜色大小
+    NSMutableDictionary *dictM = [NSMutableDictionary dictionary];
+
+    //字体大小
+    dictM[NSFontAttributeName] = [UIFont boldSystemFontOfSize:20];
+    // 字体颜色
+    dictM[NSForegroundColorAttributeName] = [UIColor greenColor];
+    
+    [bar setTitleTextAttributes:dictM];
+    
+}
+
 @end
