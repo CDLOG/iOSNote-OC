@@ -48,7 +48,7 @@
 }
 
 +(UIImage *)stretchableImageName:(NSString *)imageName{
-    UIImage *image =  [UIImage imageNamed:@"NLArenaNavBar64"];
+    UIImage *image =  [UIImage imageNamed:imageName];
     image =  [image stretchableImageWithLeftCapWidth:image.size.width /5 topCapHeight:image.size.height /2];
     return  image;
 }
