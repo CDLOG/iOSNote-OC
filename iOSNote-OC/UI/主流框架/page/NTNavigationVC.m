@@ -7,22 +7,38 @@
 
 #import "NTNavigationVC.h"
 
-@interface NTNavigationVC ()
+@interface NTNavigationVC ()<UINavigationControllerDelegate>
+/** 系统手势代理 */
+@property (nonatomic, strong) id popGesture;
 
 @end
 
 @implementation NTNavigationVC
 
-// 什么时候调用 当程序一启动的时候就会调用
-// 作用: 将当前类加载进内存, 放在代码区,比main更先调用
-//+ (void)load{
-//    NSLog(@"%s",__func__);
-//}
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //保存滑动返回手势代理
+    self.popGesture = self.interactivePopGestureRecognizer.delegate;
+    // 当是跟控制器,还原代理,如果是非跟控制器,清空代理
+    self.delegate = self;
 }
+
+#pragma mark - UINavigationControllerDelegate
+// 当控制器显示完毕的时候调用
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    if (self.viewControllers[0] == viewController) {
+        // 还原代理,根控制器不能滑动
+        self.interactivePopGestureRecognizer.delegate  = self.popGesture;
+    }else{
+//        清空代理,可以滑动返回
+        self.interactivePopGestureRecognizer.delegate = nil;
+    }
+}
+
+
 
 
 //统一设置返回按钮样式
