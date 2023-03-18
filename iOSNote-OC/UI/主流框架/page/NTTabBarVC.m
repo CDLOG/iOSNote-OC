@@ -24,6 +24,20 @@
     return _items;
 }
 
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    // 移除系统的tabbar的子控件 UITabBarButton
+    for (UIView *view in self.tabBar.subviews) {
+        NSLog(@"%@",view);
+// 逆向思维判断一下当前点控件是不是NTTabBar,如果不是直接移除
+        if (![view isKindOfClass:[NTTabBar class]]) {
+            [view removeFromSuperview];
+        }
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -39,17 +53,30 @@
     
 }
 // 自定义tabBar
+
+/*
+ 
+ 注意点,tabbar的隐藏
+ 
+ 待优化,将这个方法写到父类中,继承就可以自动隐藏tabbar
+ 当控制器push时需要隐藏TabBar,
+ UIViewController *vc = [[UIViewController alloc]init];
+ //隐藏tabbar
+ vc.hidesBottomBarWhenPushed = YES;
+ [self.navigationController pushViewController:vc animated:NO];
+ */
+
 - (void)setupTabBar{
 
 
-    // 1.隐藏系统的tabBar,不玩完全去除,造成ui混乱
-    self.tabBar.alpha = 0.001;
-    // 2.添加自己的tabBar
+
+    // 添加自己的tabBar
     NTTabBar *tabBar = [[NTTabBar alloc] init];
     tabBar.items = self.items;
     
-    [self.view addSubview:tabBar];
-    tabBar.frame = CGRectMake(0, sc_height - TabbarH, sc_width, TabbarH);
+
+    [self.tabBar addSubview:tabBar];
+    tabBar.frame = self.tabBar.bounds;
     tabBar.backgroundColor = [UIColor whiteColor];
     tabBar.delegate = self;
     

@@ -9,7 +9,6 @@
 #import "XMGDealsViewController.h"
 #import "XMGDeal.h"
 #import "XMGDealCell.h"
-
 @interface XMGDealsViewController () <UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 /** 所有的团购数据 */
@@ -134,7 +133,12 @@
     
     return cell;
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIViewController *vc = [[UIViewController alloc]init];
+    vc.title = @"界面";
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:NO];
+}
 #pragma mark - TableView代理方法
 /**
  * 只要实现这个方法，左划cell出现删除按钮的功能就有了
