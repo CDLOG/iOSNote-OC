@@ -23,6 +23,7 @@
 #import "UIView+Tools.h"
 #import "NTTools.h"
 #import "UIView+Size.h"
+#import "UIImage+Image.h"
 //X的适配
 // 导航栏底部
 #define kGetNavAndStatusHeight  self.navigationController.navigationBar.frame.size.height+[[UIApplication sharedApplication] statusBarFrame].size.height

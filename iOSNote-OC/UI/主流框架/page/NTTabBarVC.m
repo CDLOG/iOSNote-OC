@@ -41,7 +41,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.view.backgroundColor = [UIColor whiteColor];
     
     // 1.添加子控制器
     [self setupAllChildViewController];
@@ -135,12 +134,12 @@
     
     // 包装成导航控制器
     // 1.创建导航控制器
-    UINavigationController *nav = [[NTNavigationVC alloc] initWithRootViewController:vc];
+    NTNavigationVC *nav = [[NTNavigationVC alloc] initWithRootViewController:vc];
 
     //单独设置某一个控制器的导航控制器
     if ([vc isKindOfClass:[UIViewController class]]) {
         //竞技场
-        nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        nav = [[NTNavigationVC alloc] initWithRootViewController:vc];
     }
     
     [self addChildViewController:nav];

@@ -53,4 +53,9 @@
     return  image;
 }
 
++ (UIImage *)imageWithRenderOriginalName:(NSString *)name{
+    UIImage *image =  [UIImage imageNamed:name];
+    return [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+}
+
 @end

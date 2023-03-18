@@ -22,4 +22,10 @@
 /// 返回拉升好的图片,常用做背景图片的拉升
 /// - Parameter imageName: 图片名
 +(UIImage *)stretchableImageName:(NSString *)imageName;
+
+
+/// 返回没有渲染的图片
+/// - Parameter name: 图片名
++ (UIImage *)imageWithRenderOriginalName:(NSString *)name;
+
 @end

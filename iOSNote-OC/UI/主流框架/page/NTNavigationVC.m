@@ -24,4 +24,21 @@
     [super viewDidLoad];
 }
 
+
+//统一设置返回按钮样式
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    [super pushViewController:viewController animated:animated];    
+// 当非根控制器设置导航条左侧返回按钮
+    if (self.viewControllers.count > 1) {
+        // 跟控制器
+        // 设置导航条左侧返回按钮
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithRenderOriginalName:@"NavBack"] style:0 target:self action:@selector(back)];
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    
+}
+- (void)back{
+    [self popViewControllerAnimated:YES];
+}
 @end
