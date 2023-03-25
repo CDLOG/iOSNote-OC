@@ -136,8 +136,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UIViewController *vc = [[UIViewController alloc]init];
     vc.title = @"界面";
-    vc.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:vc animated:NO];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark - TableView代理方法
 /**

@@ -76,6 +76,15 @@
 //统一设置返回按钮样式
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    
+    
+    // 当非根控制器隐藏底部tabbar,要放重写父类之前
+    
+    if (self.viewControllers.count != 0) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    
+    
     [super pushViewController:viewController animated:animated];    
 // 当非根控制器设置导航条左侧返回按钮
     if (self.viewControllers.count > 1) {
