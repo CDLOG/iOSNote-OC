@@ -27,15 +27,19 @@
         _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, self.itemContent.bounds.size.width, self.itemContent.bounds.size.height) collectionViewLayout:self.flowLayout];
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
-    //不显示滚动条
-        _collectionView.showsHorizontalScrollIndicator = NO;
-       _collectionView.showsVerticalScrollIndicator = NO;
+    
         _collectionView.backgroundColor = [UIColor colorWithRed:237/255.0 green:237/255.0 blue:237/255.0 alpha:0.8 ];
-        NSLog(@"--%@",_collectionView);
         [self.itemContent addSubview: _collectionView];
-        NSLog(@"--%@",self.itemContent);
-        //注册cell
         
+        //禁止弹簧效果
+        _collectionView.bounces = NO;
+        //不开启分页
+        _collectionView.pagingEnabled = NO;
+        //不显示滚动条
+        _collectionView.showsHorizontalScrollIndicator = NO;
+        _collectionView.showsVerticalScrollIndicator = NO;
+        
+        //注册cell
         [_collectionView registerNib:[UINib nibWithNibName:NTCollectionViewCellID bundle:nil] forCellWithReuseIdentifier:NTCollectionViewCellID];
     }
     _collectionView.frame = CGRectMake(0, 0, self.itemContent.bounds.size.width, self.itemContent.bounds.size.height);
@@ -46,7 +50,7 @@
 - (UICollectionViewFlowLayout *)flowLayout {
     if (!_flowLayout) {
         _flowLayout = [[UICollectionViewFlowLayout alloc]init];
-        //设置单元格大小
+        //设置cell大小
         _flowLayout.itemSize = CGSizeMake(160, 190);
         //最小行间距(默认为10)
         _flowLayout.minimumLineSpacing = 10;

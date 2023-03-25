@@ -44,6 +44,8 @@
 		CA68EA4F29BB3A4500801F82 /* NTCover.m in Sources */ = {isa = PBXBuildFile; fileRef = CA68EA4E29BB3A4500801F82 /* NTCover.m */; };
 		CA68EA5529BB3A8600801F82 /* NTCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA68EA5429BB3A8600801F82 /* NTCoverView.m */; };
 		CA68EA5929BB40B300801F82 /* NTCoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA68EA5829BB40B300801F82 /* NTCoverView.xib */; };
+		CA68EA6429CB616D00801F82 /* NTSetRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA68EA6329CB616D00801F82 /* NTSetRootVC.m */; };
+		CA68EA6829CB621300801F82 /* NTSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CA68EA6729CB621300801F82 /* NTSaveTool.m */; };
 		CA75DB512918A93C0038E172 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75DB502918A93C0038E172 /* AppDelegate.m */; };
 		CA75DB542918A93C0038E172 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75DB532918A93C0038E172 /* SceneDelegate.m */; };
 		CA75DB572918A93C0038E172 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75DB562918A93C0038E172 /* ViewController.m */; };
@@ -188,6 +190,10 @@
 		CA68EA5329BB3A8600801F82 /* NTCoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTCoverView.h; sourceTree = "<group>"; };
 		CA68EA5429BB3A8600801F82 /* NTCoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTCoverView.m; sourceTree = "<group>"; };
 		CA68EA5829BB40B300801F82 /* NTCoverView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTCoverView.xib; sourceTree = "<group>"; };
+		CA68EA6229CB616D00801F82 /* NTSetRootVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTSetRootVC.h; sourceTree = "<group>"; };
+		CA68EA6329CB616D00801F82 /* NTSetRootVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTSetRootVC.m; sourceTree = "<group>"; };
+		CA68EA6629CB621300801F82 /* NTSaveTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTSaveTool.h; sourceTree = "<group>"; };
+		CA68EA6729CB621300801F82 /* NTSaveTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTSaveTool.m; sourceTree = "<group>"; };
 		CA75DB4C2918A93C0038E172 /* iOSNote-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSNote-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA75DB4F2918A93C0038E172 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CA75DB502918A93C0038E172 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -615,6 +621,40 @@
 			path = "蒙版";
 			sourceTree = "<group>";
 		};
+		CA68EA5D29CB37E900801F82 /* 版本更新 */ = {
+			isa = PBXGroup;
+			children = (
+				CA68EA6929CB62B900801F82 /* 当前根控制器 */,
+				CA68EA5E29CB380000801F82 /* 引导页 */,
+			);
+			path = "版本更新";
+			sourceTree = "<group>";
+		};
+		CA68EA5E29CB380000801F82 /* 引导页 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "引导页";
+			sourceTree = "<group>";
+		};
+		CA68EA6529CB61F100801F82 /* 偏好设置 */ = {
+			isa = PBXGroup;
+			children = (
+				CA68EA6629CB621300801F82 /* NTSaveTool.h */,
+				CA68EA6729CB621300801F82 /* NTSaveTool.m */,
+			);
+			path = "偏好设置";
+			sourceTree = "<group>";
+		};
+		CA68EA6929CB62B900801F82 /* 当前根控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				CA68EA6229CB616D00801F82 /* NTSetRootVC.h */,
+				CA68EA6329CB616D00801F82 /* NTSetRootVC.m */,
+			);
+			path = "当前根控制器";
+			sourceTree = "<group>";
+		};
 		CA75DB432918A93C0038E172 = {
 			isa = PBXGroup;
 			children = (
@@ -666,6 +706,7 @@
 		CAC023F72918CC6E00B0A827 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CA68EA5D29CB37E900801F82 /* 版本更新 */,
 				CAD4CF2F29B4D23400B02D72 /* 分类 */,
 				CAD4CF2029B37F9500B02D72 /* 主流框架 */,
 				CAD4CF1A29AB902B00B02D72 /* APP图标和启动图片 */,
@@ -724,6 +765,7 @@
 		CAC89C8E29385B5200ED408E /* 数据存储 */ = {
 			isa = PBXGroup;
 			children = (
+				CA68EA6529CB61F100801F82 /* 偏好设置 */,
 				CAC89C8F29385B6900ED408E /* plist */,
 			);
 			path = "数据存储";
@@ -1310,6 +1352,7 @@
 				CAC023FC2918CD3D00B0A827 /* ViewNoteController.m in Sources */,
 				CAD60C43294088CB006A01D5 /* XMGStatus.m in Sources */,
 				CA68EA4F29BB3A4500801F82 /* NTCover.m in Sources */,
+				CA68EA6829CB621300801F82 /* NTSaveTool.m in Sources */,
 				CAF491CC299A65710052B16B /* NSObject+Extension.m in Sources */,
 				CA08FB8129A848B50004BA81 /* NTQRCodeCreateVC.m in Sources */,
 				CA09E22529924A4500E4942B /* NTOutputStreamVC.m in Sources */,
@@ -1349,6 +1392,7 @@
 				CA68EA4B29B57DE300801F82 /* NTBlockVC.m in Sources */,
 				CAC89C9329385C5300ED408E /* PlistLoadVC.m in Sources */,
 				CAC89C9D29385E8900ED408E /* XcodeVC.m in Sources */,
+				CA68EA6429CB616D00801F82 /* NTSetRootVC.m in Sources */,
 				CA33F7F629AA39D1003BB2FA /* SkinTool.m in Sources */,
 				CAD60CAB298274C5006A01D5 /* NTImageDrawVC.m in Sources */,
 				CAD4CF2B29B496A900B02D72 /* NTTabBar.m in Sources */,
@@ -1533,7 +1577,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "CLJ.iOSNote-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1566,7 +1610,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "CLJ.iOSNote-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
