@@ -48,6 +48,7 @@
 		CA68EA6829CB621300801F82 /* NTSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CA68EA6729CB621300801F82 /* NTSaveTool.m */; };
 		CA68EA7029CF5BCC00801F82 /* NTThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA68EA6F29CF5BCC00801F82 /* NTThreadVC.m */; };
 		CA68EA7429D06ACC00801F82 /* NTNSThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA68EA7329D06ACC00801F82 /* NTNSThreadVC.m */; };
+		CA68EA7829D0716C00801F82 /* NTAFNDownVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA68EA7729D0716C00801F82 /* NTAFNDownVC.m */; };
 		CA75DB512918A93C0038E172 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75DB502918A93C0038E172 /* AppDelegate.m */; };
 		CA75DB542918A93C0038E172 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75DB532918A93C0038E172 /* SceneDelegate.m */; };
 		CA75DB572918A93C0038E172 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75DB562918A93C0038E172 /* ViewController.m */; };
@@ -200,6 +201,8 @@
 		CA68EA6F29CF5BCC00801F82 /* NTThreadVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTThreadVC.m; sourceTree = "<group>"; };
 		CA68EA7229D06ACC00801F82 /* NTNSThreadVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTNSThreadVC.h; sourceTree = "<group>"; };
 		CA68EA7329D06ACC00801F82 /* NTNSThreadVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTNSThreadVC.m; sourceTree = "<group>"; };
+		CA68EA7629D0716C00801F82 /* NTAFNDownVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTAFNDownVC.h; sourceTree = "<group>"; };
+		CA68EA7729D0716C00801F82 /* NTAFNDownVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTAFNDownVC.m; sourceTree = "<group>"; };
 		CA75DB4C2918A93C0038E172 /* iOSNote-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSNote-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA75DB4F2918A93C0038E172 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CA75DB502918A93C0038E172 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -445,6 +448,7 @@
 		CA09E22729944C9300E4942B /* AFN */ = {
 			isa = PBXGroup;
 			children = (
+				CA68EA7529D0714C00801F82 /* 简单文件下载 */,
 				CA09E22E29944E8100E4942B /* 网络状态监测 */,
 				CA09E22829944CA200E4942B /* 简单文件上传 */,
 			);
@@ -679,6 +683,15 @@
 				CA68EA7329D06ACC00801F82 /* NTNSThreadVC.m */,
 			);
 			path = NSThread;
+			sourceTree = "<group>";
+		};
+		CA68EA7529D0714C00801F82 /* 简单文件下载 */ = {
+			isa = PBXGroup;
+			children = (
+				CA68EA7629D0716C00801F82 /* NTAFNDownVC.h */,
+				CA68EA7729D0716C00801F82 /* NTAFNDownVC.m */,
+			);
+			path = "简单文件下载";
 			sourceTree = "<group>";
 		};
 		CA75DB432918A93C0038E172 = {
@@ -1380,6 +1393,7 @@
 				CA09E23929947F9100E4942B /* NTHTMLABCVC.m in Sources */,
 				CA33F7CD29AA3857003BB2FA /* NTChangeSkinVC.m in Sources */,
 				CA75DB512918A93C0038E172 /* AppDelegate.m in Sources */,
+				CA68EA7829D0716C00801F82 /* NTAFNDownVC.m in Sources */,
 				CA75DB622918A93E0038E172 /* main.m in Sources */,
 				CAD4CF2E29B4974A00B02D72 /* NTTabBarButton.m in Sources */,
 				CA08AE482918DC7B00907C6E /* UIView+Tools.m in Sources */,

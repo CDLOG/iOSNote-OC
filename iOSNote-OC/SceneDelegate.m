@@ -32,8 +32,8 @@
     [AppDelegate shareApplication].scene = scene;
 
     
-    //    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]];
-    self.window.rootViewController = [NTSetRootVC chooseWindowRootVC];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]];
+//    self.window.rootViewController = [NTSetRootVC chooseWindowRootVC];
     [self.window makeKeyAndVisible];
 }
 
