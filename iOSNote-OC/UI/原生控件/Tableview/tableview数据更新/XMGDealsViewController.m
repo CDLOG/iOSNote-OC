@@ -41,7 +41,6 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [super viewDidLoad];
-    [self.view setBackgroundColor:[UIColor orangeColor]];
 }
 
 - (IBAction)switchEditing {

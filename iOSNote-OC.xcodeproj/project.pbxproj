@@ -56,6 +56,8 @@
 		CA75DB5C2918A93E0038E172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA75DB5B2918A93E0038E172 /* Assets.xcassets */; };
 		CA75DB5F2918A93E0038E172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA75DB5D2918A93E0038E172 /* LaunchScreen.storyboard */; };
 		CA75DB622918A93E0038E172 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75DB612918A93E0038E172 /* main.m */; };
+		CA92EC0329D6CDFE0077AD9F /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = CA92EC0229D6CDFE0077AD9F /* UIColor+Hex.m */; };
+		CA92EC0A29D875410077AD9F /* UIBarButtonItem+UISet.m in Sources */ = {isa = PBXBuildFile; fileRef = CA92EC0929D875410077AD9F /* UIBarButtonItem+UISet.m */; };
 		CAC023FC2918CD3D00B0A827 /* ViewNoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC023FA2918CD3D00B0A827 /* ViewNoteController.m */; };
 		CAC023FD2918CD3D00B0A827 /* ViewNoteController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC023FB2918CD3D00B0A827 /* ViewNoteController.xib */; };
 		CAC49188299BA178003DFA70 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC49186299BA178003DFA70 /* NSString+Hash.m */; };
@@ -213,6 +215,10 @@
 		CA75DB5E2918A93E0038E172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA75DB602918A93E0038E172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA75DB612918A93E0038E172 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA92EC0129D6CDFE0077AD9F /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		CA92EC0229D6CDFE0077AD9F /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		CA92EC0829D875410077AD9F /* UIBarButtonItem+UISet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+UISet.h"; sourceTree = "<group>"; };
+		CA92EC0929D875410077AD9F /* UIBarButtonItem+UISet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+UISet.m"; sourceTree = "<group>"; };
 		CAC023F92918CD3D00B0A827 /* ViewNoteController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewNoteController.h; sourceTree = "<group>"; };
 		CAC023FA2918CD3D00B0A827 /* ViewNoteController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewNoteController.m; sourceTree = "<group>"; };
 		CAC023FB2918CD3D00B0A827 /* ViewNoteController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewNoteController.xib; sourceTree = "<group>"; };
@@ -736,6 +742,22 @@
 			path = "iOSNote-OC";
 			sourceTree = "<group>";
 		};
+		CA92EC0029D44ACC0077AD9F /* 分页控制器 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "分页控制器";
+			sourceTree = "<group>";
+		};
+		CA92EC0429D874B60077AD9F /* 导航按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				CA92EC0829D875410077AD9F /* UIBarButtonItem+UISet.h */,
+				CA92EC0929D875410077AD9F /* UIBarButtonItem+UISet.m */,
+			);
+			path = "导航按钮";
+			sourceTree = "<group>";
+		};
 		CAC023F72918CC6E00B0A827 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -835,6 +857,7 @@
 		CAC89CA22938DA5E00ED408E /* 自定义控件 */ = {
 			isa = PBXGroup;
 			children = (
+				CA92EC0029D44ACC0077AD9F /* 分页控制器 */,
 				CA68EA4C29BB39F100801F82 /* 蒙版 */,
 				CA33F7C929AA358A003BB2FA /* 换肤 */,
 				CA08FB7C29A848710004BA81 /* 二维码 */,
@@ -1010,6 +1033,7 @@
 		CAD60C7D2973E2AB006A01D5 /* 导航控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				CA92EC0429D874B60077AD9F /* 导航按钮 */,
 				CAD60C7E2973E4AF006A01D5 /* NTNavVC.h */,
 				CAD60C7F2973E4AF006A01D5 /* NTNavVC.m */,
 				CAD60C802973E4AF006A01D5 /* NTNavVC.xib */,
@@ -1183,6 +1207,8 @@
 		CAF491C9299A65480052B16B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CA92EC0129D6CDFE0077AD9F /* UIColor+Hex.h */,
+				CA92EC0229D6CDFE0077AD9F /* UIColor+Hex.m */,
 				CAD60CAD29827845006A01D5 /* UIImage+Image.h */,
 				CAD60CAE29827845006A01D5 /* UIImage+Image.m */,
 				CA08AE462918DC7B00907C6E /* UIView+Tools.h */,
@@ -1363,12 +1389,14 @@
 				CA08FB8129A848B50004BA81 /* NTQRCodeCreateVC.m in Sources */,
 				CA09E22529924A4500E4942B /* NTOutputStreamVC.m in Sources */,
 				CA09E23229944F2500E4942B /* NTReachabilityVC.m in Sources */,
+				CA92EC0329D6CDFE0077AD9F /* UIColor+Hex.m in Sources */,
 				CAD60C7629715B61006A01D5 /* NTUIApplicationVC.m in Sources */,
 				CA33F82129AA41A1003BB2FA /* NTProximitySensorVC.m in Sources */,
 				CA68EA4829B579FB00801F82 /* NTDelegateVC.m in Sources */,
 				CAD60C6E296EB1E9006A01D5 /* XMGProvince.m in Sources */,
 				CAD60C3A29407EFA006A01D5 /* XMGDeal.m in Sources */,
 				CA09E2142990EC6A00E4942B /* NTOneDownFileVC.m in Sources */,
+				CA92EC0A29D875410077AD9F /* UIBarButtonItem+UISet.m in Sources */,
 				CAD60C9F298244D7006A01D5 /* RedView.m in Sources */,
 				CAD60C57294F6474006A01D5 /* XMGDealCell.m in Sources */,
 				CADB038F293C9B7F00DBEDB6 /* XMGPageView.m in Sources */,
@@ -1572,6 +1600,7 @@
 				DEVELOPMENT_TEAM = P2F7HH3P2K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOSNote-OC/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "学习笔记";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "需要蓝牙权限";
 				INFOPLIST_KEY_NSCameraUsageDescription = "需要授权摄像头权限";
 				INFOPLIST_KEY_NSContactsUsageDescription = "需要授权通讯录权限";
@@ -1605,6 +1634,7 @@
 				DEVELOPMENT_TEAM = P2F7HH3P2K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOSNote-OC/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "学习笔记";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "需要蓝牙权限";
 				INFOPLIST_KEY_NSCameraUsageDescription = "需要授权摄像头权限";
 				INFOPLIST_KEY_NSContactsUsageDescription = "需要授权通讯录权限";

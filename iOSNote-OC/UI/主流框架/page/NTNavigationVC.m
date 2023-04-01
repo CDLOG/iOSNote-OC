@@ -21,9 +21,25 @@
     [super viewDidLoad];
     
     [self allScreenMove];
-    
+    [self navigationBarUI];
 }
+//统一设置导航条内容(导航条背景色,标题的大小和颜色)
+-(void)navigationBarUI{
+    
+    //导航条的背景色在没有滑动之前,是透明的,显示的是上一层的颜色
+    //通过图片设置导航条的颜色
+    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    
+    // 设置字体颜色大小
+    NSMutableDictionary *dictM = [NSMutableDictionary dictionary];
 
+    //字体大小
+    dictM[NSFontAttributeName] = [UIFont boldSystemFontOfSize:22];
+    // 字体颜色
+    dictM[NSForegroundColorAttributeName] = [UIColor orangeColor];
+
+    [self.navigationBar setTitleTextAttributes:dictM];
+}
 /// 系统滑动移除控制器的方法(只有滑动左边才行)
 -(void)systemMove{
     //保存滑动返回手势代理
