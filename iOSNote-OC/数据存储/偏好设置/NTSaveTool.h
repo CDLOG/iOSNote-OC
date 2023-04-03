@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NTSaveTool : NSObject
 
-/// 保存数据
+/// 读取数据
 /// - Parameter defaultName: key
 + (nullable id)objectForKey:(NSString *)defaultName;
 

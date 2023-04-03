@@ -13,6 +13,8 @@
 #import "NTCoverView.h"
 #import "NTAFNDownVC.h"
 #import "NTNotificationVC.h"
+#import "NTSaveTool.h"
+#import "NTOddVC.h"
 @interface ViewController ()
 
 @end
@@ -30,9 +32,11 @@
 }
 
 -(void)loadAction{
-    NTNotificationVC *tmpVC = [[NTNotificationVC alloc]init];
+    NTOddVC *tmpVC = [[NTOddVC alloc]init];
     [self.navigationController pushViewController:tmpVC animated:YES];
    
 }
+
+
 
 @end

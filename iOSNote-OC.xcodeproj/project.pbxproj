@@ -122,6 +122,9 @@
 		CADB0390293C9B7F00DBEDB6 /* XMGPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADB038E293C9B7F00DBEDB6 /* XMGPageView.xib */; };
 		CADB0395293DF20400DBEDB6 /* TableViewNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB0393293DF20400DBEDB6 /* TableViewNoteVC.m */; };
 		CADB0396293DF20400DBEDB6 /* TableViewNoteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADB0394293DF20400DBEDB6 /* TableViewNoteVC.xib */; };
+		CAF009F329DAB749002B61F1 /* NTOddVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF009F229DAB749002B61F1 /* NTOddVC.m */; };
+		CAF009F629DABE74002B61F1 /* UIButton+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF009F529DABE74002B61F1 /* UIButton+Tools.m */; };
+		CAF009F929DAC53D002B61F1 /* UIControl+tools.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF009F829DAC53D002B61F1 /* UIControl+tools.m */; };
 		CAF491C429953A370052B16B /* NTWebViewOCAndJSVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF491C229953A370052B16B /* NTWebViewOCAndJSVC.m */; };
 		CAF491C529953A370052B16B /* NTWebViewOCAndJSVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAF491C329953A370052B16B /* NTWebViewOCAndJSVC.xib */; };
 		CAF491C729953D470052B16B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CAF491C629953D470052B16B /* index.html */; };
@@ -320,6 +323,12 @@
 		CADB0392293DF20400DBEDB6 /* TableViewNoteVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewNoteVC.h; sourceTree = "<group>"; };
 		CADB0393293DF20400DBEDB6 /* TableViewNoteVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewNoteVC.m; sourceTree = "<group>"; };
 		CADB0394293DF20400DBEDB6 /* TableViewNoteVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewNoteVC.xib; sourceTree = "<group>"; };
+		CAF009F129DAB749002B61F1 /* NTOddVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTOddVC.h; sourceTree = "<group>"; };
+		CAF009F229DAB749002B61F1 /* NTOddVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTOddVC.m; sourceTree = "<group>"; };
+		CAF009F429DABE74002B61F1 /* UIButton+Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Tools.h"; sourceTree = "<group>"; };
+		CAF009F529DABE74002B61F1 /* UIButton+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Tools.m"; sourceTree = "<group>"; };
+		CAF009F729DAC53C002B61F1 /* UIControl+tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+tools.h"; sourceTree = "<group>"; };
+		CAF009F829DAC53D002B61F1 /* UIControl+tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+tools.m"; sourceTree = "<group>"; };
 		CAF491C129953A370052B16B /* NTWebViewOCAndJSVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTWebViewOCAndJSVC.h; sourceTree = "<group>"; };
 		CAF491C229953A370052B16B /* NTWebViewOCAndJSVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTWebViewOCAndJSVC.m; sourceTree = "<group>"; };
 		CAF491C329953A370052B16B /* NTWebViewOCAndJSVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTWebViewOCAndJSVC.xib; sourceTree = "<group>"; };
@@ -1009,6 +1018,7 @@
 		CAD60C7129715AF9006A01D5 /* 其他 */ = {
 			isa = PBXGroup;
 			children = (
+				CAF009F029DAB6F7002B61F1 /* 零碎知识 */,
 				CA68EA4229B5792D00801F82 /* 通知回调 */,
 				CA33F7C529A8786C003BB2FA /* 工具 */,
 			);
@@ -1176,6 +1186,15 @@
 			path = Tableview;
 			sourceTree = "<group>";
 		};
+		CAF009F029DAB6F7002B61F1 /* 零碎知识 */ = {
+			isa = PBXGroup;
+			children = (
+				CAF009F129DAB749002B61F1 /* NTOddVC.h */,
+				CAF009F229DAB749002B61F1 /* NTOddVC.m */,
+			);
+			path = "零碎知识";
+			sourceTree = "<group>";
+		};
 		CAF491BF299539FC0052B16B /* 基础知识 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1218,6 +1237,10 @@
 				CAD60CAE29827845006A01D5 /* UIImage+Image.m */,
 				CA08AE462918DC7B00907C6E /* UIView+Tools.h */,
 				CA08AE472918DC7B00907C6E /* UIView+Tools.m */,
+				CAF009F429DABE74002B61F1 /* UIButton+Tools.h */,
+				CAF009F529DABE74002B61F1 /* UIButton+Tools.m */,
+				CAF009F729DAC53C002B61F1 /* UIControl+tools.h */,
+				CAF009F829DAC53D002B61F1 /* UIControl+tools.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -1385,6 +1408,7 @@
 				CA75DB572918A93C0038E172 /* ViewController.m in Sources */,
 				CAD60C99297FD354006A01D5 /* NTCollectionViewCell.m in Sources */,
 				CAD4CF0729AA4BCC00B02D72 /* NTAccelerometerVC.m in Sources */,
+				CAF009F929DAC53D002B61F1 /* UIControl+tools.m in Sources */,
 				CAC023FC2918CD3D00B0A827 /* ViewNoteController.m in Sources */,
 				CAD60C43294088CB006A01D5 /* XMGStatus.m in Sources */,
 				CA68EA4F29BB3A4500801F82 /* NTCover.m in Sources */,
@@ -1396,6 +1420,7 @@
 				CA09E23229944F2500E4942B /* NTReachabilityVC.m in Sources */,
 				CA92EC0329D6CDFE0077AD9F /* UIColor+Hex.m in Sources */,
 				CAD60C7629715B61006A01D5 /* NTUIApplicationVC.m in Sources */,
+				CAF009F329DAB749002B61F1 /* NTOddVC.m in Sources */,
 				CA33F82129AA41A1003BB2FA /* NTProximitySensorVC.m in Sources */,
 				CA68EA4829B579FB00801F82 /* NTDelegateVC.m in Sources */,
 				CAD60C6E296EB1E9006A01D5 /* XMGProvince.m in Sources */,
@@ -1428,6 +1453,7 @@
 				CAD60C45294088CB006A01D5 /* XMGStatusCell.m in Sources */,
 				CAC89CA52938DAA000ED408E /* CustomViewClass.m in Sources */,
 				CA33F7BE29A867EA003BB2FA /* NTDispatch.m in Sources */,
+				CAF009F629DABE74002B61F1 /* UIButton+Tools.m in Sources */,
 				CA68EA4B29B57DE300801F82 /* NTBlockVC.m in Sources */,
 				CAC89C9329385C5300ED408E /* PlistLoadVC.m in Sources */,
 				CA68EA7029CF5BCC00801F82 /* NTThreadVC.m in Sources */,

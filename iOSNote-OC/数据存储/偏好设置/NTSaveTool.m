@@ -9,7 +9,7 @@
 
 @implementation NTSaveTool
 
-/// 保存数据
+/// 读取数据
 /// - Parameter defaultName: key
 + (nullable id)objectForKey:(NSString *)defaultName{
     return [[NSUserDefaults standardUserDefaults] objectForKey:defaultName];

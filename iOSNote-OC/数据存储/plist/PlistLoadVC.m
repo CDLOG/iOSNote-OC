@@ -14,14 +14,11 @@
 @implementation PlistLoadVC
 
 // 加载plist数据（比较大）
-// 懒加载：用到时再去加载，而且也只加载一次
 - (NSArray *)shops
 {
     if (_shops == nil) {
         NSString *file = [[NSBundle mainBundle] pathForResource:@"shops" ofType:@"plist"];
         self.shops = [NSArray arrayWithContentsOfFile:file];
-//        _shops = [NSArray arrayWithContentsOfFile:file];
-//        [self setShops:[NSArray arrayWithContentsOfFile:file]];
     }
     return _shops;
 }
