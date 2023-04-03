@@ -125,6 +125,7 @@
 		CAF009F329DAB749002B61F1 /* NTOddVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF009F229DAB749002B61F1 /* NTOddVC.m */; };
 		CAF009F629DABE74002B61F1 /* UIButton+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF009F529DABE74002B61F1 /* UIButton+Tools.m */; };
 		CAF009F929DAC53D002B61F1 /* UIControl+tools.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF009F829DAC53D002B61F1 /* UIControl+tools.m */; };
+		CAF009FD29DAD7FA002B61F1 /* NTTools_Method.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF009FC29DAD7FA002B61F1 /* NTTools_Method.m */; };
 		CAF491C429953A370052B16B /* NTWebViewOCAndJSVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF491C229953A370052B16B /* NTWebViewOCAndJSVC.m */; };
 		CAF491C529953A370052B16B /* NTWebViewOCAndJSVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAF491C329953A370052B16B /* NTWebViewOCAndJSVC.xib */; };
 		CAF491C729953D470052B16B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CAF491C629953D470052B16B /* index.html */; };
@@ -329,6 +330,8 @@
 		CAF009F529DABE74002B61F1 /* UIButton+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Tools.m"; sourceTree = "<group>"; };
 		CAF009F729DAC53C002B61F1 /* UIControl+tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+tools.h"; sourceTree = "<group>"; };
 		CAF009F829DAC53D002B61F1 /* UIControl+tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+tools.m"; sourceTree = "<group>"; };
+		CAF009FB29DAD7FA002B61F1 /* NTTools_Method.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTTools_Method.h; sourceTree = "<group>"; };
+		CAF009FC29DAD7FA002B61F1 /* NTTools_Method.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTTools_Method.m; sourceTree = "<group>"; };
 		CAF491C129953A370052B16B /* NTWebViewOCAndJSVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTWebViewOCAndJSVC.h; sourceTree = "<group>"; };
 		CAF491C229953A370052B16B /* NTWebViewOCAndJSVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTWebViewOCAndJSVC.m; sourceTree = "<group>"; };
 		CAF491C329953A370052B16B /* NTWebViewOCAndJSVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTWebViewOCAndJSVC.xib; sourceTree = "<group>"; };
@@ -542,6 +545,7 @@
 		CA33F7C529A8786C003BB2FA /* 工具 */ = {
 			isa = PBXGroup;
 			children = (
+				CAF009FA29DAD7D1002B61F1 /* 方法工具 */,
 				CA33F7C629A87881003BB2FA /* NTTools.h */,
 				CA33F7C729A87881003BB2FA /* NTTools.m */,
 			);
@@ -1195,6 +1199,15 @@
 			path = "零碎知识";
 			sourceTree = "<group>";
 		};
+		CAF009FA29DAD7D1002B61F1 /* 方法工具 */ = {
+			isa = PBXGroup;
+			children = (
+				CAF009FB29DAD7FA002B61F1 /* NTTools_Method.h */,
+				CAF009FC29DAD7FA002B61F1 /* NTTools_Method.m */,
+			);
+			path = "方法工具";
+			sourceTree = "<group>";
+		};
 		CAF491BF299539FC0052B16B /* 基础知识 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1408,6 +1421,7 @@
 				CA75DB572918A93C0038E172 /* ViewController.m in Sources */,
 				CAD60C99297FD354006A01D5 /* NTCollectionViewCell.m in Sources */,
 				CAD4CF0729AA4BCC00B02D72 /* NTAccelerometerVC.m in Sources */,
+				CAF009FD29DAD7FA002B61F1 /* NTTools_Method.m in Sources */,
 				CAF009F929DAC53D002B61F1 /* UIControl+tools.m in Sources */,
 				CAC023FC2918CD3D00B0A827 /* ViewNoteController.m in Sources */,
 				CAD60C43294088CB006A01D5 /* XMGStatus.m in Sources */,
