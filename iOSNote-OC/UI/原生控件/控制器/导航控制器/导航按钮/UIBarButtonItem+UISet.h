@@ -20,6 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIBarButtonItem *)itemWithimage:(UIImage *)image highImage:(UIImage *)highImage target:(id)target action:(SEL)action;
 
 + (UIBarButtonItem *)itemWithimage:(UIImage *)image selImage:(UIImage *)selImage target:(id)target action:(SEL)action;
+
+
+/// 设置返回按钮
++ (UIBarButtonItem *)backItemWithimage:(UIImage *)image highImage:(UIImage *)highImage target:(id)target action:(SEL)action title:(NSString *)title;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

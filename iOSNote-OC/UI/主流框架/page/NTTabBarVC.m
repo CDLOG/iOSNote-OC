@@ -53,17 +53,6 @@
 }
 // 自定义tabBar
 
-/*
- 
- 注意点,tabbar的隐藏
- 
- 待优化,将这个方法写到父类中,继承就可以自动隐藏tabbar
- 当控制器push时需要隐藏TabBar,
- UIViewController *vc = [[UIViewController alloc]init];
- //隐藏tabbar
- vc.hidesBottomBarWhenPushed = YES;
- [self.navigationController pushViewController:vc animated:NO];
- */
 
 - (void)setupTabBar{
 
