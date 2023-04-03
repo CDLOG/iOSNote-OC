@@ -8,7 +8,6 @@
 #import "NTAppDelegate.h"
 
 @implementation NTAppDelegate
-// 学习代理方法，只需要知道这个什么时候调用，这个方法可以用来干嘛
 
 // 程序启动完成的时候调用
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

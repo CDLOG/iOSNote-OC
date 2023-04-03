@@ -58,6 +58,7 @@
 		CA75DB622918A93E0038E172 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75DB612918A93E0038E172 /* main.m */; };
 		CA92EC0329D6CDFE0077AD9F /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = CA92EC0229D6CDFE0077AD9F /* UIColor+Hex.m */; };
 		CA92EC0A29D875410077AD9F /* UIBarButtonItem+UISet.m in Sources */ = {isa = PBXBuildFile; fileRef = CA92EC0929D875410077AD9F /* UIBarButtonItem+UISet.m */; };
+		CA92EC0F29DAA9040077AD9F /* NTNotificationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA92EC0E29DAA9040077AD9F /* NTNotificationVC.m */; };
 		CAC023FC2918CD3D00B0A827 /* ViewNoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC023FA2918CD3D00B0A827 /* ViewNoteController.m */; };
 		CAC023FD2918CD3D00B0A827 /* ViewNoteController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC023FB2918CD3D00B0A827 /* ViewNoteController.xib */; };
 		CAC49188299BA178003DFA70 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC49186299BA178003DFA70 /* NSString+Hash.m */; };
@@ -65,8 +66,6 @@
 		CAC4918E299BA1E3003DFA70 /* NTUNLineDownVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC4918C299BA1E3003DFA70 /* NTUNLineDownVC.xib */; };
 		CAC89C9329385C5300ED408E /* PlistLoadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC89C9129385C5300ED408E /* PlistLoadVC.m */; };
 		CAC89C9429385C5300ED408E /* PlistLoadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC89C9229385C5300ED408E /* PlistLoadVC.xib */; };
-		CAC89C9D29385E8900ED408E /* XcodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC89C9B29385E8900ED408E /* XcodeVC.m */; };
-		CAC89C9E29385E8900ED408E /* XcodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC89C9C29385E8900ED408E /* XcodeVC.xib */; };
 		CAC89CA1293874B300ED408E /* shops.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAC89CA0293874B300ED408E /* shops.plist */; };
 		CAC89CA52938DAA000ED408E /* CustomViewClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC89CA42938DAA000ED408E /* CustomViewClass.m */; };
 		CAC89CA72938DAB300ED408E /* CustomViewClass.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC89CA62938DAB300ED408E /* CustomViewClass.xib */; };
@@ -219,6 +218,8 @@
 		CA92EC0229D6CDFE0077AD9F /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		CA92EC0829D875410077AD9F /* UIBarButtonItem+UISet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+UISet.h"; sourceTree = "<group>"; };
 		CA92EC0929D875410077AD9F /* UIBarButtonItem+UISet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+UISet.m"; sourceTree = "<group>"; };
+		CA92EC0D29DAA9040077AD9F /* NTNotificationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTNotificationVC.h; sourceTree = "<group>"; };
+		CA92EC0E29DAA9040077AD9F /* NTNotificationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTNotificationVC.m; sourceTree = "<group>"; };
 		CAC023F92918CD3D00B0A827 /* ViewNoteController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewNoteController.h; sourceTree = "<group>"; };
 		CAC023FA2918CD3D00B0A827 /* ViewNoteController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewNoteController.m; sourceTree = "<group>"; };
 		CAC023FB2918CD3D00B0A827 /* ViewNoteController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewNoteController.xib; sourceTree = "<group>"; };
@@ -230,9 +231,6 @@
 		CAC89C9029385C5300ED408E /* PlistLoadVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlistLoadVC.h; sourceTree = "<group>"; };
 		CAC89C9129385C5300ED408E /* PlistLoadVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlistLoadVC.m; sourceTree = "<group>"; };
 		CAC89C9229385C5300ED408E /* PlistLoadVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlistLoadVC.xib; sourceTree = "<group>"; };
-		CAC89C9A29385E8900ED408E /* XcodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XcodeVC.h; sourceTree = "<group>"; };
-		CAC89C9B29385E8900ED408E /* XcodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XcodeVC.m; sourceTree = "<group>"; };
-		CAC89C9C29385E8900ED408E /* XcodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XcodeVC.xib; sourceTree = "<group>"; };
 		CAC89C9F29386FB400ED408E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		CAC89CA0293874B300ED408E /* shops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shops.plist; sourceTree = "<group>"; };
 		CAC89CA32938DAA000ED408E /* CustomViewClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewClass.h; sourceTree = "<group>"; };
@@ -618,6 +616,8 @@
 		CA68EA4529B5794C00801F82 /* 通知 */ = {
 			isa = PBXGroup;
 			children = (
+				CA92EC0D29DAA9040077AD9F /* NTNotificationVC.h */,
+				CA92EC0E29DAA9040077AD9F /* NTNotificationVC.m */,
 			);
 			path = "通知";
 			sourceTree = "<group>";
@@ -637,8 +637,7 @@
 		CA68EA5D29CB37E900801F82 /* 版本更新 */ = {
 			isa = PBXGroup;
 			children = (
-				CA68EA6929CB62B900801F82 /* 当前根控制器 */,
-				CA68EA5E29CB380000801F82 /* 引导页 */,
+				CA68EA6929CB62B900801F82 /* 控制器切换 */,
 			);
 			path = "版本更新";
 			sourceTree = "<group>";
@@ -659,13 +658,13 @@
 			path = "偏好设置";
 			sourceTree = "<group>";
 		};
-		CA68EA6929CB62B900801F82 /* 当前根控制器 */ = {
+		CA68EA6929CB62B900801F82 /* 控制器切换 */ = {
 			isa = PBXGroup;
 			children = (
 				CA68EA6229CB616D00801F82 /* NTSetRootVC.h */,
 				CA68EA6329CB616D00801F82 /* NTSetRootVC.m */,
 			);
-			path = "当前根控制器";
+			path = "控制器切换";
 			sourceTree = "<group>";
 		};
 		CA68EA6A29CF5B6500801F82 /* 线程相关 */ = {
@@ -716,6 +715,8 @@
 		CA75DB4E2918A93C0038E172 /* iOSNote-OC */ = {
 			isa = PBXGroup;
 			children = (
+				CAC023F72918CC6E00B0A827 /* UI */,
+				CAC89C8E29385B5200ED408E /* 数据存储 */,
 				CA33F81C29AA4130003BB2FA /* 硬件 */,
 				CA33F7AA29A85970003BB2FA /* 三方框架 */,
 				CA33F7A929A8544C003BB2FA /* 多线程 */,
@@ -723,9 +724,6 @@
 				CAD60CBC2988F72B006A01D5 /* 网络 */,
 				CAD60CB6298680B9006A01D5 /* 设计模式 */,
 				CAD60C7129715AF9006A01D5 /* 其他 */,
-				CAC89C9929385E5700ED408E /* 工程相关 */,
-				CAC89C8E29385B5200ED408E /* 数据存储 */,
-				CAC023F72918CC6E00B0A827 /* UI */,
 				CA75DB4F2918A93C0038E172 /* AppDelegate.h */,
 				CA75DB502918A93C0038E172 /* AppDelegate.m */,
 				CA75DB522918A93C0038E172 /* SceneDelegate.h */,
@@ -758,18 +756,36 @@
 			path = "导航按钮";
 			sourceTree = "<group>";
 		};
+		CA92EC0B29DA9F020077AD9F /* 程序启动 */ = {
+			isa = PBXGroup;
+			children = (
+				CAD4CF1A29AB902B00B02D72 /* APP图标和启动图片 */,
+				CA92EC0C29DAA0010077AD9F /* 广告页 */,
+				CA68EA5D29CB37E900801F82 /* 版本更新 */,
+				CA68EA5E29CB380000801F82 /* 引导页 */,
+				CAD60C7229715B0B006A01D5 /* UIApplication */,
+			);
+			path = "程序启动";
+			sourceTree = "<group>";
+		};
+		CA92EC0C29DAA0010077AD9F /* 广告页 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "广告页";
+			sourceTree = "<group>";
+		};
 		CAC023F72918CC6E00B0A827 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				CA68EA5D29CB37E900801F82 /* 版本更新 */,
-				CAD4CF2F29B4D23400B02D72 /* 分类 */,
+				CA92EC0B29DA9F020077AD9F /* 程序启动 */,
 				CAD4CF2029B37F9500B02D72 /* 主流框架 */,
-				CAD4CF1A29AB902B00B02D72 /* APP图标和启动图片 */,
-				CAD60CA62982747B006A01D5 /* 上下文绘制 */,
-				CAD60C9B29824499006A01D5 /* 事件处理 */,
-				CAC89CA22938DA5E00ED408E /* 自定义控件 */,
 				CAC89C9529385C8C00ED408E /* Tools */,
 				CAC023F82918CC8800B0A827 /* 原生控件 */,
+				CAC89CA22938DA5E00ED408E /* 自定义控件 */,
+				CAD4CF2F29B4D23400B02D72 /* 分类 */,
+				CAD60CA62982747B006A01D5 /* 上下文绘制 */,
+				CAD60C9B29824499006A01D5 /* 事件处理 */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -842,16 +858,6 @@
 			children = (
 			);
 			path = Tools;
-			sourceTree = "<group>";
-		};
-		CAC89C9929385E5700ED408E /* 工程相关 */ = {
-			isa = PBXGroup;
-			children = (
-				CAC89C9A29385E8900ED408E /* XcodeVC.h */,
-				CAC89C9B29385E8900ED408E /* XcodeVC.m */,
-				CAC89C9C29385E8900ED408E /* XcodeVC.xib */,
-			);
-			path = "工程相关";
 			sourceTree = "<group>";
 		};
 		CAC89CA22938DA5E00ED408E /* 自定义控件 */ = {
@@ -1005,7 +1011,6 @@
 			children = (
 				CA68EA4229B5792D00801F82 /* 通知回调 */,
 				CA33F7C529A8786C003BB2FA /* 工具 */,
-				CAD60C7229715B0B006A01D5 /* UIApplication */,
 			);
 			path = "其他";
 			sourceTree = "<group>";
@@ -1298,7 +1303,6 @@
 				CAC4918E299BA1E3003DFA70 /* NTUNLineDownVC.xib in Resources */,
 				CAD60C70296EB1F9006A01D5 /* provinces.plist in Resources */,
 				CA09E22629924A4500E4942B /* NTOutputStreamVC.xib in Resources */,
-				CAC89C9E29385E8900ED408E /* XcodeVC.xib in Resources */,
 				CAD60CB52984F571006A01D5 /* NTClipImageVC.xib in Resources */,
 				CA33F7B029A85983003BB2FA /* README.md in Resources */,
 				CAC89C9429385C5300ED408E /* PlistLoadVC.xib in Resources */,
@@ -1385,6 +1389,7 @@
 				CAD60C43294088CB006A01D5 /* XMGStatus.m in Sources */,
 				CA68EA4F29BB3A4500801F82 /* NTCover.m in Sources */,
 				CA68EA6829CB621300801F82 /* NTSaveTool.m in Sources */,
+				CA92EC0F29DAA9040077AD9F /* NTNotificationVC.m in Sources */,
 				CAF491CC299A65710052B16B /* NSObject+Extension.m in Sources */,
 				CA08FB8129A848B50004BA81 /* NTQRCodeCreateVC.m in Sources */,
 				CA09E22529924A4500E4942B /* NTOutputStreamVC.m in Sources */,
@@ -1425,7 +1430,6 @@
 				CA33F7BE29A867EA003BB2FA /* NTDispatch.m in Sources */,
 				CA68EA4B29B57DE300801F82 /* NTBlockVC.m in Sources */,
 				CAC89C9329385C5300ED408E /* PlistLoadVC.m in Sources */,
-				CAC89C9D29385E8900ED408E /* XcodeVC.m in Sources */,
 				CA68EA7029CF5BCC00801F82 /* NTThreadVC.m in Sources */,
 				CA68EA6429CB616D00801F82 /* NTSetRootVC.m in Sources */,
 				CA33F7F629AA39D1003BB2FA /* SkinTool.m in Sources */,

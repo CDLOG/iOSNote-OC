@@ -27,7 +27,7 @@
     }
     else {
         self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-        self.window.backgroundColor = [UIColor grayColor];
+        self.window.backgroundColor = [UIColor whiteColor];
         //加载的控制器判断,是否需要更新
         self.window.rootViewController = [NTSetRootVC chooseWindowRootVC];
     }

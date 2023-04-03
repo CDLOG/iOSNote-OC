@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NTSetRootVC : NSObject
 
-/// App启动的控制器判断(引导页和主界面)
+/// App启动的控制器判断(版本更新与主界面选择)
 + (UIViewController *)chooseWindowRootVC;
 @end
 
