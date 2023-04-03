@@ -7,7 +7,6 @@
 
 #import "ViewController.h"
 #import "ViewNoteController.h"
-#import "XcodeVC.h"
 #import "NTDelegateVC.h"
 #import "NTBlockVC.h"
 #import "NTCover.h"
