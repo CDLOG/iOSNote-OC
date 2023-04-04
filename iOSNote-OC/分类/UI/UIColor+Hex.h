@@ -17,4 +17,16 @@
 //color:支持@“#123456”、 @“0X123456”、 @“123456”三种格式
 + (UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alpha;
 
+/// 返回渐变图层
+/*
+ 示例:
+ UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+ NSArray *colors = @[(id)[UIColor redColor].CGColor, (id)[UIColor blueColor].CGColor];
+ CGPoint startPoint = CGPointMake(0, 0);
+ CGPoint endPoint = CGPointMake(1, 1);
+ CAGradientLayer *gradientLayer = [self gradientLayerWithFrame:view.bounds colors:colors startPoint:startPoint endPoint:endPoint];
+ [view.layer addSublayer:gradientLayer];
+ */
+- (CAGradientLayer *)gradientLayerWithFrame:(CGRect)frame colors:(NSArray *)colors startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint;
+
 @end

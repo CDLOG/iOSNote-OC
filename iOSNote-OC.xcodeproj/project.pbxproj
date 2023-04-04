@@ -130,6 +130,7 @@
 		CAF00A0529DAE7EE002B61F1 /* NTtextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF00A0329DAE7EE002B61F1 /* NTtextVC.m */; };
 		CAF00A0629DAE7EE002B61F1 /* NTtextVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAF00A0429DAE7EE002B61F1 /* NTtextVC.xib */; };
 		CAF00A0A29DC25D9002B61F1 /* DataTools.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF00A0929DC25D9002B61F1 /* DataTools.m */; };
+		CAF00A0E29DC350E002B61F1 /* NTDispatchTools.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF00A0D29DC350E002B61F1 /* NTDispatchTools.m */; };
 		CAF491C429953A370052B16B /* NTWebViewOCAndJSVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF491C229953A370052B16B /* NTWebViewOCAndJSVC.m */; };
 		CAF491C529953A370052B16B /* NTWebViewOCAndJSVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAF491C329953A370052B16B /* NTWebViewOCAndJSVC.xib */; };
 		CAF491C729953D470052B16B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CAF491C629953D470052B16B /* index.html */; };
@@ -343,6 +344,8 @@
 		CAF00A0429DAE7EE002B61F1 /* NTtextVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTtextVC.xib; sourceTree = "<group>"; };
 		CAF00A0829DC25D9002B61F1 /* DataTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataTools.h; sourceTree = "<group>"; };
 		CAF00A0929DC25D9002B61F1 /* DataTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataTools.m; sourceTree = "<group>"; };
+		CAF00A0C29DC350E002B61F1 /* NTDispatchTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTDispatchTools.h; sourceTree = "<group>"; };
+		CAF00A0D29DC350E002B61F1 /* NTDispatchTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTDispatchTools.m; sourceTree = "<group>"; };
 		CAF491C129953A370052B16B /* NTWebViewOCAndJSVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTWebViewOCAndJSVC.h; sourceTree = "<group>"; };
 		CAF491C229953A370052B16B /* NTWebViewOCAndJSVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTWebViewOCAndJSVC.m; sourceTree = "<group>"; };
 		CAF491C329953A370052B16B /* NTWebViewOCAndJSVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTWebViewOCAndJSVC.xib; sourceTree = "<group>"; };
@@ -521,6 +524,8 @@
 				CA68EA6A29CF5B6500801F82 /* 线程相关 */,
 				CA33F7BC29A867EA003BB2FA /* NTDispatch.h */,
 				CA33F7BD29A867EA003BB2FA /* NTDispatch.m */,
+				CAF00A0C29DC350E002B61F1 /* NTDispatchTools.h */,
+				CAF00A0D29DC350E002B61F1 /* NTDispatchTools.m */,
 			);
 			path = "多线程";
 			sourceTree = "<group>";
@@ -1534,6 +1539,7 @@
 				CAF491C429953A370052B16B /* NTWebViewOCAndJSVC.m in Sources */,
 				CAD4CF2829B4921C00B02D72 /* NTNavigationVC.m in Sources */,
 				CAD4CF1229AA50C500B02D72 /* NTPedometerVC.m in Sources */,
+				CAF00A0E29DC350E002B61F1 /* NTDispatchTools.m in Sources */,
 				CAC49188299BA178003DFA70 /* NSString+Hash.m in Sources */,
 				CA75DB542918A93C0038E172 /* SceneDelegate.m in Sources */,
 				CAD60C6A296EB119006A01D5 /* CLJDatePickAndCityPickVC.m in Sources */,

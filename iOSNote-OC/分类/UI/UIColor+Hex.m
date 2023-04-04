@@ -62,4 +62,14 @@
     return [self colorWithHexString:color alpha:1.0f];
 }
 
+/// 返回渐变图层
+- (CAGradientLayer *)gradientLayerWithFrame:(CGRect)frame colors:(NSArray *)colors startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint {
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer.frame = frame;
+    gradientLayer.colors = colors;
+    gradientLayer.startPoint = startPoint;
+    gradientLayer.endPoint = endPoint;
+    return gradientLayer;
+}
+
 @end
