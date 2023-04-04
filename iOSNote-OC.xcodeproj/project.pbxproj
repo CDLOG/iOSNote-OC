@@ -888,13 +888,11 @@
 		CAC89CA22938DA5E00ED408E /* 自定义控件 */ = {
 			isa = PBXGroup;
 			children = (
+				CAF00A0B29DC2D20002B61F1 /* 自定义xib */,
 				CA92EC0029D44ACC0077AD9F /* 分页控制器 */,
 				CA68EA4C29BB39F100801F82 /* 蒙版 */,
 				CA33F7C929AA358A003BB2FA /* 换肤 */,
 				CA08FB7C29A848710004BA81 /* 二维码 */,
-				CAC89CA32938DAA000ED408E /* CustomViewClass.h */,
-				CAC89CA42938DAA000ED408E /* CustomViewClass.m */,
-				CAC89CA62938DAB300ED408E /* CustomViewClass.xib */,
 			);
 			path = "自定义控件";
 			sourceTree = "<group>";
@@ -1237,6 +1235,16 @@
 				CAF00A0929DC25D9002B61F1 /* DataTools.m */,
 			);
 			path = "数据处理";
+			sourceTree = "<group>";
+		};
+		CAF00A0B29DC2D20002B61F1 /* 自定义xib */ = {
+			isa = PBXGroup;
+			children = (
+				CAC89CA32938DAA000ED408E /* CustomViewClass.h */,
+				CAC89CA42938DAA000ED408E /* CustomViewClass.m */,
+				CAC89CA62938DAB300ED408E /* CustomViewClass.xib */,
+			);
+			path = "自定义xib";
 			sourceTree = "<group>";
 		};
 		CAF491BF299539FC0052B16B /* 基础知识 */ = {
