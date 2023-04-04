@@ -34,7 +34,11 @@
     
 
 }
-
+//打电话
+-(void)call{
+    NSString * number = [NSString stringWithFormat:@"tel://%@",@"18328035560"];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:number]];
+}
 
 
 /// 隐藏状态栏

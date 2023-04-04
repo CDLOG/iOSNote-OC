@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NTTools_Method : NSObject
 /**
- * 限制指定函数的执行频率，通过delay参数控制时间间隔,先延时,后执行
+ * 限制指定函数的执行频率，避免重复执行,通过delay参数控制时间间隔,先延时,后执行
  * @param delay 时间间隔
  * @param target 目标对象
  * @param selector 目标方法

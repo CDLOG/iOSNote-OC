@@ -9,6 +9,7 @@
 #import "UIButton+Tools.h"
 #import "NSObject+Extension.h"
 #import "NTTools_Method.h"
+#import "NSString+Tools.h"
 @interface NTOddVC ()
 @end
 
@@ -20,10 +21,18 @@
     UIButton *btn= [UIButton addButtonWithUIview:self.view Frame:CGRectMake(100, 100, 80, 40) Title:@"点击"];
     [btn addClickLimitWithInterval:3];
     [btn addTarget:self action:@selector(repetitionClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    
 }
 
+
+
+
 -(void)repetitionClick{
-    NSLog(@"点击了");
+    
+    NSString * number = [NSString stringWithFormat:@"tel://%@",@"18328035560"];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:number]];
 }
 
 
