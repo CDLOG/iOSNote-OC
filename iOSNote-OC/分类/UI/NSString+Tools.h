@@ -20,6 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// - Parameter boolValue: 布尔值
 +(NSString *)boolPrint:(BOOL)boolValue;
 
+
+
+/// 根据传入的字符串、指定区间、字体、颜色和字体大小，返回一段富文本
+//示例:self.testLable.attributedText = [NSString attributedStringWithString:self.testLable.text range:NSMakeRange(1, 2) font:[UIFont fontWithName:@"Helvetica-Bold" size:20] color:[UIColor redColor] fontSize:13];
++ (NSAttributedString *)attributedStringWithString:(NSString *)string range:(NSRange)range font:(UIFont *)font color:(UIColor *)color fontSize:(CGFloat)fontSize;
+
 @end
 
 NS_ASSUME_NONNULL_END

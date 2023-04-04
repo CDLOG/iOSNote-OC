@@ -7,6 +7,7 @@
 #define NTVersion @"version"
 #import "NTSetRootVC.h"
 #import "NTTabBarVC.h"
+#import "AppDelegate.h"
 @implementation NTSetRootVC
 /// App启动的控制器判断(引导页和主界面)
 + (UIViewController *)chooseWindowRootVC{
@@ -31,9 +32,18 @@
     }else{
         // 进入主框架
         UITabBarController *tabBarVc = [[NTTabBarVC alloc] init];
+        [AppDelegate shareApplication].tabBarVC = tabBarVc;
         rootVc = tabBarVc;
     }
     
     return rootVc;
 }
+
++(void)pushPageFromCurrentPage:(UIViewController *)page{
+    if([[AppDelegate shareApplication].tabBarVC isKindOfClass:[UITabBarController class]]){
+        [(UINavigationController *)[AppDelegate shareApplication].tabBarVC.selectedViewController pushViewController:page animated:YES];
+    }
+    
+}
+
 @end

@@ -23,4 +23,19 @@
     return boolValue?@"YES":@"NO";
 }
 
+
++ (NSAttributedString *)attributedStringWithString:(NSString *)string range:(NSRange)range font:(UIFont *)font color:(UIColor *)color fontSize:(CGFloat)fontSize {
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:string];
+    
+    if (NSMaxRange(range) > string.length) {
+        range = NSMakeRange(0, string.length);
+    }
+    
+    UIFontDescriptor *fontDescriptor = font.fontDescriptor;
+    UIFontDescriptor *newFontDescriptor = [fontDescriptor fontDescriptorWithSize:fontSize];
+    UIFont *newFont = [UIFont fontWithDescriptor:newFontDescriptor size:0];
+    [attributedString addAttributes:@{ NSFontAttributeName: newFont, NSForegroundColorAttributeName: color } range:range];
+
+    return attributedString;
+}
 @end

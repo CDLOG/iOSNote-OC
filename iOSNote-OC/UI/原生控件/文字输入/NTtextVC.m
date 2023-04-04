@@ -6,9 +6,12 @@
 //
 
 #import "NTtextVC.h"
-
+#import "NSString+Tools.h"
+#import "NTSetRootVC.h"
 @interface NTtextVC ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *myTextField;
+@property (weak, nonatomic) IBOutlet UITextField *pwdText;
+@property (weak, nonatomic) IBOutlet UILabel *testLable;
 
 @end
 
@@ -17,11 +20,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.myTextField.delegate = self;
+    self.pwdText.delegate = self;
     // Do any additional setup after loading the view from its nib.
 }
 #pragma mark - 6位数验证码输入
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
+    
+    if(textField != self.myTextField){
+        return YES;
+    }
+    
 //验证码的位数
     NSInteger count = 6;
 //    得到输入的字符串
@@ -59,4 +68,35 @@
     return res;
 }
 
+#pragma mark - 密码明暗文切换
+
+- (IBAction)changgeAction:(UIButton *)sender {
+    
+    self.pwdText.enabled = NO;
+    self.pwdText.secureTextEntry = sender.selected;
+    sender.selected = !sender.selected;
+    self.pwdText.enabled = YES;
+    [self.pwdText becomeFirstResponder];
+    
+}
+
+- (IBAction)testAction:(id)sender {
+    
+    
+    [self setLineSpace:20 withText:@"大声道sad阿萨德阿萨德按时按时按时按时按时的撒旦撒旦adsad按时"inLabel:self.testLable];
+}
+#pragma mark - 指定控件文字的行间距
+-(void)setLineSpace:(CGFloat)lineSpace withText:(NSString *)text inLabel:(UILabel *)label{
+    if (!text || !label) {
+        return;
+    }
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.lineSpacing = lineSpace;  //设置行间距
+    paragraphStyle.lineBreakMode = label.lineBreakMode;
+    paragraphStyle.alignment = label.textAlignment;
+    
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text];
+    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [text length])];
+    label.attributedText = attributedString;
+}
 @end

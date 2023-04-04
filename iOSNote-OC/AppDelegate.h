@@ -10,6 +10,7 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (strong, nonatomic) UIWindow * window;
 @property (strong, nonatomic) UIScene * scene;
+@property (strong, nonatomic)  UITabBarController* tabBarVC;
 + (AppDelegate *)shareApplication;
 @end
 
