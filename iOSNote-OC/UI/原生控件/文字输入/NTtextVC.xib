@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NTtextVC">
             <connections>
+                <outlet property="baseview" destination="udi-LP-p61" id="iMx-Ib-ymu"/>
                 <outlet property="myTextField" destination="eC7-hU-Df7" id="cB6-N9-D7t"/>
                 <outlet property="pwdText" destination="LjP-Bd-Vaj" id="vCy-7x-IhU"/>
                 <outlet property="testLable" destination="Xj4-kQ-XZh" id="UTS-LF-OrX"/>
@@ -68,6 +69,13 @@
                         <action selector="testAction:" destination="-1" eventType="touchUpInside" id="2x7-cU-rw3"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udi-LP-p61">
+                    <rect key="frame" x="20" y="346.33333333333331" width="353" height="199.99999999999994"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Q2N-4J-Qvj"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -81,7 +89,9 @@
                 <constraint firstItem="n1N-x7-HTY" firstAttribute="top" secondItem="Xj4-kQ-XZh" secondAttribute="bottom" constant="20" id="NPa-9n-faY"/>
                 <constraint firstItem="yIE-FG-oWq" firstAttribute="top" secondItem="MXz-zu-KdJ" secondAttribute="bottom" constant="30" id="PcX-Op-feu"/>
                 <constraint firstItem="Xj4-kQ-XZh" firstAttribute="trailing" secondItem="dMM-fp-Vkb" secondAttribute="trailing" id="PeX-mb-9aq"/>
+                <constraint firstItem="udi-LP-p61" firstAttribute="top" secondItem="n1N-x7-HTY" secondAttribute="bottom" constant="20" id="QP1-Kh-dIE"/>
                 <constraint firstItem="LjP-Bd-Vaj" firstAttribute="leading" secondItem="yIE-FG-oWq" secondAttribute="trailing" constant="20" id="Rbi-e7-AOr"/>
+                <constraint firstItem="udi-LP-p61" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="X6t-rv-FfG"/>
                 <constraint firstItem="Xj4-kQ-XZh" firstAttribute="top" secondItem="yIE-FG-oWq" secondAttribute="bottom" constant="20" id="ftu-ak-3QY"/>
                 <constraint firstItem="LjP-Bd-Vaj" firstAttribute="centerY" secondItem="yIE-FG-oWq" secondAttribute="centerY" id="hYh-Mw-OvZ"/>
                 <constraint firstItem="eC7-hU-Df7" firstAttribute="leading" secondItem="MXz-zu-KdJ" secondAttribute="trailing" constant="20" id="rQi-6G-wED"/>
@@ -89,8 +99,9 @@
                 <constraint firstItem="dMM-fp-Vkb" firstAttribute="centerY" secondItem="LjP-Bd-Vaj" secondAttribute="centerY" id="sXF-te-hvk"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="dMM-fp-Vkb" secondAttribute="trailing" constant="30" id="u1X-qK-HxB"/>
                 <constraint firstItem="MXz-zu-KdJ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="38" id="xVU-7a-9TP"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="udi-LP-p61" secondAttribute="trailing" constant="20" id="zt5-aS-46D"/>
             </constraints>
-            <point key="canvasLocation" x="138" y="21"/>
+            <point key="canvasLocation" x="136.64122137404578" y="20.422535211267608"/>
         </view>
     </objects>
     <resources>

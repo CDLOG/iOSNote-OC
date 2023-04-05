@@ -256,7 +256,23 @@
     NSLog(@"取消选中deselectRowAtIndexPath - %zd", indexPath.row);
 }
 
+#pragma mark - 左滑显示多个按钮
 
-
-
+- (UISwipeActionsConfiguration *)tableView:(UITableView *)tableView trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UIContextualAction *deleteAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleDestructive title:@"Delete" handler:^(UIContextualAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL)) {
+        // 处理删除操作
+        completionHandler(YES);
+    }];
+    deleteAction.backgroundColor = [UIColor redColor];
+    
+    UIContextualAction *moreAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleNormal title:@"More" handler:^(UIContextualAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL)) {
+        // 处理更多操作
+        completionHandler(YES);
+    }];
+    moreAction.backgroundColor = [UIColor grayColor];
+    
+    UISwipeActionsConfiguration *config = [UISwipeActionsConfiguration configurationWithActions:@[deleteAction, moreAction]];
+    config.performsFirstActionWithFullSwipe = NO; // 是否需要完全滑动才能触发第一个动作
+    return config;
+}
 @end

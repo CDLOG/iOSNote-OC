@@ -131,6 +131,11 @@
 		CAF00A0629DAE7EE002B61F1 /* NTtextVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAF00A0429DAE7EE002B61F1 /* NTtextVC.xib */; };
 		CAF00A0A29DC25D9002B61F1 /* DataTools.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF00A0929DC25D9002B61F1 /* DataTools.m */; };
 		CAF00A0E29DC350E002B61F1 /* NTDispatchTools.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF00A0D29DC350E002B61F1 /* NTDispatchTools.m */; };
+		CAF00A1229DD2DAF002B61F1 /* NTXcodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF00A1129DD2DAF002B61F1 /* NTXcodeVC.m */; };
+		CAF00A1929DD2FA7002B61F1 /* NTSDWebImageBUG.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF00A1829DD2FA7002B61F1 /* NTSDWebImageBUG.m */; };
+		CAF00A1C29DD30C3002B61F1 /* NTUIbug.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF00A1B29DD30C3002B61F1 /* NTUIbug.m */; };
+		CAF00A2129DD340E002B61F1 /* NTSDWebimageUseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF00A1F29DD340E002B61F1 /* NTSDWebimageUseVC.m */; };
+		CAF00A2229DD340E002B61F1 /* NTSDWebimageUseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAF00A2029DD340E002B61F1 /* NTSDWebimageUseVC.xib */; };
 		CAF491C429953A370052B16B /* NTWebViewOCAndJSVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF491C229953A370052B16B /* NTWebViewOCAndJSVC.m */; };
 		CAF491C529953A370052B16B /* NTWebViewOCAndJSVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAF491C329953A370052B16B /* NTWebViewOCAndJSVC.xib */; };
 		CAF491C729953D470052B16B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CAF491C629953D470052B16B /* index.html */; };
@@ -346,6 +351,15 @@
 		CAF00A0929DC25D9002B61F1 /* DataTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataTools.m; sourceTree = "<group>"; };
 		CAF00A0C29DC350E002B61F1 /* NTDispatchTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTDispatchTools.h; sourceTree = "<group>"; };
 		CAF00A0D29DC350E002B61F1 /* NTDispatchTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTDispatchTools.m; sourceTree = "<group>"; };
+		CAF00A1029DD2DAF002B61F1 /* NTXcodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTXcodeVC.h; sourceTree = "<group>"; };
+		CAF00A1129DD2DAF002B61F1 /* NTXcodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTXcodeVC.m; sourceTree = "<group>"; };
+		CAF00A1729DD2FA7002B61F1 /* NTSDWebImageBUG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTSDWebImageBUG.h; sourceTree = "<group>"; };
+		CAF00A1829DD2FA7002B61F1 /* NTSDWebImageBUG.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTSDWebImageBUG.m; sourceTree = "<group>"; };
+		CAF00A1A29DD30C3002B61F1 /* NTUIbug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTUIbug.h; sourceTree = "<group>"; };
+		CAF00A1B29DD30C3002B61F1 /* NTUIbug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTUIbug.m; sourceTree = "<group>"; };
+		CAF00A1E29DD340E002B61F1 /* NTSDWebimageUseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTSDWebimageUseVC.h; sourceTree = "<group>"; };
+		CAF00A1F29DD340E002B61F1 /* NTSDWebimageUseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTSDWebimageUseVC.m; sourceTree = "<group>"; };
+		CAF00A2029DD340E002B61F1 /* NTSDWebimageUseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTSDWebimageUseVC.xib; sourceTree = "<group>"; };
 		CAF491C129953A370052B16B /* NTWebViewOCAndJSVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTWebViewOCAndJSVC.h; sourceTree = "<group>"; };
 		CAF491C229953A370052B16B /* NTWebViewOCAndJSVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTWebViewOCAndJSVC.m; sourceTree = "<group>"; };
 		CAF491C329953A370052B16B /* NTWebViewOCAndJSVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTWebViewOCAndJSVC.xib; sourceTree = "<group>"; };
@@ -533,6 +547,7 @@
 		CA33F7AA29A85970003BB2FA /* 三方框架 */ = {
 			isa = PBXGroup;
 			children = (
+				CAF00A1D29DD33E6002B61F1 /* SDWebimage */,
 				CA33F7AB29A85983003BB2FA /* 设备型号 */,
 			);
 			path = "三方框架";
@@ -748,11 +763,12 @@
 				CAC89C8E29385B5200ED408E /* 数据存储 */,
 				CA33F81C29AA4130003BB2FA /* 硬件 */,
 				CA33F7AA29A85970003BB2FA /* 三方框架 */,
+				CAD60CBC2988F72B006A01D5 /* 网络 */,
 				CA33F7A929A8544C003BB2FA /* 多线程 */,
 				CAF491C8299A651C0052B16B /* 分类 */,
-				CAD60CBC2988F72B006A01D5 /* 网络 */,
 				CAD60CB6298680B9006A01D5 /* 设计模式 */,
 				CAD60C7129715AF9006A01D5 /* 其他 */,
+				CAF00A1329DD2F60002B61F1 /* 常见bug */,
 				CA75DB4F2918A93C0038E172 /* AppDelegate.h */,
 				CA75DB502918A93C0038E172 /* AppDelegate.m */,
 				CA75DB522918A93C0038E172 /* SceneDelegate.h */,
@@ -1040,6 +1056,7 @@
 				CAF009F029DAB6F7002B61F1 /* 零碎知识 */,
 				CA68EA4229B5792D00801F82 /* 通知回调 */,
 				CA33F7C529A8786C003BB2FA /* 工具 */,
+				CAF00A0F29DD2D8B002B61F1 /* Xcode */,
 			);
 			path = "其他";
 			sourceTree = "<group>";
@@ -1252,6 +1269,60 @@
 			path = "自定义xib";
 			sourceTree = "<group>";
 		};
+		CAF00A0F29DD2D8B002B61F1 /* Xcode */ = {
+			isa = PBXGroup;
+			children = (
+				CAF00A1029DD2DAF002B61F1 /* NTXcodeVC.h */,
+				CAF00A1129DD2DAF002B61F1 /* NTXcodeVC.m */,
+			);
+			path = Xcode;
+			sourceTree = "<group>";
+		};
+		CAF00A1329DD2F60002B61F1 /* 常见bug */ = {
+			isa = PBXGroup;
+			children = (
+				CAF00A1529DD2F78002B61F1 /* UI */,
+				CAF00A1429DD2F6F002B61F1 /* 版本兼容 */,
+			);
+			path = "常见bug";
+			sourceTree = "<group>";
+		};
+		CAF00A1429DD2F6F002B61F1 /* 版本兼容 */ = {
+			isa = PBXGroup;
+			children = (
+				CAF00A1629DD2F89002B61F1 /* SDWebImage */,
+			);
+			path = "版本兼容";
+			sourceTree = "<group>";
+		};
+		CAF00A1529DD2F78002B61F1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CAF00A1A29DD30C3002B61F1 /* NTUIbug.h */,
+				CAF00A1B29DD30C3002B61F1 /* NTUIbug.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CAF00A1629DD2F89002B61F1 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				CAF00A1729DD2FA7002B61F1 /* NTSDWebImageBUG.h */,
+				CAF00A1829DD2FA7002B61F1 /* NTSDWebImageBUG.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		CAF00A1D29DD33E6002B61F1 /* SDWebimage */ = {
+			isa = PBXGroup;
+			children = (
+				CAF00A1E29DD340E002B61F1 /* NTSDWebimageUseVC.h */,
+				CAF00A1F29DD340E002B61F1 /* NTSDWebimageUseVC.m */,
+				CAF00A2029DD340E002B61F1 /* NTSDWebimageUseVC.xib */,
+			);
+			path = SDWebimage;
+			sourceTree = "<group>";
+		};
 		CAF491BF299539FC0052B16B /* 基础知识 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1387,6 +1458,7 @@
 				CAF00A0629DAE7EE002B61F1 /* NTtextVC.xib in Resources */,
 				CAD60C70296EB1F9006A01D5 /* provinces.plist in Resources */,
 				CA09E22629924A4500E4942B /* NTOutputStreamVC.xib in Resources */,
+				CAF00A2229DD340E002B61F1 /* NTSDWebimageUseVC.xib in Resources */,
 				CAD60CB52984F571006A01D5 /* NTClipImageVC.xib in Resources */,
 				CA33F7B029A85983003BB2FA /* README.md in Resources */,
 				CAC89C9429385C5300ED408E /* PlistLoadVC.xib in Resources */,
@@ -1477,6 +1549,7 @@
 				CA68EA6829CB621300801F82 /* NTSaveTool.m in Sources */,
 				CA92EC0F29DAA9040077AD9F /* NTNotificationVC.m in Sources */,
 				CAF491CC299A65710052B16B /* NSObject+Extension.m in Sources */,
+				CAF00A1929DD2FA7002B61F1 /* NTSDWebImageBUG.m in Sources */,
 				CA08FB8129A848B50004BA81 /* NTQRCodeCreateVC.m in Sources */,
 				CA09E22529924A4500E4942B /* NTOutputStreamVC.m in Sources */,
 				CA09E23229944F2500E4942B /* NTReachabilityVC.m in Sources */,
@@ -1499,6 +1572,7 @@
 				CA75DB512918A93C0038E172 /* AppDelegate.m in Sources */,
 				CA68EA7829D0716C00801F82 /* NTAFNDownVC.m in Sources */,
 				CA75DB622918A93E0038E172 /* main.m in Sources */,
+				CAF00A2129DD340E002B61F1 /* NTSDWebimageUseVC.m in Sources */,
 				CAD4CF2E29B4974A00B02D72 /* NTTabBarButton.m in Sources */,
 				CA08AE482918DC7B00907C6E /* UIView+Tools.m in Sources */,
 				CAD4CF3229B4D24000B02D72 /* UIView+Size.m in Sources */,
@@ -1529,11 +1603,13 @@
 				CAD60C5C294F64C7006A01D5 /* XMGDealsViewController.m in Sources */,
 				CAD4CF2529B491AE00B02D72 /* NTTabBarVC.m in Sources */,
 				CAD60CAF29827845006A01D5 /* UIImage+Image.m in Sources */,
+				CAF00A1C29DD30C3002B61F1 /* NTUIbug.m in Sources */,
 				CAD60CA42982534C006A01D5 /* NTGestureVC.m in Sources */,
 				CAD60C62296D262E006A01D5 /* PickerViewNoteVC.m in Sources */,
 				CA68EA5529BB3A8600801F82 /* NTCoverView.m in Sources */,
 				CAD60C812973E4AF006A01D5 /* NTNavVC.m in Sources */,
 				CA68EA7429D06ACC00801F82 /* NTNSThreadVC.m in Sources */,
+				CAF00A1229DD2DAF002B61F1 /* NTXcodeVC.m in Sources */,
 				CA08FB8A29A850200004BA81 /* NTScanQRCodeVC.m in Sources */,
 				CADB0395293DF20400DBEDB6 /* TableViewNoteVC.m in Sources */,
 				CAF491C429953A370052B16B /* NTWebViewOCAndJSVC.m in Sources */,

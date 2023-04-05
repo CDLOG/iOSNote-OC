@@ -16,6 +16,7 @@
 #import "NTSaveTool.h"
 #import "NTOddVC.h"
 #import "NTtextVC.h"
+#import "TableViewNoteVC.h"
 @interface ViewController ()
 
 @end
