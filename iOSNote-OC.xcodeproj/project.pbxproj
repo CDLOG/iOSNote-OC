@@ -26,6 +26,7 @@
 		CA09E23929947F9100E4942B /* NTHTMLABCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA09E23729947F9100E4942B /* NTHTMLABCVC.m */; };
 		CA09E23A29947F9100E4942B /* NTHTMLABCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA09E23829947F9100E4942B /* NTHTMLABCVC.xib */; };
 		CA09E23C2994803F00E4942B /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = CA09E23B2994803F00E4942B /* test.html */; };
+		CA16474829E15084005E92AC /* CL_TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA16474629E15083005E92AC /* CL_TextView.m */; };
 		CA33F7AF29A85983003BB2FA /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = CA33F7AC29A85983003BB2FA /* UIDevice+Hardware.m */; };
 		CA33F7B029A85983003BB2FA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CA33F7AD29A85983003BB2FA /* README.md */; };
 		CA33F7BE29A867EA003BB2FA /* NTDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = CA33F7BD29A867EA003BB2FA /* NTDispatch.m */; };
@@ -176,6 +177,8 @@
 		CA09E23729947F9100E4942B /* NTHTMLABCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTHTMLABCVC.m; sourceTree = "<group>"; };
 		CA09E23829947F9100E4942B /* NTHTMLABCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTHTMLABCVC.xib; sourceTree = "<group>"; };
 		CA09E23B2994803F00E4942B /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		CA16474629E15083005E92AC /* CL_TextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CL_TextView.m; sourceTree = "<group>"; };
+		CA16474729E15084005E92AC /* CL_TextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CL_TextView.h; sourceTree = "<group>"; };
 		CA33F7AC29A85983003BB2FA /* UIDevice+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
 		CA33F7AD29A85983003BB2FA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CA33F7AE29A85983003BB2FA /* UIDevice+Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
@@ -529,6 +532,15 @@
 				CAF491BF299539FC0052B16B /* 基础知识 */,
 			);
 			path = UIWebview;
+			sourceTree = "<group>";
+		};
+		CA16474529E15022005E92AC /* 有字数限制的文本输入框 */ = {
+			isa = PBXGroup;
+			children = (
+				CA16474729E15084005E92AC /* CL_TextView.h */,
+				CA16474629E15083005E92AC /* CL_TextView.m */,
+			);
+			path = "有字数限制的文本输入框";
 			sourceTree = "<group>";
 		};
 		CA33F7A929A8544C003BB2FA /* 多线程 */ = {
@@ -910,6 +922,7 @@
 			isa = PBXGroup;
 			children = (
 				CAF00A0B29DC2D20002B61F1 /* 自定义xib */,
+				CA16474529E15022005E92AC /* 有字数限制的文本输入框 */,
 				CA92EC0029D44ACC0077AD9F /* 分页控制器 */,
 				CA68EA4C29BB39F100801F82 /* 蒙版 */,
 				CA33F7C929AA358A003BB2FA /* 换肤 */,
@@ -1596,6 +1609,7 @@
 				CAF00A0A29DC25D9002B61F1 /* DataTools.m in Sources */,
 				CAC89C9329385C5300ED408E /* PlistLoadVC.m in Sources */,
 				CA68EA7029CF5BCC00801F82 /* NTThreadVC.m in Sources */,
+				CA16474829E15084005E92AC /* CL_TextView.m in Sources */,
 				CA68EA6429CB616D00801F82 /* NTSetRootVC.m in Sources */,
 				CA33F7F629AA39D1003BB2FA /* SkinTool.m in Sources */,
 				CAD60CAB298274C5006A01D5 /* NTImageDrawVC.m in Sources */,

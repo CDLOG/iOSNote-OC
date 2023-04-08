@@ -83,4 +83,44 @@ viewWillLayoutSubviews,viewDidLayoutSubviews,viewDidAppear,
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
+/// 跳转到前面跳转过的页面
+/// - Parameter target: 页面类名
+/// 使用示例:[self jumpExistVC: [XMGDealsViewController class]];
+-(void)jumpExistVC:(Class)target{
+    UIViewController *targetVC = nil;
+    for (UIViewController * controller in self.navigationController.viewControllers) { //遍历
+        
+        if ([controller isKindOfClass:target]) {
+            targetVC = controller;
+        }
+    }
+
+    if (targetVC) {
+        [self.navigationController popToViewController:targetVC animated:YES]; //跳转
+    }
+}
+
+/// 跳转前面的某一级页面层级,然后推出新的页面,常用与某一个层级的不同页面逻辑
+/// @param target 层级页面
+/// @param page 新推出的页面
+-(void)jumpNotExistVC:(Class)target andTargetVC:(UIViewController *)page{
+
+    UIViewController *targetVC = nil;
+
+    for (UIViewController * controller in self.navigationController.viewControllers) { //遍历
+        
+        if ([controller isKindOfClass:[target class]]) { //这里判断是否为你想要跳转的页面
+            
+            targetVC = controller;
+            
+        }
+        
+    }
+
+    if (target) {
+        [self.navigationController popToViewController:targetVC animated:YES]; //跳转
+        [self.navigationController pushViewController:page animated:NO]; //跳转
+    }
+
+}
 @end
